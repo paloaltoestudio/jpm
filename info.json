@@ -1,0 +1,1971 @@
+[
+    {
+        "idDelito": 1,
+        "nombreDelito": "Insubordinación",
+        "idPregunta": "1",
+        "nombrePreguntanmpreguntas": "¿El denunciado incurrió en actitudes violentas? ",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "SI/NO",
+        "respuestaQueHabilitaRespuestaHijo": "SI",
+        "tipoDeSeleccin": "FAMILIA PROPIA",
+        "nombreDelElementoDeSeleccin": "FP_PERSONAS",
+        "columnaDelElementoDeSeleccin": "NOMBRE"
+    },
+    {
+        "idDelito": 1,
+        "nombreDelito": "Insubordinación",
+        "idePreguntaPadre": "1",
+        "idPregunta": "2",
+        "nombrePreguntanmpreguntas": "¿Cuáles?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "TEXTO UNA LÍNEA",
+        "tipoDeSeleccin": "GRUPO DE CAMPOS DEL PROCESO",
+        "nombreDelElementoDeSeleccin": "GC_VICTIMAS, GC_TESTIGOS",
+        "columnaDelElementoDeSeleccin": "APELLIDOS"
+    },
+    {
+        "idDelito": 1,
+        "nombreDelito": "Insubordinación",
+        "idePreguntaPadre": "1",
+        "idPregunta": "3",
+        "nombrePreguntanmpreguntas": "¿Las actitudes violentas están relacionadas con una orden?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "SI/NO",
+        "respuestaQueHabilitaRespuestaHijo": "SI"
+    },
+    {
+        "idDelito": 1,
+        "nombreDelito": "Insubordinación",
+        "idePreguntaPadre": "3",
+        "idPregunta": "4",
+        "nombrePreguntanmpreguntas": "¿En qué consistía la orden?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "AREA DE TEXTO"
+    },
+    {
+        "idDelito": 1,
+        "nombreDelito": "Insubordinación",
+        "idePreguntaPadre": "3",
+        "idPregunta": "5",
+        "nombrePreguntanmpreguntas": "¿Cómo fue impartida la orden?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "AREA DE TEXTO"
+    },
+    {
+        "idDelito": 1,
+        "nombreDelito": "Insubordinación",
+        "idePreguntaPadre": "3",
+        "idPregunta": "6",
+        "nombrePreguntanmpreguntas": "¿Fueron para rechazar una orden? ",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "SI/NO",
+        "respuestaQueHabilitaRespuestaHijo": "SI"
+    },
+    {
+        "idDelito": 1,
+        "nombreDelito": "Insubordinación",
+        "idePreguntaPadre": "3",
+        "idPregunta": "7",
+        "nombrePreguntanmpreguntas": "¿Fueron para impedir que otra persona cumpliera la orden?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "SI/NO",
+        "respuestaQueHabilitaRespuestaHijo": "SI"
+    },
+    {
+        "idDelito": 1,
+        "nombreDelito": "Insubordinación",
+        "idePreguntaPadre": "7",
+        "idPregunta": "8",
+        "formulario": 2,
+        "nombrePreguntanmpreguntas": "¿Qué persona debía cumplir la orden?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "TEXTO UNA LÍNEA",
+        "pregunta1": "Selección única, viene de personas"
+    },
+    {
+        "idDelito": 1,
+        "nombreDelito": "Insubordinación",
+        "idePreguntaPadre": "3",
+        "idPregunta": "9",
+        "nombrePreguntanmpreguntas": "¿Fueron para impedir que el superior impartiera la orden?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "SI/NO",
+        "respuestaQueHabilitaRespuestaHijo": "SI"
+    },
+    {
+        "idDelito": 1,
+        "nombreDelito": "Insubordinación",
+        "idePreguntaPadre": "9",
+        "idPregunta": "10",
+        "formulario": 2,
+        "nombrePreguntanmpreguntas": "¿Qué superior debía impartir la orden? \n",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "TEXTO UNA LÍNEA",
+        "pregunta1": "Selección única, viene de personas"
+    },
+    {
+        "idDelito": 1,
+        "nombreDelito": "Insubordinación",
+        "idePreguntaPadre": "3",
+        "idPregunta": "11",
+        "nombrePreguntanmpreguntas": "¿Obligaron al superior a impartir la orden?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "SI/NO",
+        "respuestaQueHabilitaRespuestaHijo": "SI"
+    },
+    {
+        "idDelito": 1,
+        "nombreDelito": "Insubordinación",
+        "idePreguntaPadre": "11",
+        "idPregunta": "12",
+        "formulario": 2,
+        "nombrePreguntanmpreguntas": "¿Qué superior fue obligado a impartir la orden? \n",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "TEXTO UNA LÍNEA",
+        "tipoDeSeleccin": "FAMILIA_SUPERIORES\ntipo de selección\nCampo relación",
+        "pregunta1": "Selección única, viene de personas"
+    },
+    {
+        "idDelito": 1,
+        "nombreDelito": "Insubordinación",
+        "idPregunta": "13",
+        "nombrePreguntanmpreguntas": "¿La conducta la cometió el denunciado con el concurso de otras personas?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "SI/NO",
+        "respuestaQueHabilitaRespuestaHijo": "SI"
+    },
+    {
+        "idDelito": 1,
+        "nombreDelito": "Insubordinación",
+        "idePreguntaPadre": "13",
+        "idPregunta": "14",
+        "formulario": 2,
+        "nombrePreguntanmpreguntas": "¿Con el concurso de quienes cometio la conducta?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "TEXTO UNA LÍNEA",
+        "pregunta1": "Selección múltiple, viene de personas"
+    },
+    {
+        "idDelito": 1,
+        "nombreDelito": "Insubordinación",
+        "idPregunta": "15",
+        "nombrePreguntanmpreguntas": "¿La conducta la cometió el denunciado estando frente a tropas formadas?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "SI/NO",
+        "respuestaQueHabilitaRespuestaHijo": "SI"
+    },
+    {
+        "idDelito": 1,
+        "nombreDelito": "Insubordinación",
+        "idePreguntaPadre": "15",
+        "idPregunta": "16",
+        "formulario": 2,
+        "nombrePreguntanmpreguntas": " ¿En frente de qué tropas cometió la conducta?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "TEXTO UNA LÍNEA"
+    },
+    {
+        "idDelito": 3,
+        "nombreDelito": "Insubordinación por exigencia",
+        "idPregunta": "17",
+        "nombrePreguntanmpreguntas": "¿El denunciado incurrió en actitudes violentas?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "SI/NO",
+        "respuestaQueHabilitaRespuestaHijo": "SI"
+    },
+    {
+        "idDelito": 3,
+        "nombreDelito": "Insubordinación por exigencia",
+        "idePreguntaPadre": "17",
+        "idPregunta": "18",
+        "nombrePreguntanmpreguntas": "¿Cuáles?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "AREA DE TEXTO"
+    },
+    {
+        "idDelito": 3,
+        "nombreDelito": "Insubordinación por exigencia",
+        "idePreguntaPadre": "17",
+        "idPregunta": "19",
+        "nombrePreguntanmpreguntas": "¿Las actitudes violentas realizadas por el denunciado fueron para hacer exigencias al superior?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "SI/NO",
+        "respuestaQueHabilitaRespuestaHijo": "SI"
+    },
+    {
+        "idDelito": 3,
+        "nombreDelito": "Insubordinación por exigencia",
+        "idePreguntaPadre": 19,
+        "idPregunta": "20",
+        "nombrePreguntanmpreguntas": "¿En qué consistía la exigencia?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "AREA DE TEXTO"
+    },
+    {
+        "idDelito": 3,
+        "nombreDelito": "Insubordinación por exigencia",
+        "idePreguntaPadre": 19,
+        "idPregunta": "21",
+        "formulario": 2,
+        "nombrePreguntanmpreguntas": "¿A qué superior fue realizada la exigencia?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "TEXTO UNA LÍNEA"
+    },
+    {
+        "idDelito": 4,
+        "nombreDelito": "Desobediencia",
+        "idPregunta": "22",
+        "nombrePreguntanmpreguntas": "¿El denunciado recibió una orden?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "SI/NO",
+        "respuestaQueHabilitaRespuestaHijo": "SI"
+    },
+    {
+        "idDelito": 4,
+        "nombreDelito": "Desobediencia",
+        "idePreguntaPadre": 22,
+        "idPregunta": "23",
+        "nombrePreguntanmpreguntas": "¿En qué consistía la orden?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "AREA DE TEXTO"
+    },
+    {
+        "idDelito": 4,
+        "nombreDelito": "Desobediencia",
+        "idePreguntaPadre": 22,
+        "idPregunta": "24",
+        "formulario": 2,
+        "nombrePreguntanmpreguntas": "¿Quién impartió la orden?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "TEXTO UNA LÍNEA"
+    },
+    {
+        "idDelito": 4,
+        "nombreDelito": "Desobediencia",
+        "idePreguntaPadre": 24,
+        "idPregunta": "25",
+        "nombrePreguntanmpreguntas": "¿En qué calidad impartió la orden?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "TEXTO UNA LÍNEA"
+    },
+    {
+        "idDelito": 4,
+        "nombreDelito": "Desobediencia",
+        "idePreguntaPadre": 22,
+        "idPregunta": "26",
+        "nombrePreguntanmpreguntas": "¿De qué manera impartió la orden?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "AREA DE TEXTO"
+    },
+    {
+        "idDelito": 4,
+        "nombreDelito": "Desobediencia",
+        "idePreguntaPadre": 22,
+        "idPregunta": "27",
+        "nombrePreguntanmpreguntas": "¿Qué función desempeñaba quien recibió la orden?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "TEXTO UNA LÍNEA"
+    },
+    {
+        "idDelito": 4,
+        "nombreDelito": "Desobediencia",
+        "idPregunta": "28",
+        "nombrePreguntanmpreguntas": "¿El denunciado incumplió la orden?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "SI/NO",
+        "respuestaQueHabilitaRespuestaHijo": "SI"
+    },
+    {
+        "idDelito": 4,
+        "nombreDelito": "Desobediencia",
+        "idePreguntaPadre": 28,
+        "idPregunta": "29",
+        "nombrePreguntanmpreguntas": "¿De qué manera la incumplió?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "AREA DE TEXTO"
+    },
+    {
+        "idDelito": 4,
+        "nombreDelito": "Desobediencia",
+        "idPregunta": "30",
+        "nombrePreguntanmpreguntas": "¿El denunciado modificó la orden?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "SI/NO",
+        "respuestaQueHabilitaRespuestaHijo": "SI"
+    },
+    {
+        "idDelito": 4,
+        "nombreDelito": "Desobediencia",
+        "idePreguntaPadre": 30,
+        "idPregunta": "31",
+        "nombrePreguntanmpreguntas": "¿De qué manera la modificó?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "AREA DE TEXTO"
+    },
+    {
+        "idDelito": 5,
+        "nombreDelito": "Desobediencia de personal retirado",
+        "idPregunta": "32",
+        "nombrePreguntanmpreguntas": "¿El denunciado fue llamado al servicio por un Decreto de movilización o llamamiento especial?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "SI/NO",
+        "respuestaQueHabilitaRespuestaHijo": "SI"
+    },
+    {
+        "idDelito": 5,
+        "nombreDelito": "Desobediencia de personal retirado",
+        "idePreguntaPadre": 32,
+        "idPregunta": "33",
+        "nombrePreguntanmpreguntas": "¿Cuál Decreto?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "TEXTO UNA LÍNEA"
+    },
+    {
+        "idDelito": 5,
+        "nombreDelito": "Desobediencia de personal retirado",
+        "idPregunta": "34",
+        "nombrePreguntanmpreguntas": "¿El denunciado estaba en retiro temporal?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "SI/NO",
+        "respuestaQueHabilitaRespuestaHijo": "SI"
+    },
+    {
+        "idDelito": 5,
+        "nombreDelito": "Desobediencia de personal retirado",
+        "idPregunta": "35",
+        "nombrePreguntanmpreguntas": "¿El denunciado estaba en situación de reserva?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "SI/NO",
+        "respuestaQueHabilitaRespuestaHijo": "SI"
+    },
+    {
+        "idDelito": 5,
+        "nombreDelito": "Desobediencia de personal retirado",
+        "idPregunta": "36",
+        "nombrePreguntanmpreguntas": "¿Cuándo debía presentarse?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "TEXTO UNA LÍNEA"
+    },
+    {
+        "idDelito": 5,
+        "nombreDelito": "Desobediencia de personal retirado",
+        "idPregunta": "37",
+        "nombrePreguntanmpreguntas": "¿En dónde debía presentarse? ",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "TEXTO UNA LÍNEA"
+    },
+    {
+        "idDelito": 5,
+        "nombreDelito": "Desobediencia de personal retirado",
+        "idPregunta": "38",
+        "nombrePreguntanmpreguntas": "¿El denunciado se presentó?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "SI/NO",
+        "respuestaQueHabilitaRespuestaHijo": "SI"
+    },
+    {
+        "idDelito": 5,
+        "nombreDelito": "Desobediencia de personal retirado",
+        "idePreguntaPadre": 38,
+        "idPregunta": "39",
+        "nombrePreguntanmpreguntas": "¿Cuándo se presentó?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "TEXTO UNA LÍNEA"
+    },
+    {
+        "idDelito": 6,
+        "nombreDelito": "Desobediencia de reservistas",
+        "idPregunta": "40",
+        "nombrePreguntanmpreguntas": "¿El denunciado fue llamado al servicio por un Decreto de movilización o llamamiento especial?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "SI/NO",
+        "respuestaQueHabilitaRespuestaHijo": "SI"
+    },
+    {
+        "idDelito": 6,
+        "nombreDelito": "Desobediencia de reservistas",
+        "idePreguntaPadre": 40,
+        "idPregunta": "41",
+        "nombrePreguntanmpreguntas": "¿Cuál Decreto?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "TEXTO UNA LÍNEA"
+    },
+    {
+        "idDelito": 6,
+        "nombreDelito": "Desobediencia de reservistas",
+        "idPregunta": "42",
+        "nombrePreguntanmpreguntas": "¿El denunciado prestó servicio militar obligatorio?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "SI/NO",
+        "respuestaQueHabilitaRespuestaHijo": "SI"
+    },
+    {
+        "idDelito": 6,
+        "nombreDelito": "Desobediencia de reservistas",
+        "idPregunta": "43",
+        "nombrePreguntanmpreguntas": "¿El denunciado estaba en situación de reserva?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "SI/NO",
+        "respuestaQueHabilitaRespuestaHijo": "SI"
+    },
+    {
+        "idDelito": 6,
+        "nombreDelito": "Desobediencia de reservistas",
+        "idPregunta": "44",
+        "nombrePreguntanmpreguntas": "¿Cuándo debía presentarse?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "TEXTO UNA LÍNEA"
+    },
+    {
+        "idDelito": 6,
+        "nombreDelito": "Desobediencia de reservistas",
+        "idPregunta": "45",
+        "nombrePreguntanmpreguntas": "¿En dónde debía presentarse? ",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "TEXTO UNA LÍNEA"
+    },
+    {
+        "idDelito": 6,
+        "nombreDelito": "Desobediencia de reservistas",
+        "idPregunta": "46",
+        "nombrePreguntanmpreguntas": "¿El denunciado se presentó?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "SI/NO",
+        "respuestaQueHabilitaRespuestaHijo": "SI"
+    },
+    {
+        "idDelito": 6,
+        "nombreDelito": "Desobediencia de reservistas",
+        "idePreguntaPadre": 46,
+        "idPregunta": "47",
+        "nombrePreguntanmpreguntas": "¿Cuándo se presentó?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "TEXTO UNA LÍNEA"
+    },
+    {
+        "idDelito": 7,
+        "nombreDelito": "Ataque al superior",
+        "idPregunta": "48",
+        "nombrePreguntanmpreguntas": "¿Cómo fue el ataque?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "AREA DE TEXTO"
+    },
+    {
+        "idDelito": 7,
+        "nombreDelito": "Ataque al superior",
+        "idPregunta": "49",
+        "nombrePreguntanmpreguntas": "¿Ejerció violencia física?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "SI/NO",
+        "respuestaQueHabilitaRespuestaHijo": "SI"
+    },
+    {
+        "idDelito": 7,
+        "nombreDelito": "Ataque al superior",
+        "idPregunta": "50",
+        "nombrePreguntanmpreguntas": "¿Ejerció violencia verbal?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "SI/NO",
+        "respuestaQueHabilitaRespuestaHijo": "SI"
+    },
+    {
+        "idDelito": 7,
+        "nombreDelito": "Ataque al superior",
+        "idPregunta": "51",
+        "nombrePreguntanmpreguntas": "¿Qué actividad del servicio estaba realizando al momento del ataque?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "TEXTO UNA LÍNEA"
+    },
+    {
+        "idDelito": 7,
+        "nombreDelito": "Ataque al superior",
+        "idPregunta": "52",
+        "nombrePreguntanmpreguntas": "¿Cuál fue el motivo del ataque?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "AREA DE TEXTO"
+    },
+    {
+        "idDelito": 9,
+        "nombreDelito": "Amenazas",
+        "idPregunta": "53",
+        "nombrePreguntanmpreguntas": "¿La persona manifestó amenaza?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "SI/NO",
+        "respuestaQueHabilitaRespuestaHijo": "SI"
+    },
+    {
+        "idDelito": 9,
+        "nombreDelito": "Amenazas",
+        "idPregunta": "54",
+        "nombrePreguntanmpreguntas": "¿En qué consistió la amenaza?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "AREA DE TEXTO"
+    },
+    {
+        "idDelito": 9,
+        "nombreDelito": "Amenazas",
+        "idPregunta": "55",
+        "formulario": 2,
+        "nombrePreguntanmpreguntas": "¿A quién o quienes iba dirigida la amenaza?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "TEXTO UNA LÍNEA"
+    },
+    {
+        "idDelito": 9,
+        "nombreDelito": "Amenazas",
+        "idPregunta": "56",
+        "nombrePreguntanmpreguntas": "¿Por qué medio manifestó la amenaza?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "TEXTO UNA LÍNEA"
+    },
+    {
+        "idDelito": 9,
+        "nombreDelito": "Amenazas",
+        "idPregunta": "57",
+        "nombrePreguntanmpreguntas": "¿Con qué propósito se manifestó la amenaza?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "TEXTO UNA LÍNEA"
+    },
+    {
+        "idDelito": 9,
+        "nombreDelito": "Amenazas",
+        "idPregunta": "58",
+        "nombrePreguntanmpreguntas": "¿La amenaza tiene alguna relación con un acto del servicio?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "SI/NO",
+        "respuestaQueHabilitaRespuestaHijo": "SI"
+    },
+    {
+        "idDelito": 13,
+        "nombreDelito": "Abandono del puesto",
+        "idPregunta": "59",
+        "nombrePreguntanmpreguntas": "¿El denunciado estaba de servicio?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "SI/NO",
+        "respuestaQueHabilitaRespuestaHijo": "SI"
+    },
+    {
+        "idDelito": 13,
+        "nombreDelito": "Abandono del puesto",
+        "idePreguntaPadre": 59,
+        "idPregunta": "60",
+        "nombrePreguntanmpreguntas": "¿Cuál servicio debía prestar?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "TEXTO UNA LÍNEA"
+    },
+    {
+        "idDelito": 13,
+        "nombreDelito": "Abandono del puesto",
+        "idePreguntaPadre": 59,
+        "idPregunta": "61",
+        "nombrePreguntanmpreguntas": "¿Dónde debía prestarlo?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "TEXTO UNA LÍNEA"
+    },
+    {
+        "idDelito": 13,
+        "nombreDelito": "Abandono del puesto",
+        "idePreguntaPadre": 59,
+        "idPregunta": "62",
+        "nombrePreguntanmpreguntas": "¿En qué horario debía prestarlo?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "TEXTO UNA LÍNEA"
+    },
+    {
+        "idDelito": 13,
+        "nombreDelito": "Abandono del puesto",
+        "idePreguntaPadre": 59,
+        "idPregunta": "63",
+        "nombrePreguntanmpreguntas": "¿Sus funciones eran de seguridad y vigilancia?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "SI/NO",
+        "respuestaQueHabilitaRespuestaHijo": "SI"
+    },
+    {
+        "idDelito": 13,
+        "nombreDelito": "Abandono del puesto",
+        "idePreguntaPadre": 59,
+        "idPregunta": "64",
+        "nombrePreguntanmpreguntas": "¿Recibió el servicio?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "SI/NO",
+        "respuestaQueHabilitaRespuestaHijo": "SI"
+    },
+    {
+        "idDelito": 13,
+        "nombreDelito": "Abandono del puesto",
+        "idePreguntaPadre": 64,
+        "idPregunta": "65",
+        "nombrePreguntanmpreguntas": "¿A qué hora lo recibió?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "TEXTO UNA LÍNEA"
+    },
+    {
+        "idDelito": 13,
+        "nombreDelito": "Abandono del puesto",
+        "idePreguntaPadre": 59,
+        "idPregunta": "66",
+        "nombrePreguntanmpreguntas": "¿Tenía descansos durante el servicio?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "SI/NO",
+        "respuestaQueHabilitaRespuestaHijo": "SI"
+    },
+    {
+        "idDelito": 13,
+        "nombreDelito": "Abandono del puesto",
+        "idePreguntaPadre": 66,
+        "idPregunta": "67",
+        "nombrePreguntanmpreguntas": "¿En qué horarios eran los descansos?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "TEXTO UNA LÍNEA"
+    },
+    {
+        "idDelito": 13,
+        "nombreDelito": "Abandono del puesto",
+        "idPregunta": "68",
+        "nombrePreguntanmpreguntas": "¿Se durmió mientras estaba de servicio?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "SI/NO",
+        "respuestaQueHabilitaRespuestaHijo": "SI"
+    },
+    {
+        "idDelito": 13,
+        "nombreDelito": "Abandono del puesto",
+        "idePreguntaPadre": 68,
+        "idPregunta": "69",
+        "nombrePreguntanmpreguntas": "¿Lo hizo durante el turno de descanso?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "SI/NO",
+        "respuestaQueHabilitaRespuestaHijo": "SI"
+    },
+    {
+        "idDelito": 13,
+        "nombreDelito": "Abandono del puesto",
+        "idePreguntaPadre": 68,
+        "idPregunta": "70",
+        "nombrePreguntanmpreguntas": "¿En qué horario se durmió?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "TEXTO UNA LÍNEA"
+    },
+    {
+        "idDelito": 13,
+        "nombreDelito": "Abandono del puesto",
+        "idPregunta": "71",
+        "nombrePreguntanmpreguntas": "¿Se embriagó durante el servicio?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "SI/NO",
+        "respuestaQueHabilitaRespuestaHijo": "SI"
+    },
+    {
+        "idDelito": 13,
+        "nombreDelito": "Abandono del puesto",
+        "idPregunta": "72",
+        "nombrePreguntanmpreguntas": "¿Se puso bajo el efecto de sustancias estupefacientes o psicotrópicas durante el servicio?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "SI/NO",
+        "respuestaQueHabilitaRespuestaHijo": "SI"
+    },
+    {
+        "idDelito": 13,
+        "nombreDelito": "Abandono del puesto",
+        "idPregunta": "73",
+        "nombrePreguntanmpreguntas": "¿Los hechos fueron en tiempo de guerra?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "SI/NO",
+        "respuestaQueHabilitaRespuestaHijo": "SI"
+    },
+    {
+        "idDelito": 13,
+        "nombreDelito": "Abandono del puesto",
+        "idPregunta": "74",
+        "nombrePreguntanmpreguntas": "¿Los hechos fueron durante conmoción interior?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "SI/NO",
+        "respuestaQueHabilitaRespuestaHijo": "SI"
+    },
+    {
+        "idDelito": 15,
+        "nombreDelito": "Abandono del servicio",
+        "idPregunta": "75",
+        "nombrePreguntanmpreguntas": "¿Cuál era el cargo del investigado?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "TEXTO UNA LÍNEA"
+    },
+    {
+        "idDelito": 15,
+        "nombreDelito": "Abandono del servicio",
+        "idPregunta": "76",
+        "nombrePreguntanmpreguntas": "¿Cuáles son los deberes propios de dicho cargo?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "AREA DE TEXTO"
+    },
+    {
+        "idDelito": 15,
+        "nombreDelito": "Abandono del servicio",
+        "idPregunta": "77",
+        "nombrePreguntanmpreguntas": "¿Abandonó totalmente los deberes propios del cargo?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "SI/NO",
+        "respuestaQueHabilitaRespuestaHijo": "SI"
+    },
+    {
+        "idDelito": 15,
+        "nombreDelito": "Abandono del servicio",
+        "idePreguntaPadre": 77,
+        "idPregunta": "78",
+        "nombrePreguntanmpreguntas": "¿Cuándo inició el abandono de tales deberes?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "TEXTO UNA LÍNEA"
+    },
+    {
+        "idDelito": 15,
+        "nombreDelito": "Abandono del servicio",
+        "idPregunta": "79",
+        "nombrePreguntanmpreguntas": "¿Terminó el abandono de tales deberes?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "SI/NO",
+        "respuestaQueHabilitaRespuestaHijo": "SI"
+    },
+    {
+        "idDelito": 15,
+        "nombreDelito": "Abandono del servicio",
+        "idePreguntaPadre": 79,
+        "idPregunta": "80",
+        "nombrePreguntanmpreguntas": "¿Cuándo terminó el abandono de tales deberes?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "TEXTO UNA LÍNEA"
+    },
+    {
+        "idDelito": 16,
+        "nombreDelito": "Abandono del servicio de soldados voluntarios o profesionales",
+        "idPregunta": "81",
+        "nombrePreguntanmpreguntas": "¿El soldado se encontraba de campaña o en cumplimiento de una operación militar?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "SI/NO",
+        "respuestaQueHabilitaRespuestaHijo": "SI"
+    },
+    {
+        "idDelito": 16,
+        "nombreDelito": "Abandono del servicio de soldados voluntarios o profesionales",
+        "idePreguntaPadre": 81,
+        "idPregunta": "82",
+        "nombrePreguntanmpreguntas": "¿Cuál?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "TEXTO UNA LÍNEA"
+    },
+    {
+        "idDelito": 16,
+        "nombreDelito": "Abandono del servicio de soldados voluntarios o profesionales",
+        "idPregunta": "83",
+        "nombrePreguntanmpreguntas": "¿Cuáles eran los deberes propios del servicio en campaña u operación militar?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "AREA DE TEXTO"
+    },
+    {
+        "idDelito": 16,
+        "nombreDelito": "Abandono del servicio de soldados voluntarios o profesionales",
+        "idPregunta": "84",
+        "nombrePreguntanmpreguntas": "¿Cómo abandonó dichos deberes?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "AREA DE TEXTO"
+    },
+    {
+        "idDelito": 16,
+        "nombreDelito": "Abandono del servicio de soldados voluntarios o profesionales",
+        "idPregunta": "85",
+        "nombrePreguntanmpreguntas": "¿Cuándo inició el abandono de los deberes?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "TEXTO UNA LÍNEA"
+    },
+    {
+        "idDelito": 16,
+        "nombreDelito": "Abandono del servicio de soldados voluntarios o profesionales",
+        "idPregunta": "86",
+        "nombrePreguntanmpreguntas": "¿Terminó el abandono de los deberes?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "SI/NO",
+        "respuestaQueHabilitaRespuestaHijo": "SI"
+    },
+    {
+        "idDelito": 16,
+        "nombreDelito": "Abandono del servicio de soldados voluntarios o profesionales",
+        "idePreguntaPadre": 86,
+        "idPregunta": "87",
+        "nombrePreguntanmpreguntas": "¿Cuándo terminó dicho abandono de deberes?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "TEXTO UNA LÍNEA"
+    },
+    {
+        "idDelito": 16,
+        "nombreDelito": "Abandono del servicio de soldados voluntarios o profesionales",
+        "idePreguntaPadre": 86,
+        "idPregunta": "88",
+        "nombrePreguntanmpreguntas": "¿Por qué lo hizo?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "TEXTO UNA LÍNEA"
+    },
+    {
+        "idDelito": 20,
+        "nombreDelito": "Delito del centinela",
+        "idPregunta": "97",
+        "nombrePreguntanmpreguntas": "¿El denunciado estaba nombrado de centinela?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "SI/NO",
+        "respuestaQueHabilitaRespuestaHijo": "SI"
+    },
+    {
+        "idDelito": 20,
+        "nombreDelito": "Delito del centinela",
+        "idePreguntaPadre": 97,
+        "idPregunta": "98",
+        "formulario": 2,
+        "nombrePreguntanmpreguntas": "¿Quién lo designó?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "TEXTO UNA LÍNEA"
+    },
+    {
+        "idDelito": 20,
+        "nombreDelito": "Delito del centinela",
+        "idePreguntaPadre": 97,
+        "idPregunta": "99",
+        "nombrePreguntanmpreguntas": "¿Mediante qué acto lo designó?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "TEXTO UNA LÍNEA"
+    },
+    {
+        "idDelito": 20,
+        "nombreDelito": "Delito del centinela",
+        "idPregunta": "100",
+        "nombrePreguntanmpreguntas": "¿El denunciado hacía parte de la guardia de la unidad?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "SI/NO",
+        "respuestaQueHabilitaRespuestaHijo": "SI"
+    },
+    {
+        "idDelito": 20,
+        "nombreDelito": "Delito del centinela",
+        "idePreguntaPadre": 100,
+        "idPregunta": "101",
+        "nombrePreguntanmpreguntas": "¿La guardia era relevada en turnos de 24 horas?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "SI/NO",
+        "respuestaQueHabilitaRespuestaHijo": "SI"
+    },
+    {
+        "idDelito": 20,
+        "nombreDelito": "Delito del centinela",
+        "idPregunta": "102",
+        "nombrePreguntanmpreguntas": "¿En qué puesto prestaba?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "TEXTO UNA LÍNEA"
+    },
+    {
+        "idDelito": 20,
+        "nombreDelito": "Delito del centinela",
+        "idPregunta": "103",
+        "nombrePreguntanmpreguntas": "¿Cuáles eran las funciones de seguridad de dicho puesto?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "AREA DE TEXTO"
+    },
+    {
+        "idDelito": 20,
+        "nombreDelito": "Delito del centinela",
+        "idPregunta": "104",
+        "nombrePreguntanmpreguntas": "¿El denunciado prestaba con armamento?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "SI/NO",
+        "respuestaQueHabilitaRespuestaHijo": "SI"
+    },
+    {
+        "idDelito": 20,
+        "nombreDelito": "Delito del centinela",
+        "idPregunta": "105",
+        "nombrePreguntanmpreguntas": "¿Era un puesto simple o doble?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "TEXTO UNA LÍNEA"
+    },
+    {
+        "idDelito": 20,
+        "nombreDelito": "Delito del centinela",
+        "idPregunta": "106",
+        "nombrePreguntanmpreguntas": "¿En dónde quedaba dicho puesto?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "TEXTO UNA LÍNEA"
+    },
+    {
+        "idDelito": 20,
+        "nombreDelito": "Delito del centinela",
+        "idPregunta": "107",
+        "nombrePreguntanmpreguntas": "¿A qué hora recibió el puesto?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "TEXTO UNA LÍNEA"
+    },
+    {
+        "idDelito": 20,
+        "nombreDelito": "Delito del centinela",
+        "idPregunta": "108",
+        "formulario": 2,
+        "nombrePreguntanmpreguntas": "¿A quién le recibió el puesto?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "TEXTO UNA LÍNEA",
+        "pregunta1": "Selección única, viene de personas"
+    },
+    {
+        "idDelito": 20,
+        "nombreDelito": "Delito del centinela",
+        "idPregunta": "109",
+        "nombrePreguntanmpreguntas": "¿A qué hora debía entregarlo?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "TEXTO UNA LÍNEA"
+    },
+    {
+        "idDelito": 20,
+        "nombreDelito": "Delito del centinela",
+        "idPregunta": "110",
+        "nombrePreguntanmpreguntas": "¿A quién debía entregarle el puesto?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "TEXTO UNA LÍNEA"
+    },
+    {
+        "idDelito": 20,
+        "nombreDelito": "Delito del centinela",
+        "idPregunta": "111",
+        "nombrePreguntanmpreguntas": "Describa detalladamente el puesto",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "AREA DE TEXTO"
+    },
+    {
+        "idDelito": 20,
+        "nombreDelito": "Delito del centinela",
+        "idPregunta": "112",
+        "formulario": 2,
+        "nombrePreguntanmpreguntas": "¿Quién realizó el relevó de los turnos de centinela?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "TEXTO UNA LÍNEA",
+        "pregunta1": "Selección única, viene de personas"
+    },
+    {
+        "idDelito": 20,
+        "nombreDelito": "Delito del centinela",
+        "idPregunta": "113",
+        "nombrePreguntanmpreguntas": "¿Cómo se hizo el relevo de los turnos de centinela?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "TEXTO UNA LÍNEA"
+    },
+    {
+        "idDelito": 20,
+        "nombreDelito": "Delito del centinela",
+        "idPregunta": "114",
+        "nombrePreguntanmpreguntas": "¿El denunciado manifestó algo que le impidiera prestar el turno antes de recibirlo?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "SI/NO",
+        "respuestaQueHabilitaRespuestaHijo": "SI"
+    },
+    {
+        "idDelito": 20,
+        "nombreDelito": "Delito del centinela",
+        "idePreguntaPadre": 114,
+        "idPregunta": "115",
+        "nombrePreguntanmpreguntas": "¿Qué manifestó?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "AREA DE TEXTO"
+    },
+    {
+        "idDelito": 20,
+        "nombreDelito": "Delito del centinela",
+        "idPregunta": "116",
+        "nombrePreguntanmpreguntas": "¿El denunciado manifestó algo que le estuviera impidiendo prestar el turno, mientras lo estuvo prestando?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "SI/NO",
+        "respuestaQueHabilitaRespuestaHijo": "SI"
+    },
+    {
+        "idDelito": 20,
+        "nombreDelito": "Delito del centinela",
+        "idePreguntaPadre": 116,
+        "idPregunta": "117",
+        "nombrePreguntanmpreguntas": "¿Qué manifestó?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "AREA DE TEXTO"
+    },
+    {
+        "idDelito": 20,
+        "nombreDelito": "Delito del centinela",
+        "idPregunta": "118",
+        "nombrePreguntanmpreguntas": "En qué conducta incurrió"
+    },
+    {
+        "idDelito": 20,
+        "nombreDelito": "Delito del centinela",
+        "idePreguntaPadre": 118,
+        "idPregunta": "119",
+        "nombrePreguntanmpreguntas": "¿Se durmió?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "SI/NO",
+        "respuestaQueHabilitaRespuestaHijo": "SI"
+    },
+    {
+        "idDelito": 20,
+        "nombreDelito": "Delito del centinela",
+        "idePreguntaPadre": 118,
+        "idPregunta": "120",
+        "nombrePreguntanmpreguntas": "¿Se embriagó?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "SI/NO",
+        "respuestaQueHabilitaRespuestaHijo": "SI"
+    },
+    {
+        "idDelito": 20,
+        "nombreDelito": "Delito del centinela",
+        "idePreguntaPadre": 118,
+        "idPregunta": "121",
+        "nombrePreguntanmpreguntas": "¿Se puso bajo el efecto de sustancias estupefacientes o psicotrópicas?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "SI/NO",
+        "respuestaQueHabilitaRespuestaHijo": "SI"
+    },
+    {
+        "idDelito": 20,
+        "nombreDelito": "Delito del centinela",
+        "idePreguntaPadre": 118,
+        "idPregunta": "122",
+        "nombrePreguntanmpreguntas": "¿Faltó a alguna consigna especial?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "SI/NO",
+        "respuestaQueHabilitaRespuestaHijo": "SI"
+    },
+    {
+        "idDelito": 20,
+        "nombreDelito": "Delito del centinela",
+        "idePreguntaPadre": 122,
+        "idPregunta": "123",
+        "nombrePreguntanmpreguntas": "¿A cuál consigna?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "TEXTO UNA LÍNEA"
+    },
+    {
+        "idDelito": 20,
+        "nombreDelito": "Delito del centinela",
+        "idePreguntaPadre": 122,
+        "idPregunta": "124",
+        "nombrePreguntanmpreguntas": "¿Cuándo se la informaron?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "TEXTO UNA LÍNEA"
+    },
+    {
+        "idDelito": 20,
+        "nombreDelito": "Delito del centinela",
+        "idePreguntaPadre": 122,
+        "idPregunta": "125",
+        "nombrePreguntanmpreguntas": "¿Quién se le informó?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "TEXTO UNA LÍNEA"
+    },
+    {
+        "idDelito": 20,
+        "nombreDelito": "Delito del centinela",
+        "idePreguntaPadre": 122,
+        "idPregunta": "126",
+        "nombrePreguntanmpreguntas": "¿Cómo se le informó?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "TEXTO UNA LÍNEA"
+    },
+    {
+        "idDelito": 20,
+        "nombreDelito": "Delito del centinela",
+        "idPregunta": "127",
+        "nombrePreguntanmpreguntas": "¿Se separó de su puesto?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "SI/NO",
+        "respuestaQueHabilitaRespuestaHijo": "SI"
+    },
+    {
+        "idDelito": 20,
+        "nombreDelito": "Delito del centinela",
+        "idePreguntaPadre": "127",
+        "idPregunta": "128",
+        "nombrePreguntanmpreguntas": "¿A qué distancia se separó?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "TEXTO UNA LÍNEA"
+    },
+    {
+        "idDelito": 20,
+        "nombreDelito": "Delito del centinela",
+        "idePreguntaPadre": "127",
+        "idPregunta": "129",
+        "nombrePreguntanmpreguntas": "¿A qué hora se separó?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "TEXTO UNA LÍNEA"
+    },
+    {
+        "idDelito": 20,
+        "nombreDelito": "Delito del centinela",
+        "idePreguntaPadre": "127",
+        "idPregunta": "130",
+        "nombrePreguntanmpreguntas": "¿Cuánto tiempo duró separado del puesto?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "TEXTO UNA LÍNEA"
+    },
+    {
+        "idDelito": 20,
+        "nombreDelito": "Delito del centinela",
+        "idePreguntaPadre": "127",
+        "idPregunta": "131",
+        "nombrePreguntanmpreguntas": "¿Retornó al puesto?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "SI/NO",
+        "respuestaQueHabilitaRespuestaHijo": "SI"
+    },
+    {
+        "idDelito": 20,
+        "nombreDelito": "Delito del centinela",
+        "idePreguntaPadre": "131",
+        "idPregunta": "132",
+        "nombrePreguntanmpreguntas": "¿A qué hora retornó?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "TEXTO UNA LÍNEA"
+    },
+    {
+        "idDelito": 20,
+        "nombreDelito": "Delito del centinela",
+        "idePreguntaPadre": "127",
+        "idPregunta": "133",
+        "nombrePreguntanmpreguntas": "¿Por qué se separó del puesto?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "TEXTO UNA LÍNEA"
+    },
+    {
+        "idDelito": 20,
+        "nombreDelito": "Delito del centinela",
+        "idPregunta": "134",
+        "nombrePreguntanmpreguntas": "¿Se dejó relevar por quien no estaba autorizado?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "SI/NO",
+        "respuestaQueHabilitaRespuestaHijo": "SI"
+    },
+    {
+        "idDelito": 20,
+        "nombreDelito": "Delito del centinela",
+        "idePreguntaPadre": "134",
+        "idPregunta": "135",
+        "nombrePreguntanmpreguntas": "¿Quién lo relevó?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "TEXTO UNA LÍNEA"
+    },
+    {
+        "idDelito": 20,
+        "nombreDelito": "Delito del centinela",
+        "idePreguntaPadre": "134",
+        "idPregunta": "136",
+        "nombrePreguntanmpreguntas": "¿Por qué lo relevó?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "TEXTO UNA LÍNEA"
+    },
+    {
+        "idDelito": 20,
+        "nombreDelito": "Delito del centinela",
+        "idePreguntaPadre": "134",
+        "idPregunta": "137",
+        "nombrePreguntanmpreguntas": "¿Por qué se dejó relevar?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "AREA DE TEXTO"
+    },
+    {
+        "idDelito": 20,
+        "nombreDelito": "Delito del centinela",
+        "idPregunta": "138",
+        "nombrePreguntanmpreguntas": "¿Los hechos sucedieron en tiempo de guerra?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "SI/NO",
+        "respuestaQueHabilitaRespuestaHijo": "SI"
+    },
+    {
+        "idDelito": 20,
+        "nombreDelito": "Delito del centinela",
+        "idPregunta": "139",
+        "nombrePreguntanmpreguntas": "¿Los hechos sucedieron en tiempo de conmoción interior?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "SI/NO",
+        "respuestaQueHabilitaRespuestaHijo": "SI"
+    },
+    {
+        "idDelito": 22,
+        "nombreDelito": "Libertad indebida de prisioneros de guerra",
+        "idPregunta": "140",
+        "nombrePreguntanmpreguntas": "¿Quién era el prisionero de guerra?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "TEXTO UNA LÍNEA"
+    },
+    {
+        "idDelito": 22,
+        "nombreDelito": "Libertad indebida de prisioneros de guerra",
+        "idPregunta": "141",
+        "nombrePreguntanmpreguntas": "¿Por qué motivo esa persona era prisionero?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "TEXTO UNA LÍNEA"
+    },
+    {
+        "idDelito": 22,
+        "nombreDelito": "Libertad indebida de prisioneros de guerra",
+        "idPregunta": "142",
+        "nombrePreguntanmpreguntas": "¿El prisionero fue aprendido en virtud de un conflicto armado Internacional?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "SI/NO",
+        "respuestaQueHabilitaRespuestaHijo": "SI"
+    },
+    {
+        "idDelito": 22,
+        "nombreDelito": "Libertad indebida de prisioneros de guerra",
+        "idPregunta": "143",
+        "nombrePreguntanmpreguntas": "¿El prisionero se encuentra dentro de los beneficiarios del Tercer Convenio de Ginebra\nde 1949?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "SI/NO",
+        "respuestaQueHabilitaRespuestaHijo": "SI"
+    },
+    {
+        "idDelito": 22,
+        "nombreDelito": "Libertad indebida de prisioneros de guerra",
+        "idePreguntaPadre": 143,
+        "idPregunta": "144",
+        "nombrePreguntanmpreguntas": "¿Por qué?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "TEXTO UNA LÍNEA"
+    },
+    {
+        "idDelito": 22,
+        "nombreDelito": "Libertad indebida de prisioneros de guerra",
+        "idPregunta": "145",
+        "nombrePreguntanmpreguntas": "¿Dónde se encontraba el prisionero de guerra?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "TEXTO UNA LÍNEA"
+    },
+    {
+        "idDelito": 22,
+        "nombreDelito": "Libertad indebida de prisioneros de guerra",
+        "idPregunta": "146",
+        "formulario": 2,
+        "nombrePreguntanmpreguntas": "¿A cargo de quién se encontraba el prisionero de guerra?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "TEXTO UNA LÍNEA"
+    },
+    {
+        "idDelito": 22,
+        "nombreDelito": "Libertad indebida de prisioneros de guerra",
+        "idPregunta": "147",
+        "nombrePreguntanmpreguntas": "¿El denunciado puso a un prisionero de guerra en libertad?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "SI/NO",
+        "respuestaQueHabilitaRespuestaHijo": "SI"
+    },
+    {
+        "idDelito": 22,
+        "nombreDelito": "Libertad indebida de prisioneros de guerra",
+        "idePreguntaPadre": 147,
+        "idPregunta": "148",
+        "nombrePreguntanmpreguntas": "¿Cuándo lo puso en libertad?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "TEXTO UNA LÍNEA"
+    },
+    {
+        "idDelito": 22,
+        "nombreDelito": "Libertad indebida de prisioneros de guerra",
+        "idePreguntaPadre": 147,
+        "idPregunta": "149",
+        "nombrePreguntanmpreguntas": "¿Cuándo se descubrió que lo puso en libertad?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "TEXTO UNA LÍNEA"
+    },
+    {
+        "idDelito": 22,
+        "nombreDelito": "Libertad indebida de prisioneros de guerra",
+        "idePreguntaPadre": 147,
+        "idPregunta": "150",
+        "formulario": 2,
+        "nombrePreguntanmpreguntas": "¿Quién descubrió que lo puso en libertad?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "TEXTO UNA LÍNEA"
+    },
+    {
+        "idDelito": 22,
+        "nombreDelito": "Libertad indebida de prisioneros de guerra",
+        "idePreguntaPadre": 147,
+        "idPregunta": "151",
+        "nombrePreguntanmpreguntas": "¿Por qué lo puso en libertad?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "TEXTO UNA LÍNEA"
+    },
+    {
+        "idDelito": 22,
+        "nombreDelito": "Libertad indebida de prisioneros de guerra",
+        "idePreguntaPadre": 147,
+        "idPregunta": "152",
+        "nombrePreguntanmpreguntas": "¿Tenía facultad para ponerlo en libertad?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "SI/NO",
+        "respuestaQueHabilitaRespuestaHijo": "SI"
+    },
+    {
+        "idDelito": 22,
+        "nombreDelito": "Libertad indebida de prisioneros de guerra",
+        "idePreguntaPadre": 147,
+        "idPregunta": "153",
+        "nombrePreguntanmpreguntas": "¿Tenía autorización para ponerlo en libertad?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "SI/NO",
+        "respuestaQueHabilitaRespuestaHijo": "SI"
+    },
+    {
+        "idDelito": 22,
+        "nombreDelito": "Libertad indebida de prisioneros de guerra",
+        "idPregunta": "154",
+        "nombrePreguntanmpreguntas": "¿El prisionero se evadió mientras estaba siendo custodiado?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "SI/NO",
+        "respuestaQueHabilitaRespuestaHijo": "SI"
+    },
+    {
+        "idDelito": 22,
+        "nombreDelito": "Libertad indebida de prisioneros de guerra",
+        "idePreguntaPadre": 154,
+        "idPregunta": "155",
+        "formulario": 2,
+        "nombrePreguntanmpreguntas": "¿Quién era el encargado de la custodia del prisionero de guerra?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "TEXTO UNA LÍNEA",
+        "pregunta1": "Selección única, viene de personas"
+    },
+    {
+        "idDelito": 22,
+        "nombreDelito": "Libertad indebida de prisioneros de guerra",
+        "idePreguntaPadre": 154,
+        "idPregunta": "156",
+        "nombrePreguntanmpreguntas": "¿En qué lugar lo estaban custodiando?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "TEXTO UNA LÍNEA"
+    },
+    {
+        "idDelito": 22,
+        "nombreDelito": "Libertad indebida de prisioneros de guerra",
+        "idePreguntaPadre": 154,
+        "idPregunta": "157",
+        "nombrePreguntanmpreguntas": "¿Por qué se encontraba en dicho lugar?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "AREA DE TEXTO"
+    },
+    {
+        "idDelito": 22,
+        "nombreDelito": "Libertad indebida de prisioneros de guerra",
+        "idePreguntaPadre": 154,
+        "idPregunta": "158",
+        "nombrePreguntanmpreguntas": "¿Era el lugar habitual de custodia?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "TEXTO UNA LÍNEA"
+    },
+    {
+        "idDelito": 22,
+        "nombreDelito": "Libertad indebida de prisioneros de guerra",
+        "idePreguntaPadre": 154,
+        "idPregunta": "159",
+        "nombrePreguntanmpreguntas": "¿Con qué elementos de seguridad contaban los custodios?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "TEXTO UNA LÍNEA"
+    },
+    {
+        "idDelito": 22,
+        "nombreDelito": "Libertad indebida de prisioneros de guerra",
+        "idePreguntaPadre": 154,
+        "idPregunta": "160",
+        "nombrePreguntanmpreguntas": "¿El denunciado facilitó la evasión?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "SI/NO",
+        "respuestaQueHabilitaRespuestaHijo": "SI"
+    },
+    {
+        "idDelito": 22,
+        "nombreDelito": "Libertad indebida de prisioneros de guerra",
+        "idePreguntaPadre": "160",
+        "idPregunta": "161",
+        "nombrePreguntanmpreguntas": "¿Cómo facilitó la evasión?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "TEXTO UNA LÍNEA"
+    },
+    {
+        "idDelito": 22,
+        "nombreDelito": "Libertad indebida de prisioneros de guerra",
+        "idPregunta": "162",
+        "nombrePreguntanmpreguntas": "¿Existía algún reglamento u orden que regulara la custodia del prisionero de guerra?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "SI/NO",
+        "respuestaQueHabilitaRespuestaHijo": "SI"
+    },
+    {
+        "idDelito": 22,
+        "nombreDelito": "Libertad indebida de prisioneros de guerra",
+        "idePreguntaPadre": "162",
+        "idPregunta": "163",
+        "nombrePreguntanmpreguntas": "¿Cuál era el reglamento?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "TEXTO UNA LÍNEA"
+    },
+    {
+        "idDelito": 22,
+        "nombreDelito": "Libertad indebida de prisioneros de guerra",
+        "idePreguntaPadre": "162",
+        "idPregunta": "164",
+        "nombrePreguntanmpreguntas": "¿En qué consistía la orden?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "TEXTO UNA LÍNEA"
+    },
+    {
+        "idDelito": 22,
+        "nombreDelito": "Libertad indebida de prisioneros de guerra",
+        "idePreguntaPadre": "162",
+        "idPregunta": "165",
+        "nombrePreguntanmpreguntas": "¿Qué norma del reglamento u orden incumplió o inobservó el denunciado? ",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "TEXTO UNA LÍNEA"
+    },
+    {
+        "idDelito": 22,
+        "nombreDelito": "Libertad indebida de prisioneros de guerra",
+        "idPregunta": "166",
+        "nombrePreguntanmpreguntas": "¿El prisionero se evadió mientras estaba siendo conducido?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "SI/NO",
+        "respuestaQueHabilitaRespuestaHijo": "SI"
+    },
+    {
+        "idDelito": 22,
+        "nombreDelito": "Libertad indebida de prisioneros de guerra",
+        "idePreguntaPadre": "166",
+        "idPregunta": "167",
+        "nombrePreguntanmpreguntas": "¿A dónde estaba siendo conducido?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "TEXTO UNA LÍNEA"
+    },
+    {
+        "idDelito": 22,
+        "nombreDelito": "Libertad indebida de prisioneros de guerra",
+        "idePreguntaPadre": "166",
+        "idPregunta": "168",
+        "nombrePreguntanmpreguntas": "¿Por qué estaba siendo conducido?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "TEXTO UNA LÍNEA"
+    },
+    {
+        "idDelito": 22,
+        "nombreDelito": "Libertad indebida de prisioneros de guerra",
+        "idePreguntaPadre": "166",
+        "idPregunta": "169",
+        "nombrePreguntanmpreguntas": "¿Por orden de quién estaba siendo conducido?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "TEXTO UNA LÍNEA"
+    },
+    {
+        "idDelito": 22,
+        "nombreDelito": "Libertad indebida de prisioneros de guerra",
+        "idePreguntaPadre": "166",
+        "idPregunta": "170",
+        "nombrePreguntanmpreguntas": "¿Quién o quiénes lo estaban conduciendo?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "TEXTO UNA LÍNEA"
+    },
+    {
+        "idDelito": 22,
+        "nombreDelito": "Libertad indebida de prisioneros de guerra",
+        "idePreguntaPadre": "166",
+        "idPregunta": "171",
+        "nombrePreguntanmpreguntas": "¿Al mando de quién o quiénes estaban los que estaban conduciendo al prisionero?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "TEXTO UNA LÍNEA"
+    },
+    {
+        "idDelito": 22,
+        "nombreDelito": "Libertad indebida de prisioneros de guerra",
+        "idePreguntaPadre": "166",
+        "idPregunta": "172",
+        "nombrePreguntanmpreguntas": "¿Con qué elementos de seguridad contaban los que lo estaban conduciendo?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "TEXTO UNA LÍNEA"
+    },
+    {
+        "idDelito": 22,
+        "nombreDelito": "Libertad indebida de prisioneros de guerra",
+        "idePreguntaPadre": "166",
+        "idPregunta": "173",
+        "nombrePreguntanmpreguntas": "¿Existía algún reglamento u orden que regulara la conducción del prisionero de guerra?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "SI/NO",
+        "respuestaQueHabilitaRespuestaHijo": "SI"
+    },
+    {
+        "idDelito": 22,
+        "nombreDelito": "Libertad indebida de prisioneros de guerra",
+        "idePreguntaPadre": "173",
+        "idPregunta": "174",
+        "nombrePreguntanmpreguntas": "¿Cuál era el reglamento?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "AREA DE TEXTO"
+    },
+    {
+        "idDelito": 22,
+        "nombreDelito": "Libertad indebida de prisioneros de guerra",
+        "idePreguntaPadre": "173",
+        "idPregunta": "175",
+        "nombrePreguntanmpreguntas": "¿En qué consistía la orden?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "TEXTO UNA LÍNEA"
+    },
+    {
+        "idDelito": 22,
+        "nombreDelito": "Libertad indebida de prisioneros de guerra",
+        "idePreguntaPadre": "173",
+        "idPregunta": "176",
+        "nombrePreguntanmpreguntas": "¿Qué norma del reglamento u orden incumplió o inobservó el denunciado?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "TEXTO UNA LÍNEA"
+    },
+    {
+        "idDelito": 23,
+        "nombreDelito": "Omisión en el abastecimiento",
+        "idPregunta": "177",
+        "nombrePreguntanmpreguntas": "¿Cuáles eran las funciones del denunciado?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "AREA DE TEXTO"
+    },
+    {
+        "idDelito": 23,
+        "nombreDelito": "Omisión en el abastecimiento",
+        "idPregunta": "178",
+        "nombrePreguntanmpreguntas": "¿Dentro de las funciones del denunciado se encontraba la de abastecer?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "SI/NO",
+        "respuestaQueHabilitaRespuestaHijo": "SI"
+    },
+    {
+        "idDelito": 23,
+        "nombreDelito": "Omisión en el abastecimiento",
+        "idePreguntaPadre": 178,
+        "idPregunta": "179",
+        "nombrePreguntanmpreguntas": "¿El denunciado abasteció en forma debida a las tropas?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "SI/NO",
+        "respuestaQueHabilitaRespuestaHijo": "SI"
+    },
+    {
+        "idDelito": 23,
+        "nombreDelito": "Omisión en el abastecimiento",
+        "idePreguntaPadre": 178,
+        "idPregunta": "180",
+        "nombrePreguntanmpreguntas": "¿El denunciado abasteció en forma oportuna a las tropas?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "SI/NO",
+        "respuestaQueHabilitaRespuestaHijo": "SI"
+    },
+    {
+        "idDelito": 23,
+        "nombreDelito": "Omisión en el abastecimiento",
+        "idPregunta": "181",
+        "nombrePreguntanmpreguntas": "¿La unidad a abastecer era militar o de policía?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "TEXTO UNA LÍNEA"
+    },
+    {
+        "idDelito": 23,
+        "nombreDelito": "Omisión en el abastecimiento",
+        "idPregunta": "182",
+        "nombrePreguntanmpreguntas": "¿Cuál era la clase de abastecimiento que se le debía dar?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "TEXTO UNA LÍNEA"
+    },
+    {
+        "idDelito": 23,
+        "nombreDelito": "Omisión en el abastecimiento",
+        "idPregunta": "183",
+        "nombrePreguntanmpreguntas": "¿En qué cantidad se debía suministrar?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "TEXTO UNA LÍNEA"
+    },
+    {
+        "idDelito": 23,
+        "nombreDelito": "Omisión en el abastecimiento",
+        "idPregunta": "184",
+        "nombrePreguntanmpreguntas": "¿Cuándo se debía abastecer?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "TEXTO UNA LÍNEA"
+    },
+    {
+        "idDelito": 23,
+        "nombreDelito": "Omisión en el abastecimiento",
+        "idPregunta": "185",
+        "nombrePreguntanmpreguntas": "¿Por qué se les debía abastecer?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "TEXTO UNA LÍNEA"
+    },
+    {
+        "idDelito": 23,
+        "nombreDelito": "Omisión en el abastecimiento",
+        "idPregunta": "186",
+        "nombrePreguntanmpreguntas": "¿Cómo se debía abastecer?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "TEXTO UNA LÍNEA"
+    },
+    {
+        "idDelito": 23,
+        "nombreDelito": "Omisión en el abastecimiento",
+        "idPregunta": "187",
+        "nombrePreguntanmpreguntas": "¿Quién debía abastecer?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "TEXTO UNA LÍNEA"
+    },
+    {
+        "idDelito": 23,
+        "nombreDelito": "Omisión en el abastecimiento",
+        "idPregunta": "188",
+        "nombrePreguntanmpreguntas": "¿Cuál era la acción militar o policial que estaban cumpliendo las tropas?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "TEXTO UNA LÍNEA"
+    },
+    {
+        "idDelito": 23,
+        "nombreDelito": "Omisión en el abastecimiento",
+        "idPregunta": "189",
+        "nombrePreguntanmpreguntas": "¿Hubo algún perjuicio para las operaciones o acciones militares o policivas? Sí o no.",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "SI/NO",
+        "respuestaQueHabilitaRespuestaHijo": "SI"
+    },
+    {
+        "idDelito": 23,
+        "nombreDelito": "Omisión en el abastecimiento",
+        "idePreguntaPadre": "189",
+        "idPregunta": "190",
+        "nombrePreguntanmpreguntas": "¿Cuál fue el perjuicio?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "TEXTO UNA LÍNEA"
+    },
+    {
+        "idDelito": 23,
+        "nombreDelito": "Omisión en el abastecimiento",
+        "idePreguntaPadre": "189",
+        "idPregunta": "191",
+        "nombrePreguntanmpreguntas": "¿El perjuicio se generó como consecuencia del no debido abastecimiento?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "SI/NO",
+        "respuestaQueHabilitaRespuestaHijo": "SI"
+    },
+    {
+        "idDelito": 23,
+        "nombreDelito": "Omisión en el abastecimiento",
+        "idePreguntaPadre": "191",
+        "idPregunta": "192",
+        "nombrePreguntanmpreguntas": "¿Por qué? ",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "TEXTO UNA LÍNEA"
+    },
+    {
+        "idDelito": 23,
+        "nombreDelito": "Omisión en el abastecimiento",
+        "idePreguntaPadre": "189",
+        "idPregunta": "193",
+        "nombrePreguntanmpreguntas": "¿El perjuicio se generó como consecuencia del no oportuno abastecimiento?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "SI/NO",
+        "respuestaQueHabilitaRespuestaHijo": "SI"
+    },
+    {
+        "idDelito": 23,
+        "nombreDelito": "Omisión en el abastecimiento",
+        "idePreguntaPadre": "193",
+        "idPregunta": "194",
+        "nombrePreguntanmpreguntas": "¿Por qué? ",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "TEXTO UNA LÍNEA"
+    },
+    {
+        "idDelito": 23,
+        "nombreDelito": "Omisión en el abastecimiento",
+        "idPregunta": "195",
+        "nombrePreguntanmpreguntas": "¿Existía algún reglamento, directiva, circular, orden u otra disposición normativa que regulara el abastecimiento?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "SI/NO",
+        "respuestaQueHabilitaRespuestaHijo": "SI"
+    },
+    {
+        "idDelito": 23,
+        "nombreDelito": "Omisión en el abastecimiento",
+        "idePreguntaPadre": 195,
+        "idPregunta": "196",
+        "nombrePreguntanmpreguntas": "¿Cuál era?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "TEXTO UNA LÍNEA"
+    },
+    {
+        "idDelito": 23,
+        "nombreDelito": "Omisión en el abastecimiento",
+        "idePreguntaPadre": 195,
+        "idPregunta": "197",
+        "nombrePreguntanmpreguntas": "¿El denunciado lo incumplió?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "SI/NO",
+        "respuestaQueHabilitaRespuestaHijo": "SI"
+    },
+    {
+        "idDelito": 23,
+        "nombreDelito": "Omisión en el abastecimiento",
+        "idePreguntaPadre": 197,
+        "idPregunta": "198",
+        "nombrePreguntanmpreguntas": "¿Qué incumplió? ",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "TEXTO UNA LÍNEA"
+    },
+    {
+        "idDelito": 24,
+        "nombreDelito": "Inutilización voluntaria",
+        "idPregunta": "199",
+        "nombrePreguntanmpreguntas": "¿El denunciado se lesionó?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "SI/NO",
+        "respuestaQueHabilitaRespuestaHijo": "SI"
+    },
+    {
+        "idDelito": 24,
+        "nombreDelito": "Inutilización voluntaria",
+        "idePreguntaPadre": 199,
+        "idPregunta": "200",
+        "nombrePreguntanmpreguntas": "¿Cuál fue la lesión que se produjo el denunciado?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "TEXTO UNA LÍNEA"
+    },
+    {
+        "idDelito": 24,
+        "nombreDelito": "Inutilización voluntaria",
+        "idPregunta": "201",
+        "nombrePreguntanmpreguntas": "¿El denunciado se inutilizó? Sí o no.",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "SI/NO",
+        "respuestaQueHabilitaRespuestaHijo": "SI"
+    },
+    {
+        "idDelito": 24,
+        "nombreDelito": "Inutilización voluntaria",
+        "idePreguntaPadre": 201,
+        "idPregunta": "202",
+        "nombrePreguntanmpreguntas": "¿En qué consistió la inutilización?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "TEXTO UNA LÍNEA"
+    },
+    {
+        "idDelito": 24,
+        "nombreDelito": "Inutilización voluntaria",
+        "idPregunta": "203",
+        "nombrePreguntanmpreguntas": "¿El propósito que tuvo el denunciado fue eludir el cumplimiento de sus deberes militares o policiales?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "SI/NO",
+        "respuestaQueHabilitaRespuestaHijo": "SI"
+    },
+    {
+        "idDelito": 24,
+        "nombreDelito": "Inutilización voluntaria",
+        "idePreguntaPadre": 203,
+        "idPregunta": "204",
+        "nombrePreguntanmpreguntas": "¿De dónde infiere que el propósito del denunciado fue eludir el cumplimiento de sus deberes militares o policiales?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "TEXTO UNA LÍNEA"
+    },
+    {
+        "idDelito": 24,
+        "nombreDelito": "Inutilización voluntaria",
+        "idePreguntaPadre": 203,
+        "idPregunta": "205",
+        "nombrePreguntanmpreguntas": "¿Qué deberes debía cumplir el denunciado?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "TEXTO UNA LÍNEA"
+    },
+    {
+        "idDelito": 24,
+        "nombreDelito": "Inutilización voluntaria",
+        "idPregunta": "206",
+        "nombrePreguntanmpreguntas": "¿El propósito que tuvo el denunciado fue obtener su retiro o reconocimiento de prestación social?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "SI/NO",
+        "respuestaQueHabilitaRespuestaHijo": "SI"
+    },
+    {
+        "idDelito": 24,
+        "nombreDelito": "Inutilización voluntaria",
+        "idePreguntaPadre": 206,
+        "idPregunta": "207",
+        "nombrePreguntanmpreguntas": "¿De dónde infiere que el propósito del denunciado fue el obtener su retiro o reconocimiento de prestación social?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "TEXTO UNA LÍNEA"
+    },
+    {
+        "idDelito": 25,
+        "nombreDelito": "Cobardía",
+        "idPregunta": "208",
+        "nombrePreguntanmpreguntas": "¿En la zona o área señalada se cumplían operaciones de combate?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "SI/NO",
+        "respuestaQueHabilitaRespuestaHijo": "SI"
+    },
+    {
+        "idDelito": 25,
+        "nombreDelito": "Cobardía",
+        "idePreguntaPadre": 208,
+        "idPregunta": "209",
+        "nombrePreguntanmpreguntas": "¿Contra qué tipo de grupos se realizaban las operaciones?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "TEXTO UNA LÍNEA"
+    },
+    {
+        "idDelito": 25,
+        "nombreDelito": "Cobardía",
+        "idePreguntaPadre": 208,
+        "idPregunta": "210",
+        "nombrePreguntanmpreguntas": "¿El denunciado participaba de la operación de combate?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "SI/NO",
+        "respuestaQueHabilitaRespuestaHijo": "SI"
+    },
+    {
+        "idDelito": 25,
+        "nombreDelito": "Cobardía",
+        "idePreguntaPadre": 210,
+        "idPregunta": "211",
+        "nombrePreguntanmpreguntas": "¿Cuál era la responsabilidad del denunciado?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "TEXTO UNA LÍNEA"
+    },
+    {
+        "idDelito": 25,
+        "nombreDelito": "Cobardía",
+        "idePreguntaPadre": 211,
+        "idPregunta": "212",
+        "nombrePreguntanmpreguntas": "¿Con qué preparación contaba el denunciado para asumir esa responsabilidad?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "TEXTO UNA LÍNEA"
+    },
+    {
+        "idDelito": 25,
+        "nombreDelito": "Cobardía",
+        "idePreguntaPadre": 208,
+        "idPregunta": "213",
+        "nombrePreguntanmpreguntas": "¿El denunciado huyó estando en la zona de combate?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "SI/NO",
+        "respuestaQueHabilitaRespuestaHijo": "SI"
+    },
+    {
+        "idDelito": 25,
+        "nombreDelito": "Cobardía",
+        "idePreguntaPadre": 208,
+        "idPregunta": "214",
+        "nombrePreguntanmpreguntas": "¿El denunciado eludió su responsabilidad estando en la zona de combate?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "SI/NO",
+        "respuestaQueHabilitaRespuestaHijo": "SI"
+    },
+    {
+        "idDelito": 25,
+        "nombreDelito": "Cobardía",
+        "idePreguntaPadre": 214,
+        "idPregunta": "215",
+        "nombrePreguntanmpreguntas": "¿Cómo la eludió?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "TEXTO UNA LÍNEA"
+    },
+    {
+        "idDelito": 25,
+        "nombreDelito": "Cobardía",
+        "idPregunta": "216",
+        "nombrePreguntanmpreguntas": "¿El denunciado huyó en presencia del enemigo o delincuentes?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "SI/NO",
+        "respuestaQueHabilitaRespuestaHijo": "SI"
+    },
+    {
+        "idDelito": 25,
+        "nombreDelito": "Cobardía",
+        "idPregunta": "217",
+        "nombrePreguntanmpreguntas": "¿El denunciado eludió su responsabilidad en presencia del enemigo o delincuentes?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "SI/NO",
+        "respuestaQueHabilitaRespuestaHijo": "SI"
+    },
+    {
+        "idDelito": 25,
+        "nombreDelito": "Cobardía",
+        "idePreguntaPadre": 217,
+        "idPregunta": "218",
+        "nombrePreguntanmpreguntas": "¿Cómo la eludió?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "TEXTO UNA LÍNEA"
+    },
+    {
+        "idDelito": 25,
+        "nombreDelito": "Cobardía",
+        "idePreguntaPadre": 217,
+        "idPregunta": "219",
+        "nombrePreguntanmpreguntas": "¿Qué lo motivó a hacerlo?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "TEXTO UNA LÍNEA"
+    },
+    {
+        "idDelito": 25,
+        "nombreDelito": "Cobardía",
+        "idPregunta": "220",
+        "nombrePreguntanmpreguntas": "¿Qué afectación produjo el comportamiento del denunciado al personal de la Fuerza Pública?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "TEXTO UNA LÍNEA"
+    },
+    {
+        "idDelito": 25,
+        "nombreDelito": "Cobardía",
+        "idPregunta": "221",
+        "nombrePreguntanmpreguntas": "¿Los miembros de la Fuerza Pública fueron derrotados?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "SI/NO",
+        "respuestaQueHabilitaRespuestaHijo": "SI"
+    },
+    {
+        "idDelito": 25,
+        "nombreDelito": "Cobardía",
+        "idePreguntaPadre": 221,
+        "idPregunta": "222",
+        "nombrePreguntanmpreguntas": "¿La derrota derivó del comportamiento asumido por el denunciado? Sí o no",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "SI/NO",
+        "respuestaQueHabilitaRespuestaHijo": "SI"
+    },
+    {
+        "idDelito": 25,
+        "nombreDelito": "Cobardía",
+        "idePreguntaPadre": 221,
+        "idPregunta": "223",
+        "nombrePreguntanmpreguntas": "¿De dónde infiere que el comportamiento asumido por el denunciado generó la\nderrota?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "TEXTO UNA LÍNEA"
+    },
+    {
+        "idDelito": 27,
+        "nombreDelito": "Cobardía por omisión",
+        "idPregunta": "224",
+        "nombrePreguntanmpreguntas": "¿Qué tipo de acciones militares o de policía se estaban realizando?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "TEXTO UNA LÍNEA"
+    },
+    {
+        "idDelito": 27,
+        "nombreDelito": "Cobardía por omisión",
+        "idPregunta": "225",
+        "nombrePreguntanmpreguntas": "¿El denunciado acudió al lugar?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "SI/NO",
+        "respuestaQueHabilitaRespuestaHijo": "SI"
+    },
+    {
+        "idDelito": 27,
+        "nombreDelito": "Cobardía por omisión",
+        "idePreguntaPadre": 225,
+        "idPregunta": "226",
+        "nombrePreguntanmpreguntas": "¿Por qué no lo hizo?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "TEXTO UNA LÍNEA"
+    },
+    {
+        "idDelito": 27,
+        "nombreDelito": "Cobardía por omisión",
+        "idePreguntaPadre": 225,
+        "idPregunta": "227",
+        "nombrePreguntanmpreguntas": "¿Qué función debía desempeñar el denunciado dentro de las acciones desarrolladas?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "TEXTO UNA LÍNEA"
+    },
+    {
+        "idDelito": 27,
+        "nombreDelito": "Cobardía por omisión",
+        "idPregunta": "228",
+        "nombrePreguntanmpreguntas": "¿El denunciado permaneció en el sitio de combate?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "SI/NO",
+        "respuestaQueHabilitaRespuestaHijo": "SI"
+    },
+    {
+        "idDelito": 27,
+        "nombreDelito": "Cobardía por omisión",
+        "idePreguntaPadre": 228,
+        "idPregunta": "229",
+        "nombrePreguntanmpreguntas": "¿Por qué no lo hizo?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "TEXTO UNA LÍNEA"
+    },
+    {
+        "idDelito": 27,
+        "nombreDelito": "Cobardía por omisión",
+        "idePreguntaPadre": 228,
+        "idPregunta": "230",
+        "nombrePreguntanmpreguntas": "¿Qué función desempeñaba el denunciado en el sitio de combate?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "TEXTO UNA LÍNEA"
+    },
+    {
+        "idDelito": 27,
+        "nombreDelito": "Cobardía por omisión",
+        "idPregunta": "231",
+        "nombrePreguntanmpreguntas": "¿El denunciado se ocultó en el sitio de combate?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "SI/NO",
+        "respuestaQueHabilitaRespuestaHijo": "SI"
+    },
+    {
+        "idDelito": 27,
+        "nombreDelito": "Cobardía por omisión",
+        "idePreguntaPadre": 231,
+        "idPregunta": "232",
+        "nombrePreguntanmpreguntas": "¿Por qué lo hizo?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "TEXTO UNA LÍNEA"
+    },
+    {
+        "idDelito": 27,
+        "nombreDelito": "Cobardía por omisión",
+        "idPregunta": "233",
+        "nombrePreguntanmpreguntas": "¿El denunciado simuló enfermedad en el sitio de combate?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "SI/NO",
+        "respuestaQueHabilitaRespuestaHijo": "SI"
+    },
+    {
+        "idDelito": 27,
+        "nombreDelito": "Cobardía por omisión",
+        "idePreguntaPadre": 233,
+        "idPregunta": "234",
+        "nombrePreguntanmpreguntas": "¿Cuál?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "TEXTO UNA LÍNEA"
+    },
+    {
+        "idDelito": 27,
+        "nombreDelito": "Cobardía por omisión",
+        "idePreguntaPadre": 233,
+        "idPregunta": "235",
+        "nombrePreguntanmpreguntas": "¿Por qué lo hizo?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "TEXTO UNA LÍNEA"
+    },
+    {
+        "idDelito": 27,
+        "nombreDelito": "Cobardía por omisión",
+        "idPregunta": "236",
+        "nombrePreguntanmpreguntas": "¿Con qué preparación contaba el denunciado para asumir esa responsabilidad?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "TEXTO UNA LÍNEA"
+    },
+    {
+        "idDelito": 28,
+        "nombreDelito": "Comercio con el enemigo",
+        "idPregunta": "237",
+        "nombrePreguntanmpreguntas": "¿El denunciado comerció con el enemigo?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "SI/NO",
+        "respuestaQueHabilitaRespuestaHijo": "SI"
+    },
+    {
+        "idDelito": 28,
+        "nombreDelito": "Comercio con el enemigo",
+        "idePreguntaPadre": 237,
+        "idPregunta": "238",
+        "formulario": 2,
+        "nombrePreguntanmpreguntas": "¿Con qué enemigo comerció?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "TEXTO UNA LÍNEA"
+    },
+    {
+        "idDelito": 28,
+        "nombreDelito": "Comercio con el enemigo",
+        "idePreguntaPadre": 237,
+        "idPregunta": "239",
+        "formulario": 2,
+        "nombrePreguntanmpreguntas": "¿Con quién del enemigo comerció?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "TEXTO UNA LÍNEA"
+    },
+    {
+        "idDelito": 28,
+        "nombreDelito": "Comercio con el enemigo",
+        "idePreguntaPadre": 237,
+        "idPregunta": "240",
+        "formulario": 2,
+        "nombrePreguntanmpreguntas": "¿Qué fue lo que comerció?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "TEXTO UNA LÍNEA"
+    },
+    {
+        "idDelito": 29,
+        "nombreDelito": "Injuria",
+        "idPregunta": "241",
+        "nombrePreguntanmpreguntas": "¿Es usted el afectado?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "SI/NO",
+        "respuestaQueHabilitaRespuestaHijo": "SI"
+    },
+    {
+        "idDelito": 29,
+        "nombreDelito": "Injuria",
+        "idePreguntaPadre": "241",
+        "idPregunta": "242",
+        "nombrePreguntanmpreguntas": "¿En caso de no ser el afectado directo en qué calidad actúa?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "TEXTO UNA LÍNEA"
+    },
+    {
+        "idDelito": 29,
+        "nombreDelito": "Injuria",
+        "idePreguntaPadre": "241",
+        "idPregunta": "243",
+        "nombrePreguntanmpreguntas": "¿El afectado directo se encuentra fallecido?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "SI/NO",
+        "respuestaQueHabilitaRespuestaHijo": "SI"
+    },
+    {
+        "idDelito": 29,
+        "nombreDelito": "Injuria",
+        "idPregunta": "244",
+        "nombrePreguntanmpreguntas": "¿El denunciado realizó imputaciones deshonrosas? Sí o No",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "SI/NO",
+        "respuestaQueHabilitaRespuestaHijo": "SI"
+    },
+    {
+        "idDelito": 29,
+        "nombreDelito": "Injuria",
+        "idePreguntaPadre": "244",
+        "idPregunta": "245",
+        "nombrePreguntanmpreguntas": "¿Qué tipo de imputaciones deshonrosas realizó?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "TEXTO UNA LÍNEA"
+    },
+    {
+        "idDelito": 29,
+        "nombreDelito": "Injuria",
+        "idePreguntaPadre": "244",
+        "idPregunta": "246",
+        "formulario": 2,
+        "nombrePreguntanmpreguntas": "¿A quién se las realizó?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "TEXTO UNA LÍNEA"
+    },
+    {
+        "idDelito": 29,
+        "nombreDelito": "Injuria",
+        "idePreguntaPadre": "244",
+        "idPregunta": "247",
+        "nombrePreguntanmpreguntas": "¿Qué deberes desempeñaba la persona afectada al momento de la ocurrencia de los hechos?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "TEXTO UNA LÍNEA"
+    },
+    {
+        "idDelito": 29,
+        "nombreDelito": "Injuria",
+        "idePreguntaPadre": "244",
+        "idPregunta": "248",
+        "nombrePreguntanmpreguntas": "¿El denunciado utilizó medios de comunicación social u otro medio de divulgación colectiva?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "SI/NO",
+        "respuestaQueHabilitaRespuestaHijo": "SI"
+    },
+    {
+        "idDelito": 29,
+        "nombreDelito": "Injuria",
+        "idePreguntaPadre": "248",
+        "idPregunta": "249",
+        "nombrePreguntanmpreguntas": "¿Cuál?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "TEXTO UNA LÍNEA"
+    },
+    {
+        "idDelito": 29,
+        "nombreDelito": "Injuria",
+        "idePreguntaPadre": 244,
+        "idPregunta": "250",
+        "nombrePreguntanmpreguntas": "¿El denunciado realizó la imputación deshonrosa en reuniones públicas?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "TEXTO UNA LÍNEA"
+    },
+    {
+        "idDelito": 29,
+        "nombreDelito": "Injuria",
+        "idPregunta": "251",
+        "nombrePreguntanmpreguntas": "¿La imputación deshonrosa afectó la memoria de un miembro difunto de la fuerza pública?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "SI/NO",
+        "respuestaQueHabilitaRespuestaHijo": "SI"
+    },
+    {
+        "idDelito": 29,
+        "nombreDelito": "Injuria",
+        "idPregunta": "252",
+        "nombrePreguntanmpreguntas": "¿De quién se trata?",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "TEXTO UNA LÍNEA"
+    }
+]

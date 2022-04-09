@@ -1,0 +1,156 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JPM</title>
+</head>
+
+<style>
+
+    .hide {
+        display: none;
+    }
+    .child {
+        margin-left: 40px;
+    }
+    .trigger {
+        text-decoration: underline;
+    }
+
+    input {
+        display: block;
+        padding: 10px;
+        margin-bottom: 20px;
+        width: 400px;
+    }
+
+    input[type='checkbox']{
+        display: inline;
+        width: auto;
+    }
+
+    textarea {
+        width: 400px;
+        height: 100px;
+        display: block;
+        margin-bottom: 20px;
+    }
+
+</style>
+<body>
+    <form id="jpm_form" action="" method="get">
+        <div id="insubordinacion"></div>
+        <button>Enviar</button>
+    </form>
+
+    
+    <script>
+        const insubordinacion = document.querySelector('#insubordinacion');
+
+        async function fetchChcrime() {
+            try {
+                const response = await fetch('http://127.0.0.1:5500/info.json');
+                const chrime = await response.json();
+                return chrime;
+            } catch (error) {
+                return [null, error];
+            }
+        }
+
+        fetchChcrime().then(chrimes => {
+            
+            chrimes.forEach(function(chrime){
+                
+                // Define which type of field
+                function elemType(){
+                    if(chrime.tipoDePregunta3chkabcsiNo3chksolodescripcion == 'TEXTO UNA LÍNEA'){
+                        const chrimeElement = document.createElement('input');
+                        chrimeElement.name = `${chrime.idPregunta}`;
+                        chrimeElement.id = `${chrime.idPregunta}`;
+                        chrimeElement.placeholder = `${chrime.nombrePreguntanmpreguntas}`;
+                        return chrimeElement;
+                    } 
+                    else if(chrime.tipoDePregunta3chkabcsiNo3chksolodescripcion == 'AREA DE TEXTO'){
+                        const chrimeElement = document.createElement('textarea');
+                        chrimeElement.id = `${chrime.idPregunta}`;
+                        chrimeElement.placeholder = `${chrime.nombrePreguntanmpreguntas}`;
+                        return chrimeElement;
+                    } 
+                    else if(chrime.tipoDePregunta3chkabcsiNo3chksolodescripcion == 'SI/NO') {
+                        const chrimeElement = document.createElement('div');
+                        chrimeElement.id = `${chrime.idPregunta}`;
+                        const chrimeLabel = document.createElement('label');
+                        chrimeLabel.innerText = `${chrime.nombrePreguntanmpreguntas}`;
+                        const chrimeField = document.createElement('input');
+                        chrimeField.type = 'checkbox';
+                        chrimeField.name = `${chrime.idPregunta}`;
+                        chrimeElement.appendChild(chrimeLabel);
+                        chrimeElement.appendChild(chrimeField);
+                        return chrimeElement;
+                    } 
+                    else {
+                        const chrimeElement = document.createElement('p');
+                        chrimeElement.id = `${chrime.idPregunta}`;
+                        
+                        const note = document.createTextNode(chrime.nombrePreguntanmpreguntas); 
+                        chrimeElement.appendChild(note);
+                        return chrimeElement;
+                    }
+                }
+
+                const chrimeElement = elemType();
+                
+                if(chrime.idePreguntaPadre){
+                    chrimeElement.classList.add(`parent_id_${chrime.idePreguntaPadre}`);
+                    chrimeElement.classList.add('hide');
+                    chrimeElement.classList.add('child');
+                } 
+                
+                if(chrime.respuestaQueHabilitaRespuestaHijo){
+                    const field = chrimeElement.querySelector('input');
+                    field.classList.add('trigger');
+                }
+
+                if(chrime.nombreDelito == 'Insubordinación'){
+                    insubordinacion.appendChild(chrimeElement);
+                }
+            });
+
+            //Fetch triggers
+            const triggers = document.querySelectorAll('.trigger');
+            
+            // Add click listener to every trigger
+            [...triggers].map(function(trigger){
+                trigger.addEventListener('click', function(e){
+                    // Get parent padding
+                    let parentPadding = window.getComputedStyle(e.target.parentNode, null).getPropertyValue('margin-left');
+                    parentPadding = parentPadding.split('px');
+                    parentPadding = parseInt(parentPadding[0]);
+                    
+                    // Fetch trigger's children and remove hide class
+                    const elemsShow = document.querySelectorAll(`.parent_id_${e.target.parentNode.id}`);
+                    [...elemsShow].map(elem => {
+                        if(trigger.checked == true){
+                            elem.classList.remove('hide');
+                        } else {
+                            elem.classList.add('hide');
+                        }
+
+                        // Add up parent padding to indent child
+                        const childPadding = parentPadding + 40;
+                        elem.style.marginLeft = `${childPadding}px`;
+                    })
+                })
+            }); 
+
+            // const form = document.querySelector('#jpm_form');
+
+            // form.addEventListener('submit', function(e){
+            //     e.preventDefault()
+            // })
+        }); 
+
+    </script>
+</body>
+</html>
