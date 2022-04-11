@@ -1,0 +1,74 @@
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+h2 {
+    color: #2a70b9;
+    font: normal bold 18px 'Arial', sans-serif;
+    text-transform: uppercase;
+}
+
+.hide {
+    display: none;
+}
+.child {
+    margin-left: 40px;
+}
+.trigger {
+    text-decoration: underline;
+}
+
+label, span {
+    font: normal bold 15px 'Arial', sans-serif;
+    color: #2b2b29;
+    margin-right: 20px;
+}
+
+label.radio_label {
+    position: relative;
+    margin-right: 0;
+    top: -1px;
+    font-weight: normal;
+    color: #979797;
+}
+
+input {
+    display: block;
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+input[type='radio']{
+    display: inline;
+    width: auto;
+    margin-right: 10px;
+}
+input[type='text'], textarea {
+    margin-top: 10px;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    display: block;
+    margin-bottom: 20px;
+}
+
+button {
+    background: #2a70b9;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    margin-top: 20px;
+}
+
+button:hover {
+    background: #215893;
+}
