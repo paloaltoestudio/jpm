@@ -49,6 +49,7 @@ input[type='radio']{
 }
 input[type='text'], textarea {
     margin-top: 10px;
+    border: 1px solid rgb(128, 128, 128);
 }
 
 textarea {
