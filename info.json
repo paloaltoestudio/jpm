@@ -883,7 +883,8 @@
         "idDelito": 20,
         "nombreDelito": "Delito del centinela",
         "idPregunta": "118",
-        "nombrePreguntanmpreguntas": "En qué conducta incurrió"
+        "nombrePreguntanmpreguntas": "En qué conducta incurrió",
+        "tipoDePregunta3chkabcsiNo3chksolodescripcion": "TEXTO UNA LÍNEA"
     },
     {
         "idDelito": 20,

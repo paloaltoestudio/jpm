@@ -1,5 +1,28 @@
 const insubordinacion = document.querySelector('#insubordinacion');
 const insubordinacion_exigencia = document.querySelector('#insubordinacion_exigencia');  
+const desobediencia = document.querySelector('#desobediencia'); 
+const desobediencia_personal_retirado = document.querySelector('#desobediencia_personal_retirado'); 
+
+const chrimeList = [
+    'insubordinacion', 
+    'insubordinacion_exigencia', 
+    'desobediencia',
+    'desobediencia_personal_retirado',
+    'desobediencia_reservistas',
+    'ataque_superior',
+    'amenazas',
+    'abandono_puesto',
+    'abandono_servicio',
+    'abandono_servicio_soldados_voluntarios_profesionales',
+    'delito_centinela',
+    'libertad_indebida_prisioneros_guerra',
+    'omision_abastecimiento',
+    'inutilizacion_voluntaria',
+    'cobardia',
+    'cobardia_omision',
+    'comercio_enemigo',
+    'injuria'
+];
 
 fetchChcrime().then(chrimes => {
     
@@ -86,19 +109,19 @@ fetchChcrime().then(chrimes => {
             })
         }
 
-        if(chrime.nombreDelito == 'Insubordinación' && chrime.idePreguntaPadre){
-            const parentElem = document.getElementById(`${chrime.idePreguntaPadre}`);
-            parentElem.append(chrimeElement);
-        } else if(chrime.nombreDelito == 'Insubordinación'){
-            insubordinacion.appendChild(chrimeElement);
-        }
+        // Print fields on each chrime group
+        chrimeList.map(function(chrimeName){
+            const chrimeDiv = document.querySelector(`#${chrimeName}`);
+            let chrimeTitle = chrimeDiv.querySelector('.chrime_title');
+            chrimeTitle = chrimeTitle.textContent;
 
-        if(chrime.nombreDelito == 'Insubordinación por exigencia' && chrime.idePreguntaPadre){
-            const parentElem = document.getElementById(`${chrime.idePreguntaPadre}`);
-            parentElem.append(chrimeElement);
-        } else if(chrime.nombreDelito == 'Insubordinación por exigencia'){
-            insubordinacion_exigencia.appendChild(chrimeElement);
-        }
+            if(chrime.nombreDelito == chrimeTitle && chrime.idePreguntaPadre){
+                const parentElem = document.getElementById(`${chrime.idePreguntaPadre}`);
+                parentElem.append(chrimeElement);
+            } else if(chrime.nombreDelito == chrimeTitle){
+                chrimeDiv.appendChild(chrimeElement);
+            }
+        });
     });
 
     //Fetch triggers
