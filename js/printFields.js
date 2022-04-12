@@ -107,16 +107,27 @@ fetchChcrime().then(chrimes => {
 
         // Print fields on each chrime group
         chrimeList.map(function(chrimeName){
+            //debugger;
             const chrimeDiv = document.querySelector(`#${chrimeName}`);
-            let chrimeTitle = chrimeDiv.querySelector('.chrime_title');
-            chrimeTitle = chrimeTitle.textContent;
+            console.log(chrimeDiv)
+
+            const getTitle = function(){
+                if(chrimeDiv){
+                    let chrimeTitle = chrimeDiv.querySelector('.chrime_title');
+                    return chrimeTitle = chrimeTitle.textContent;
+                } else {
+                    return chrimeTitle = '';
+                }
+            }
+
+            chrimeTitle = getTitle();
 
             if(chrime.nombreDelito == chrimeTitle && chrime.idePreguntaPadre){
                 const parentElem = document.getElementById(`${chrime.idePreguntaPadre}`);
                 parentElem.append(chrimeElement);
             } else if(chrime.nombreDelito == chrimeTitle){
                 chrimeDiv.appendChild(chrimeElement);
-            }
+            } 
         });
     });
 
