@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;700&display=swap');
+
 
 .container {
     width: 100%;
@@ -7,7 +9,7 @@
 
 h2 {
     color: #2a70b9;
-    font: normal bold 18px 'Arial', sans-serif;
+    font: normal bold 18px 'Work Sans', sans-serif;
     text-transform: uppercase;
 }
 
@@ -22,8 +24,8 @@ h2 {
 }
 
 label, span {
-    font: normal bold 15px 'Arial', sans-serif;
-    color: #2b2b29;
+    font: normal bold 15px 'Work Sans', sans-serif;
+    color: #4e4e4e;
     margin-right: 20px;
 }
 

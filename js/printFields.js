@@ -1,8 +1,3 @@
-const insubordinacion = document.querySelector('#insubordinacion');
-const insubordinacion_exigencia = document.querySelector('#insubordinacion_exigencia');  
-const desobediencia = document.querySelector('#desobediencia'); 
-const desobediencia_personal_retirado = document.querySelector('#desobediencia_personal_retirado'); 
-
 const chrimeList = [
     'insubordinacion', 
     'insubordinacion_exigencia', 
@@ -172,11 +167,54 @@ fetchChcrime().then(chrimes => {
             })
         })
     }); 
-
-    // Change submit
-    // const form = document.querySelector('#jpm_form');
-
-    // form.addEventListener('submit', function(e){
-    //     e.preventDefault()
-    // })
 }); 
+
+
+// Change submit event
+const form = document.querySelector('#jpm_form');
+
+form.addEventListener('submit', function(e){
+    e.preventDefault();
+
+    // Serialize form data function
+    const serializeForm = function (form) {
+        var obj = {};
+        var formData = new FormData(form);
+        for (var key of formData.keys()) {
+            obj[key] = formData.get(key);
+        }
+        return obj;
+    };
+
+    const sendForm = async () => {
+        const url = 'https://jsonplaceholder.typicode.com/posts'; // endpoint to post data
+        const settings = {
+            method: 'POST', // or 'PUT'
+            body: JSON.stringify(serializeForm(e.target)), 
+            headers:{
+                'Accept': 'application/json',
+                'Content-Type': 'application/json'
+            }};
+
+        try {
+            const fetchResponse = await fetch(`${url}`, settings);
+            const data = await fetchResponse.json();
+            return data;
+        } catch (e) {
+            return e;
+        }    
+    }
+
+    sendForm();
+
+    // fetch(url, {
+    // method: 'POST', // or 'PUT'
+    // body: JSON.stringify(serializeForm(e.target)), // data can be `string` or {object}!
+    // headers:{
+    //     'Accept': 'application/json',
+    //     'Content-Type': 'application/json'
+    // }
+    // }).then(res => res.json())
+    // .catch(error => console.error('Error:', error))
+    // .then(response => console.log('Success:', response));
+});
