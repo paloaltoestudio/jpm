@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;700&display=swap');
 
+/* #jpm_form > div {
+    display: none;
+}
+
+#jpm_form div.show {
+    display: block;
+} */
 
 .container {
     width: 100%;
@@ -16,7 +23,7 @@ h2 {
     z-index: 1;
     border-bottom: 1px solid #2a70b9;
     padding-bottom: 8px;
-}
+}   
 
 .hide {
     display: none;

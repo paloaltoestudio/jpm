@@ -1,3 +1,4 @@
+
 const chrimeList = [
     'insubordinacion', 
     'insubordinacion_exigencia', 
