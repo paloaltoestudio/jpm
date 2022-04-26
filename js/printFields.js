@@ -26,12 +26,12 @@ fetchChcrime().then(chrimes => {
         
         // Define which type of field
         function elemType(){
-            if(chrime.tipoDePregunta3chkabcsiNo3chksolodescripcion == 'TEXTO UNA LÍNEA'){
+            if(chrime.tipoDePregunta == 'TEXTO UNA LÍNEA'){
                 const chrimeElement = document.createElement('div');
                 chrimeElement.id = `${chrime.idPregunta}`;
                 chrimeElement.classList.add('wrapper');
                 const chrimeLabel = document.createElement('label');
-                chrimeLabel.innerText = `${chrime.nombrePreguntanmpreguntas}`;
+                chrimeLabel.innerText = `${chrime.nombrePreguntas}`;
                 const chrimeField = document.createElement('input');
                 chrimeField.type = 'text';
                 chrimeField.name = `${chrime.idPregunta}`;
@@ -39,24 +39,24 @@ fetchChcrime().then(chrimes => {
                 chrimeElement.append(chrimeField);
                 return chrimeElement;
             } 
-            else if(chrime.tipoDePregunta3chkabcsiNo3chksolodescripcion == 'AREA DE TEXTO'){
+            else if(chrime.tipoDePregunta == 'AREA DE TEXTO'){
                 const chrimeElement = document.createElement('div');
                 chrimeElement.id = `${chrime.idPregunta}`;
                 chrimeElement.classList.add('wrapper');
                 const chrimeLabel = document.createElement('label');
-                chrimeLabel.innerText = `${chrime.nombrePreguntanmpreguntas}`;
+                chrimeLabel.innerText = `${chrime.nombrePreguntas}`;
                 const chrimeField = document.createElement('textarea');
                 chrimeField.name = `${chrime.idPregunta}`;
                 chrimeElement.append(chrimeLabel);
                 chrimeElement.append(chrimeField);
                 return chrimeElement;
             } 
-            else if(chrime.tipoDePregunta3chkabcsiNo3chksolodescripcion == 'SI/NO') {
+            else if(chrime.tipoDePregunta == 'SI/NO') {
                 const chrimeElement = document.createElement('div');
                 chrimeElement.id = `${chrime.idPregunta}`;
                 chrimeElement.classList.add('wrapper');
                 const chrimeSpan = document.createElement('span');
-                chrimeSpan.innerText = `${chrime.nombrePreguntanmpreguntas}`;
+                chrimeSpan.innerText = `${chrime.nombrePreguntas}`;
                 const chrimeLabel = document.createElement('label');
                 chrimeLabel.innerText = `Sí`;
                 chrimeLabel.classList.add('radio_label');
@@ -84,7 +84,7 @@ fetchChcrime().then(chrimes => {
                 const chrimeElement = document.createElement('p');
                 chrimeElement.id = `${chrime.idPregunta}`;
                 
-                const note = document.createTextNode(chrime.nombrePreguntanmpreguntas); 
+                const note = document.createTextNode(chrime.nombrePreguntas); 
                 chrimeElement.appendChild(note);
                 return chrimeElement;
             }
@@ -92,8 +92,8 @@ fetchChcrime().then(chrimes => {
 
         const chrimeElement = elemType();
         
-        if(chrime.idePreguntaPadre){
-            chrimeElement.classList.add(`parent_id_${chrime.idePreguntaPadre}`);
+        if(chrime.idPreguntaPadre){
+            chrimeElement.classList.add(`parent_id_${chrime.idPreguntaPadre}`);
             chrimeElement.classList.add('hide');
             chrimeElement.classList.add('child');
         } 
@@ -105,11 +105,11 @@ fetchChcrime().then(chrimes => {
             })
         }
 
+
+
         // Print fields on each chrime group
         chrimeList.map(function(chrimeName){
-            //debugger;
-            const chrimeDiv = document.querySelector(`#${chrimeName}`);
-            console.log(chrimeDiv)
+            const chrimeDiv = document.getElementById(`${chrimeName}`);
 
             const getTitle = function(){
                 if(chrimeDiv){
@@ -122,8 +122,8 @@ fetchChcrime().then(chrimes => {
 
             chrimeTitle = getTitle();
 
-            if(chrime.nombreDelito == chrimeTitle && chrime.idePreguntaPadre){
-                const parentElem = document.getElementById(`${chrime.idePreguntaPadre}`);
+            if(chrime.nombreDelito == chrimeTitle && chrime.idPreguntaPadre){
+                const parentElem = document.getElementById(`${chrime.idPreguntaPadre}`);
                 parentElem.append(chrimeElement);
             } else if(chrime.nombreDelito == chrimeTitle){
                 chrimeDiv.appendChild(chrimeElement);
@@ -218,15 +218,4 @@ form.addEventListener('submit', function(e){
     }
 
     sendForm();
-
-    // fetch(url, {
-    // method: 'POST', // or 'PUT'
-    // body: JSON.stringify(serializeForm(e.target)), // data can be `string` or {object}!
-    // headers:{
-    //     'Accept': 'application/json',
-    //     'Content-Type': 'application/json'
-    // }
-    // }).then(res => res.json())
-    // .catch(error => console.error('Error:', error))
-    // .then(response => console.log('Success:', response));
 });

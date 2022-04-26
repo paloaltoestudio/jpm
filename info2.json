@@ -1,0 +1,810 @@
+[
+ {
+  "idDelito": 1,
+  "nombreDelito": "Insubordinación",
+  "idPregunta": "1",
+  "nombrePreguntas": "¿El denunciado incurrió en actitudes violentas? ",
+  "tipoDePregunta": "SI/NO",
+  "respuestaQueHabilitaRespuestaHijo": "SI"
+ },
+ {
+  "idDelito": 1,
+  "nombreDelito": "Insubordinación",
+  "idPreguntaPadre": "1",
+  "idPregunta": "2",
+  "nombrePreguntas": "¿Cuáles?",
+  "tipoDePregunta": "TEXTO UNA LÍNEA"
+ },
+ {
+  "idDelito": 1,
+  "nombreDelito": "Insubordinación",
+  "idPreguntaPadre": "1",
+  "idPregunta": "3",
+  "nombrePreguntas": "¿ El denunciado utilizo armas?",
+  "tipoDePregunta": "SI/NO",
+  "respuestaQueHabilitaRespuestaHijo": null
+ },
+ {
+  "idDelito": 1,
+  "nombreDelito": "Insubordinación",
+  "idPreguntaPadre": "1",
+  "idPregunta": "4",
+  "nombrePreguntas": "¿Las actitudes violentas están relacionadas con una orden?",
+  "tipoDePregunta": "SI/NO",
+  "respuestaQueHabilitaRespuestaHijo": "SI"
+ },
+ {
+  "idDelito": 1,
+  "nombreDelito": "Insubordinación",
+  "idPreguntaPadre": "4",
+  "idPregunta": "5",
+  "nombrePreguntas": "¿En qué consistía la orden?",
+  "tipoDePregunta": "AREA DE TEXTO",
+  "respuestaQueHabilitaRespuestaHijo": null
+ },
+ {
+  "idDelito": 1,
+  "nombreDelito": "Insubordinación",
+  "idPreguntaPadre": "4",
+  "idPregunta": "6",
+  "nombrePreguntas": "¿Cómo fue impartida la orden?",
+  "tipoDePregunta": "AREA DE TEXTO",
+  "respuestaQueHabilitaRespuestaHijo": null
+ },
+ {
+  "idDelito": 1,
+  "nombreDelito": "Insubordinación",
+  "idPreguntaPadre": "4",
+  "idPregunta": "7",
+  "nombrePreguntas": "¿Fueron para rechazar una orden? ",
+  "tipoDePregunta": "SI/NO",
+  "respuestaQueHabilitaRespuestaHijo": "SI"
+ },
+ {
+  "idDelito": 1,
+  "nombreDelito": "Insubordinación",
+  "idPreguntaPadre": "4",
+  "idPregunta": "8",
+  "nombrePreguntas": "¿Fueron para impedir que otra persona cumpliera la orden?",
+  "tipoDePregunta": "SI/NO",
+  "respuestaQueHabilitaRespuestaHijo": null
+ },
+ {
+  "idDelito": 1,
+  "nombreDelito": "Insubordinación",
+  "idPreguntaPadre": "7",
+  "idPregunta": "9",
+  "nombrePreguntas": "¿Qué persona debía cumplir la orden?",
+  "tipoDePregunta": "TEXTO UNA LÍNEA",
+  "respuestaQueHabilitaRespuestaHijo": null
+ },
+ {
+  "idDelito": 1,
+  "nombreDelito": "Insubordinación",
+  "idPreguntaPadre": "3",
+  "idPregunta": "10",
+  "nombrePreguntas": "¿Fueron para impedir que el superior impartiera la orden?",
+  "tipoDePregunta": "SI/NO",
+  "respuestaQueHabilitaRespuestaHijo": "SI"
+ },
+ {
+  "idDelito": 1,
+  "nombreDelito": "Insubordinación",
+  "idPreguntaPadre": "10",
+  "idPregunta": "11",
+  "nombrePreguntas": "¿Qué superior debía impartir la orden? ",
+  "tipoDePregunta": "TEXTO UNA LÍNEA",
+  "respuestaQueHabilitaRespuestaHijo": null
+ },
+ {
+  "idDelito": 1,
+  "nombreDelito": "Insubordinación",
+  "idPreguntaPadre": "3",
+  "idPregunta": "12",
+  "nombrePreguntas": "¿Obligaron al superior a impartir la orden?",
+  "tipoDePregunta": "SI/NO",
+  "respuestaQueHabilitaRespuestaHijo": "SI"
+ },
+ {
+  "idDelito": 1,
+  "nombreDelito": "Insubordinación",
+  "idPreguntaPadre": "12",
+  "idPregunta": "13",
+  "nombrePreguntas": "¿Qué superior fue obligado a impartir la orden? ",
+  "tipoDePregunta": "TEXTO UNA LÍNEA",
+  "respuestaQueHabilitaRespuestaHijo": null
+ },
+ {
+  "idDelito": 1,
+  "nombreDelito": "Insubordinación",
+  "idPreguntaPadre": null,
+  "idPregunta": "14",
+  "nombrePreguntas": "¿La conducta la cometió el denunciado con el concurso de otras personas?",
+  "tipoDePregunta": "SI/NO",
+  "respuestaQueHabilitaRespuestaHijo": "SI"
+ },
+ {
+  "idDelito": 1,
+  "nombreDelito": "Insubordinación",
+  "idPreguntaPadre": "14",
+  "idPregunta": "15",
+  "nombrePreguntas": "¿Con quiénes?",
+  "tipoDePregunta": "TEXTO UNA LÍNEA",
+  "respuestaQueHabilitaRespuestaHijo": null
+ },
+ {
+  "idDelito": 1,
+  "nombreDelito": "Insubordinación",
+  "idPreguntaPadre": null,
+  "idPregunta": "16",
+  "nombrePreguntas": "¿La conducta la cometió el denunciado estando frente a tropas formadas?",
+  "tipoDePregunta": "SI/NO",
+  "respuestaQueHabilitaRespuestaHijo": "SI"
+ },
+ {
+  "idDelito": 1,
+  "nombreDelito": "Insubordinación",
+  "idPreguntaPadre": "16",
+  "idPregunta": "17",
+  "nombrePreguntas": " ¿Qué tropas?",
+  "tipoDePregunta": "TEXTO UNA LÍNEA",
+  "respuestaQueHabilitaRespuestaHijo": null
+ },
+ {
+  "idDelito": 10,
+  "nombreDelito": "ABANDONO DEL SERVICIO DE SOLDADOS VOLUNTARIOS O PROFESIONALES",
+  "idPreguntaPadre": null,
+  "idPregunta": "65",
+  "nombrePreguntas": "El Investigado ejercía la función de: ",
+  "tipoDePregunta": "SI/NO",
+  "respuestaQueHabilitaRespuestaHijo": null
+ },
+ {
+  "idDelito": 10,
+  "nombreDelito": "ABANDONO DEL SERVICIO DE SOLDADOS VOLUNTARIOS O PROFESIONALES",
+  "idPreguntaPadre": 65,
+  "idPregunta": "66",
+  "nombrePreguntas": "¿Comandante General Fuerzas Militares?",
+  "tipoDePregunta": "SI/NO",
+  "respuestaQueHabilitaRespuestaHijo": null
+ },
+ {
+  "idDelito": 10,
+  "nombreDelito": "ABANDONO DEL SERVICIO DE SOLDADOS VOLUNTARIOS O PROFESIONALES",
+  "idPreguntaPadre": 65,
+  "idPregunta": "67",
+  "nombrePreguntas": "¿Comandante de Fuerza?",
+  "tipoDePregunta": "SI/NO",
+  "respuestaQueHabilitaRespuestaHijo": null
+ },
+ {
+  "idDelito": 10,
+  "nombreDelito": "ABANDONO DEL SERVICIO DE SOLDADOS VOLUNTARIOS O PROFESIONALES",
+  "idPreguntaPadre": 67,
+  "idPregunta": "68",
+  "nombrePreguntas": "¿De cuál?",
+  "tipoDePregunta": "TEXTO UNA LÍNEA",
+  "respuestaQueHabilitaRespuestaHijo": null
+ },
+ {
+  "idDelito": 10,
+  "nombreDelito": "ABANDONO DEL SERVICIO DE SOLDADOS VOLUNTARIOS O PROFESIONALES",
+  "idPreguntaPadre": 65,
+  "idPregunta": "69",
+  "nombrePreguntas": "¿Jefe de Estado Mayor Conjunto?",
+  "tipoDePregunta": "SI/NO",
+  "respuestaQueHabilitaRespuestaHijo": null
+ },
+ {
+  "idDelito": 10,
+  "nombreDelito": "ABANDONO DEL SERVICIO DE SOLDADOS VOLUNTARIOS O PROFESIONALES",
+  "idPreguntaPadre": 65,
+  "idPregunta": "70",
+  "nombrePreguntas": "¿Comandante de Comando Conjunto? ",
+  "tipoDePregunta": "SI/NO",
+  "respuestaQueHabilitaRespuestaHijo": null
+ },
+ {
+  "idDelito": 10,
+  "nombreDelito": "ABANDONO DEL SERVICIO DE SOLDADOS VOLUNTARIOS O PROFESIONALES",
+  "idPreguntaPadre": 65,
+  "idPregunta": "71",
+  "nombrePreguntas": "¿Comandante de Fuerza de Tarea?",
+  "tipoDePregunta": "SI/NO",
+  "respuestaQueHabilitaRespuestaHijo": null
+ },
+ {
+  "idDelito": 10,
+  "nombreDelito": "ABANDONO DEL SERVICIO DE SOLDADOS VOLUNTARIOS O PROFESIONALES",
+  "idPreguntaPadre": 65,
+  "idPregunta": "72",
+  "nombrePreguntas": "¿Director General de la Policía Nacional?",
+  "tipoDePregunta": "SI/NO",
+  "respuestaQueHabilitaRespuestaHijo": null
+ },
+ {
+  "idDelito": 10,
+  "nombreDelito": "ABANDONO DEL SERVICIO DE SOLDADOS VOLUNTARIOS O PROFESIONALES",
+  "idPreguntaPadre": 65,
+  "idPregunta": "73",
+  "nombrePreguntas": "¿Comandante de Unidad Operativa?",
+  "tipoDePregunta": "SI/NO",
+  "respuestaQueHabilitaRespuestaHijo": null
+ },
+ {
+  "idDelito": 10,
+  "nombreDelito": "ABANDONO DEL SERVICIO DE SOLDADOS VOLUNTARIOS O PROFESIONALES",
+  "idPreguntaPadre": 65,
+  "idPregunta": "74",
+  "nombrePreguntas": "¿Comandante de Unidad Táctica (Batallón, Grupo de caballería o sus equivalentes     en la Armada y Fuerza Aérea)?",
+  "tipoDePregunta": "SI/NO",
+  "respuestaQueHabilitaRespuestaHijo": null
+ },
+ {
+  "idDelito": 10,
+  "nombreDelito": "ABANDONO DEL SERVICIO DE SOLDADOS VOLUNTARIOS O PROFESIONALES",
+  "idPreguntaPadre": 65,
+  "idPregunta": "75",
+  "nombrePreguntas": "¿Director de Escuela de Formación?",
+  "tipoDePregunta": "SI/NO",
+  "respuestaQueHabilitaRespuestaHijo": null
+ },
+ {
+  "idDelito": 10,
+  "nombreDelito": "ABANDONO DEL SERVICIO DE SOLDADOS VOLUNTARIOS O PROFESIONALES",
+  "idPreguntaPadre": 65,
+  "idPregunta": "76",
+  "nombrePreguntas": "¿Comandante de Departamento de Policía?",
+  "tipoDePregunta": "SI/NO",
+  "respuestaQueHabilitaRespuestaHijo": null
+ },
+ {
+  "idDelito": 10,
+  "nombreDelito": "ABANDONO DEL SERVICIO DE SOLDADOS VOLUNTARIOS O PROFESIONALES",
+  "idPreguntaPadre": 65,
+  "idPregunta": "77",
+  "nombrePreguntas": "¿Comandante de Comando Unificado? ",
+  "tipoDePregunta": "SI/NO",
+  "respuestaQueHabilitaRespuestaHijo": null
+ },
+ {
+  "idDelito": 10,
+  "nombreDelito": "ABANDONO DEL SERVICIO DE SOLDADOS VOLUNTARIOS O PROFESIONALES",
+  "idPreguntaPadre": 65,
+  "idPregunta": "78",
+  "nombrePreguntas": "¿Comandante de Comando Específico?",
+  "tipoDePregunta": "SI/NO",
+  "respuestaQueHabilitaRespuestaHijo": null
+ },
+ {
+  "idDelito": 10,
+  "nombreDelito": "ABANDONO DEL SERVICIO DE SOLDADOS VOLUNTARIOS O PROFESIONALES",
+  "idPreguntaPadre": 65,
+  "idPregunta": "79",
+  "nombrePreguntas": "¿Comandante de Comando Operativo?",
+  "tipoDePregunta": "SI/NO",
+  "respuestaQueHabilitaRespuestaHijo": null
+ },
+ {
+  "idDelito": 10,
+  "nombreDelito": "ABANDONO DEL SERVICIO DE SOLDADOS VOLUNTARIOS O PROFESIONALES",
+  "idPreguntaPadre": null,
+  "idPregunta": "80",
+  "nombrePreguntas": "¿Ejerció las funciones propias del comando, jefatura o dirección?",
+  "tipoDePregunta": "SI/NO",
+  "respuestaQueHabilitaRespuestaHijo": "SI"
+ },
+ {
+  "idDelito": 10,
+  "nombreDelito": "ABANDONO DEL SERVICIO DE SOLDADOS VOLUNTARIOS O PROFESIONALES",
+  "idPreguntaPadre": 80,
+  "idPregunta": "81",
+  "nombrePreguntas": "¿Por qué causa no las ejerció?",
+  "tipoDePregunta": "TEXTO UNA LÍNEA",
+  "respuestaQueHabilitaRespuestaHijo": null
+ },
+ {
+  "idDelito": 10,
+  "nombreDelito": "ABANDONO DEL SERVICIO DE SOLDADOS VOLUNTARIOS O PROFESIONALES",
+  "idPreguntaPadre": null,
+  "idPregunta": "82",
+  "nombrePreguntas": "¿Los hechos sucedieron en tiempo de paz?",
+  "tipoDePregunta": "SI/NO",
+  "respuestaQueHabilitaRespuestaHijo": "SI"
+ },
+ {
+  "idDelito": 10,
+  "nombreDelito": "ABANDONO DEL SERVICIO DE SOLDADOS VOLUNTARIOS O PROFESIONALES",
+  "idPreguntaPadre": 82,
+  "idPregunta": "83",
+  "nombrePreguntas": "¿A partir de cuándo dejó de ejercer las funciones?",
+  "tipoDePregunta": "TEXTO UNA LÍNEA",
+  "respuestaQueHabilitaRespuestaHijo": null
+ },
+ {
+  "idDelito": 10,
+  "nombreDelito": "ABANDONO DEL SERVICIO DE SOLDADOS VOLUNTARIOS O PROFESIONALES",
+  "idPreguntaPadre": 82,
+  "idPregunta": "84",
+  "nombrePreguntas": "¿Reasumió el ejercicio de sus funciones?",
+  "tipoDePregunta": "SI/NO",
+  "respuestaQueHabilitaRespuestaHijo": "SI"
+ },
+ {
+  "idDelito": 10,
+  "nombreDelito": "ABANDONO DEL SERVICIO DE SOLDADOS VOLUNTARIOS O PROFESIONALES",
+  "idPreguntaPadre": 84,
+  "idPregunta": "85",
+  "nombrePreguntas": "¿Cuándo?",
+  "tipoDePregunta": "TEXTO UNA LÍNEA",
+  "respuestaQueHabilitaRespuestaHijo": null
+ },
+ {
+  "idDelito": 10,
+  "nombreDelito": "ABANDONO DEL SERVICIO DE SOLDADOS VOLUNTARIOS O PROFESIONALES",
+  "idPreguntaPadre": 82,
+  "idPregunta": "86",
+  "nombrePreguntas": "¿El abandono de las funciones fue por más de 24 horas consecutivas? ",
+  "tipoDePregunta": "SI/NO",
+  "respuestaQueHabilitaRespuestaHijo": null
+ },
+ {
+  "idDelito": 16,
+  "nombreDelito": "Deserción",
+  "idPreguntaPadre": null,
+  "idPregunta": "89",
+  "nombrePreguntas": "¿Regresó?",
+  "tipoDePregunta": "SI/NO",
+  "respuestaQueHabilitaRespuestaHijo": "SI"
+ },
+ {
+  "idDelito": 16,
+  "nombreDelito": "Deserción",
+  "idPreguntaPadre": 89,
+  "idPregunta": "90",
+  "nombrePreguntas": "¿Cuándo regresó?",
+  "tipoDePregunta": "TEXTO UNA LÍNEA",
+  "respuestaQueHabilitaRespuestaHijo": null
+ },
+ {
+  "idDelito": 16,
+  "nombreDelito": "Deserción",
+  "idPreguntaPadre": null,
+  "idPregunta": "91",
+  "nombrePreguntas": "¿Por qué se ausentó?",
+  "tipoDePregunta": "AREA DE TEXTO",
+  "respuestaQueHabilitaRespuestaHijo": null
+ },
+ {
+  "idDelito": 16,
+  "nombreDelito": "Deserción",
+  "idPreguntaPadre": null,
+  "idPregunta": "92",
+  "nombrePreguntas": "¿La conducta la cometió en tiempo de guerra?",
+  "tipoDePregunta": "SI/NO",
+  "respuestaQueHabilitaRespuestaHijo": null
+ },
+ {
+  "idDelito": 16,
+  "nombreDelito": "Deserción",
+  "idPreguntaPadre": null,
+  "idPregunta": "93",
+  "nombrePreguntas": "¿La conducta la cometió en conmoción interior?",
+  "tipoDePregunta": "SI/NO",
+  "respuestaQueHabilitaRespuestaHijo": null
+ },
+ {
+  "idDelito": 16,
+  "nombreDelito": "Deserción",
+  "idPreguntaPadre": null,
+  "idPregunta": "94",
+  "nombrePreguntas": "¿La conducta la cometió ante la proximidad de rebeldes?",
+  "tipoDePregunta": "SI/NO",
+  "respuestaQueHabilitaRespuestaHijo": null
+ },
+ {
+  "idDelito": 16,
+  "nombreDelito": "Deserción",
+  "idPreguntaPadre": null,
+  "idPregunta": "95",
+  "nombrePreguntas": "¿La conducta la cometió ante la proximidad de sediciosos?",
+  "tipoDePregunta": "SI/NO",
+  "respuestaQueHabilitaRespuestaHijo": null
+ },
+ {
+  "idDelito": 16,
+  "nombreDelito": "Deserción",
+  "idPreguntaPadre": null,
+  "idPregunta": "96",
+  "nombrePreguntas": "¿La conducta se cometió en tiempo de guerra exterior?",
+  "tipoDePregunta": "SI/NO",
+  "respuestaQueHabilitaRespuestaHijo": null
+ },
+ {
+  "idDelito": 20,
+  "nombreDelito": "Delito del centinela",
+  "idPreguntaPadre": null,
+  "idPregunta": "97",
+  "nombrePreguntas": "¿El denunciado estaba nombrado de centinela?",
+  "tipoDePregunta": "SI/NO",
+  "respuestaQueHabilitaRespuestaHijo": "SI"
+ },
+ {
+  "idDelito": 20,
+  "nombreDelito": "Delito del centinela",
+  "idPreguntaPadre": 97,
+  "idPregunta": "98",
+  "nombrePreguntas": "¿Quién lo designó?",
+  "tipoDePregunta": "TEXTO UNA LÍNEA",
+  "respuestaQueHabilitaRespuestaHijo": null
+ },
+ {
+  "idDelito": 20,
+  "nombreDelito": "Delito del centinela",
+  "idPreguntaPadre": 97,
+  "idPregunta": "99",
+  "nombrePreguntas": "¿Mediante qué acto lo designó?",
+  "tipoDePregunta": "TEXTO UNA LÍNEA",
+  "respuestaQueHabilitaRespuestaHijo": null
+ },
+ {
+  "idDelito": 20,
+  "nombreDelito": "Delito del centinela",
+  "idPreguntaPadre": null,
+  "idPregunta": "100",
+  "nombrePreguntas": "¿El denunciado hacía parte de la guardia de la unidad?",
+  "tipoDePregunta": "SI/NO",
+  "respuestaQueHabilitaRespuestaHijo": "SI"
+ },
+ {
+  "idDelito": 20,
+  "nombreDelito": "Delito del centinela",
+  "idPreguntaPadre": 100,
+  "idPregunta": "101",
+  "nombrePreguntas": "¿La guardia era relevada en turnos de 24 horas?",
+  "tipoDePregunta": "SI/NO",
+  "respuestaQueHabilitaRespuestaHijo": null
+ },
+ {
+  "idDelito": 20,
+  "nombreDelito": "Delito del centinela",
+  "idPreguntaPadre": null,
+  "idPregunta": "102",
+  "nombrePreguntas": "¿En qué puesto prestaba?",
+  "tipoDePregunta": "TEXTO UNA LÍNEA",
+  "respuestaQueHabilitaRespuestaHijo": null
+ },
+ {
+  "idDelito": 20,
+  "nombreDelito": "Delito del centinela",
+  "idPreguntaPadre": null,
+  "idPregunta": "103",
+  "nombrePreguntas": "¿Cuáles eran las funciones de seguridad de dicho puesto?",
+  "tipoDePregunta": "AREA DE TEXTO",
+  "respuestaQueHabilitaRespuestaHijo": null
+ },
+ {
+  "idDelito": 20,
+  "nombreDelito": "Delito del centinela",
+  "idPreguntaPadre": null,
+  "idPregunta": "104",
+  "nombrePreguntas": "¿El denunciado prestaba con armamento?",
+  "tipoDePregunta": "SI/NO",
+  "respuestaQueHabilitaRespuestaHijo": null
+ },
+ {
+  "idDelito": 20,
+  "nombreDelito": "Delito del centinela",
+  "idPreguntaPadre": null,
+  "idPregunta": "105",
+  "nombrePreguntas": "¿Era un puesto simple o doble?",
+  "tipoDePregunta": "TEXTO UNA LÍNEA",
+  "respuestaQueHabilitaRespuestaHijo": null
+ },
+ {
+  "idDelito": 20,
+  "nombreDelito": "Delito del centinela",
+  "idPreguntaPadre": null,
+  "idPregunta": "106",
+  "nombrePreguntas": "¿En dónde quedaba dicho puesto?",
+  "tipoDePregunta": "TEXTO UNA LÍNEA",
+  "respuestaQueHabilitaRespuestaHijo": null
+ },
+ {
+  "idDelito": 20,
+  "nombreDelito": "Delito del centinela",
+  "idPreguntaPadre": null,
+  "idPregunta": "107",
+  "nombrePreguntas": "¿A qué hora recibió el puesto?",
+  "tipoDePregunta": "TEXTO UNA LÍNEA",
+  "respuestaQueHabilitaRespuestaHijo": null
+ },
+ {
+  "idDelito": 20,
+  "nombreDelito": "Delito del centinela",
+  "idPreguntaPadre": null,
+  "idPregunta": "108",
+  "nombrePreguntas": "¿A quién le recibió el puesto?",
+  "tipoDePregunta": "TEXTO UNA LÍNEA",
+  "respuestaQueHabilitaRespuestaHijo": null
+ },
+ {
+  "idDelito": 20,
+  "nombreDelito": "Delito del centinela",
+  "idPreguntaPadre": null,
+  "idPregunta": "109",
+  "nombrePreguntas": "¿A qué hora debía entregarlo?",
+  "tipoDePregunta": "TEXTO UNA LÍNEA",
+  "respuestaQueHabilitaRespuestaHijo": null
+ },
+ {
+  "idDelito": 20,
+  "nombreDelito": "Delito del centinela",
+  "idPreguntaPadre": null,
+  "idPregunta": "110",
+  "nombrePreguntas": "¿A quién debía entregarle el puesto?",
+  "tipoDePregunta": "TEXTO UNA LÍNEA",
+  "respuestaQueHabilitaRespuestaHijo": null
+ },
+ {
+  "idDelito": 20,
+  "nombreDelito": "Delito del centinela",
+  "idPreguntaPadre": null,
+  "idPregunta": "111",
+  "nombrePreguntas": "Describa detalladamente el puesto",
+  "tipoDePregunta": "AREA DE TEXTO",
+  "respuestaQueHabilitaRespuestaHijo": null
+ },
+ {
+  "idDelito": 20,
+  "nombreDelito": "Delito del centinela",
+  "idPreguntaPadre": null,
+  "idPregunta": "112",
+  "nombrePreguntas": "¿Quién realizó el relevó de los turnos de centinela?",
+  "tipoDePregunta": "TEXTO UNA LÍNEA",
+  "respuestaQueHabilitaRespuestaHijo": null
+ },
+ {
+  "idDelito": 20,
+  "nombreDelito": "Delito del centinela",
+  "idPreguntaPadre": null,
+  "idPregunta": "113",
+  "nombrePreguntas": "¿Cómo se hizo el relevo de los turnos de centinela?",
+  "tipoDePregunta": "TEXTO UNA LÍNEA",
+  "respuestaQueHabilitaRespuestaHijo": null
+ },
+ {
+  "idDelito": 20,
+  "nombreDelito": "Delito del centinela",
+  "idPreguntaPadre": null,
+  "idPregunta": "114",
+  "nombrePreguntas": "¿El denunciado manifestó algo que le impidiera prestar el turno antes de recibirlo?",
+  "tipoDePregunta": "SI/NO",
+  "respuestaQueHabilitaRespuestaHijo": "SI"
+ },
+ {
+  "idDelito": 20,
+  "nombreDelito": "Delito del centinela",
+  "idPreguntaPadre": 114,
+  "idPregunta": "115",
+  "nombrePreguntas": "¿Qué manifestó?",
+  "tipoDePregunta": "AREA DE TEXTO",
+  "respuestaQueHabilitaRespuestaHijo": "NO"
+ },
+ {
+  "idDelito": 20,
+  "nombreDelito": "Delito del centinela",
+  "idPreguntaPadre": null,
+  "idPregunta": "116",
+  "nombrePreguntas": "¿El denunciado manifestó algo que le estuviera impidiendo prestar el turno, mientras lo estuvo prestando?",
+  "tipoDePregunta": "SI/NO",
+  "respuestaQueHabilitaRespuestaHijo": "SI"
+ },
+ {
+  "idDelito": 20,
+  "nombreDelito": "Delito del centinela",
+  "idPreguntaPadre": 116,
+  "idPregunta": "117",
+  "nombrePreguntas": "¿Qué manifestó?",
+  "tipoDePregunta": "AREA DE TEXTO",
+  "respuestaQueHabilitaRespuestaHijo": null
+ },
+ {
+  "idDelito": 20,
+  "nombreDelito": "Delito del centinela",
+  "idPreguntaPadre": null,
+  "idPregunta": "118",
+  "nombrePreguntas": "En qué conducta incurrió",
+  "tipoDePregunta": "SI/NO",
+  "respuestaQueHabilitaRespuestaHijo": null
+ },
+ {
+  "idDelito": 20,
+  "nombreDelito": "Delito del centinela",
+  "idPreguntaPadre": 118,
+  "idPregunta": "119",
+  "nombrePreguntas": "¿Se durmió?",
+  "tipoDePregunta": "SI/NO",
+  "respuestaQueHabilitaRespuestaHijo": null
+ },
+ {
+  "idDelito": 20,
+  "nombreDelito": "Delito del centinela",
+  "idPreguntaPadre": 118,
+  "idPregunta": "120",
+  "nombrePreguntas": "¿Se embriagó?",
+  "tipoDePregunta": "SI/NO",
+  "respuestaQueHabilitaRespuestaHijo": null
+ },
+ {
+  "idDelito": 20,
+  "nombreDelito": "Delito del centinela",
+  "idPreguntaPadre": 118,
+  "idPregunta": "121",
+  "nombrePreguntas": "¿Se puso bajo el efecto de sustancias estupefacientes o psicotrópicas?",
+  "tipoDePregunta": "SI/NO",
+  "respuestaQueHabilitaRespuestaHijo": null
+ },
+ {
+  "idDelito": 20,
+  "nombreDelito": "Delito del centinela",
+  "idPreguntaPadre": 118,
+  "idPregunta": "122",
+  "nombrePreguntas": "¿Faltó a alguna consigna especial?",
+  "tipoDePregunta": "SI/NO",
+  "respuestaQueHabilitaRespuestaHijo": "SI"
+ },
+ {
+  "idDelito": 20,
+  "nombreDelito": "Delito del centinela",
+  "idPreguntaPadre": 122,
+  "idPregunta": "123",
+  "nombrePreguntas": "¿A cuál consigna?",
+  "tipoDePregunta": "TEXTO UNA LÍNEA",
+  "respuestaQueHabilitaRespuestaHijo": null
+ },
+ {
+  "idDelito": 20,
+  "nombreDelito": "Delito del centinela",
+  "idPreguntaPadre": 122,
+  "idPregunta": "124",
+  "nombrePreguntas": "¿Cuándo se la informaron?",
+  "tipoDePregunta": "TEXTO UNA LÍNEA",
+  "respuestaQueHabilitaRespuestaHijo": null
+ },
+ {
+  "idDelito": 20,
+  "nombreDelito": "Delito del centinela",
+  "idPreguntaPadre": 122,
+  "idPregunta": "125",
+  "nombrePreguntas": "¿Quién se le informó?",
+  "tipoDePregunta": "TEXTO UNA LÍNEA",
+  "respuestaQueHabilitaRespuestaHijo": null
+ },
+ {
+  "idDelito": 20,
+  "nombreDelito": "Delito del centinela",
+  "idPreguntaPadre": 122,
+  "idPregunta": "126",
+  "nombrePreguntas": "¿Cómo se le informó?",
+  "tipoDePregunta": "TEXTO UNA LÍNEA",
+  "respuestaQueHabilitaRespuestaHijo": null
+ },
+ {
+  "idDelito": 20,
+  "nombreDelito": "Delito del centinela",
+  "idPreguntaPadre": null,
+  "idPregunta": "127",
+  "nombrePreguntas": "¿Se separó de su puesto?",
+  "tipoDePregunta": "SI/NO",
+  "respuestaQueHabilitaRespuestaHijo": "SI"
+ },
+ {
+  "idDelito": 20,
+  "nombreDelito": "Delito del centinela",
+  "idPreguntaPadre": "127",
+  "idPregunta": "128",
+  "nombrePreguntas": "¿A qué distancia se separó?",
+  "tipoDePregunta": "TEXTO UNA LÍNEA",
+  "respuestaQueHabilitaRespuestaHijo": null
+ },
+ {
+  "idDelito": 20,
+  "nombreDelito": "Delito del centinela",
+  "idPreguntaPadre": "127",
+  "idPregunta": "129",
+  "nombrePreguntas": "¿A qué hora se separó?",
+  "tipoDePregunta": "TEXTO UNA LÍNEA",
+  "respuestaQueHabilitaRespuestaHijo": null
+ },
+ {
+  "idDelito": 20,
+  "nombreDelito": "Delito del centinela",
+  "idPreguntaPadre": "127",
+  "idPregunta": "130",
+  "nombrePreguntas": "¿Cuánto tiempo duró separado del puesto?",
+  "tipoDePregunta": "TEXTO UNA LÍNEA",
+  "respuestaQueHabilitaRespuestaHijo": null
+ },
+ {
+  "idDelito": 20,
+  "nombreDelito": "Delito del centinela",
+  "idPreguntaPadre": "127",
+  "idPregunta": "131",
+  "nombrePreguntas": "¿Retornó al puesto?",
+  "tipoDePregunta": "SI/NO",
+  "respuestaQueHabilitaRespuestaHijo": "SI"
+ },
+ {
+  "idDelito": 20,
+  "nombreDelito": "Delito del centinela",
+  "idPreguntaPadre": "131",
+  "idPregunta": "132",
+  "nombrePreguntas": "¿A qué hora retornó?",
+  "tipoDePregunta": "TEXTO UNA LÍNEA",
+  "respuestaQueHabilitaRespuestaHijo": null
+ },
+ {
+  "idDelito": 20,
+  "nombreDelito": "Delito del centinela",
+  "idPreguntaPadre": "127",
+  "idPregunta": "133",
+  "nombrePreguntas": "¿Por qué se separó del puesto?",
+  "tipoDePregunta": "TEXTO UNA LÍNEA",
+  "respuestaQueHabilitaRespuestaHijo": null
+ },
+ {
+  "idDelito": 20,
+  "nombreDelito": "Delito del centinela",
+  "idPreguntaPadre": null,
+  "idPregunta": "134",
+  "nombrePreguntas": "¿Se dejó relevar por quien no estaba autorizado?",
+  "tipoDePregunta": "SI/NO",
+  "respuestaQueHabilitaRespuestaHijo": "SI"
+ },
+ {
+  "idDelito": 20,
+  "nombreDelito": "Delito del centinela",
+  "idPreguntaPadre": "134",
+  "idPregunta": "135",
+  "nombrePreguntas": "¿Quién lo relevó?",
+  "tipoDePregunta": "TEXTO UNA LÍNEA",
+  "respuestaQueHabilitaRespuestaHijo": null
+ },
+ {
+  "idDelito": 20,
+  "nombreDelito": "Delito del centinela",
+  "idPreguntaPadre": "134",
+  "idPregunta": "136",
+  "nombrePreguntas": "¿Por qué lo relevó?",
+  "tipoDePregunta": "TEXTO UNA LÍNEA",
+  "respuestaQueHabilitaRespuestaHijo": null
+ },
+ {
+  "idDelito": 20,
+  "nombreDelito": "Delito del centinela",
+  "idPreguntaPadre": "134",
+  "idPregunta": "137",
+  "nombrePreguntas": "¿Por qué se dejó relevar?",
+  "tipoDePregunta": "AREA DE TEXTO",
+  "respuestaQueHabilitaRespuestaHijo": null
+ },
+ {
+  "idDelito": 20,
+  "nombreDelito": "Delito del centinela",
+  "idPreguntaPadre": null,
+  "idPregunta": "138",
+  "nombrePreguntas": "¿Los hechos sucedieron en tiempo de guerra?",
+  "tipoDePregunta": "SI/NO",
+  "respuestaQueHabilitaRespuestaHijo": null
+ },
+ {
+  "idDelito": 20,
+  "nombreDelito": "Delito del centinela",
+  "idPreguntaPadre": null,
+  "idPregunta": "139",
+  "nombrePreguntas": "¿Los hechos sucedieron en tiempo de conmoción interior?",
+  "tipoDePregunta": "SI/NO",
+  "respuestaQueHabilitaRespuestaHijo": null
+ }
+]
