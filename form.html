@@ -10,7 +10,7 @@
 <body>
 
     <div class="container">
-        <form id="jpm_form" action="" method="get">
+        <form id="jpm_form" data-msg_id="4545" action="" method="get">
             <div id="insubordinacion">
                 <h2 class="chrime_title">Insubordinación</h2>
             </div>
@@ -39,7 +39,7 @@
                 <h2 class="chrime_title">Abandono del servicio</h2>
             </div>
             <div id="abandono_servicio_soldados_voluntarios_profesionales">
-                <h2 class="chrime_title">Abandono del servicio de soldados voluntarios o profesionales</h2>
+                <h2 class="chrime_title">ABANDONO DEL SERVICIO DE SOLDADOS VOLUNTARIOS O PROFESIONALES</h2>
             </div>
             <div id="delito_centinela">
                 <h2 class="chrime_title">Delito del centinela</h2>
@@ -65,6 +65,9 @@
             <div id="injuria">
                 <h2 class="chrime_title">Injuria</h2>
             </div>
+            <div id="desercion">
+                <h2 class="chrime_title">Deserción</h2>
+            </div>
             <button>Guardar Respuestas</button>
         </form>
     </div>
@@ -73,7 +76,10 @@
     <script src="./js/fetch.js"></script>
 
     <!-- Print fields logic -->
+    <script src="./js/buildFields.js"></script>
+    <script src="./js/submit.js"></script>
     <script src="./js/printFields.js"></script>
+    <script src="./js/triggers.js"></script>
 
     <!-- Get params to show chrimes -->
     <!-- <script src="./js/params.js"></script> -->
