@@ -17,7 +17,8 @@ const chrimeList = [
     'cobardia',
     'cobardia_omision',
     'comercio_enemigo',
-    'injuria'
+    'injuria',
+    'desercion'
 ];
 
 fetchChcrime().then(chrimes => {
@@ -30,11 +31,15 @@ fetchChcrime().then(chrimes => {
                 const chrimeElement = document.createElement('div');
                 chrimeElement.id = `${chrime.idPregunta}`;
                 chrimeElement.classList.add('wrapper');
+                chrimeElement.setAttribute('chrime_id', `${chrime.idDelito}`);
+                chrimeElement.setAttribute('chrime_name', `${chrime.nombreDelito}`);
+                chrimeElement.setAttribute('question', `${chrime.nombrePreguntas}`);
                 const chrimeLabel = document.createElement('label');
                 chrimeLabel.innerText = `${chrime.nombrePreguntas}`;
                 const chrimeField = document.createElement('input');
                 chrimeField.type = 'text';
-                chrimeField.name = `${chrime.idPregunta}`;
+                chrimeField.classList.add('field');
+                chrimeField.name = `answer_${chrime.idPregunta}`;
                 chrimeElement.append(chrimeLabel);
                 chrimeElement.append(chrimeField);
                 return chrimeElement;
@@ -43,10 +48,14 @@ fetchChcrime().then(chrimes => {
                 const chrimeElement = document.createElement('div');
                 chrimeElement.id = `${chrime.idPregunta}`;
                 chrimeElement.classList.add('wrapper');
+                chrimeElement.setAttribute('chrime_id', `${chrime.idDelito}`);
+                chrimeElement.setAttribute('chrime_name', `${chrime.nombreDelito}`);
+                chrimeElement.setAttribute('question', `${chrime.nombrePreguntas}`);
                 const chrimeLabel = document.createElement('label');
                 chrimeLabel.innerText = `${chrime.nombrePreguntas}`;
                 const chrimeField = document.createElement('textarea');
-                chrimeField.name = `${chrime.idPregunta}`;
+                chrimeField.name = `answer_${chrime.idPregunta}`;
+                chrimeField.classList.add('field');
                 chrimeElement.append(chrimeLabel);
                 chrimeElement.append(chrimeField);
                 return chrimeElement;
@@ -55,6 +64,9 @@ fetchChcrime().then(chrimes => {
                 const chrimeElement = document.createElement('div');
                 chrimeElement.id = `${chrime.idPregunta}`;
                 chrimeElement.classList.add('wrapper');
+                chrimeElement.setAttribute('chrime_id', `${chrime.idDelito}`);
+                chrimeElement.setAttribute('chrime_name', `${chrime.nombreDelito}`);
+                chrimeElement.setAttribute('question', `${chrime.nombrePreguntas}`);
                 const chrimeSpan = document.createElement('span');
                 chrimeSpan.innerText = `${chrime.nombrePreguntas}`;
                 const chrimeLabel = document.createElement('label');
@@ -63,15 +75,18 @@ fetchChcrime().then(chrimes => {
                 const chrimeField = document.createElement('input');
                 chrimeField.type = 'radio';
                 chrimeField.value = 'si';
-                chrimeField.name = `${chrime.idPregunta}`;
-
+                chrimeField.name = `answer_${chrime.idPregunta}`;
+                chrimeField.classList.add('field');
+                
                 const chrimeLabel2 = document.createElement('label');
                 chrimeLabel2.innerText = `No`;
                 const chrimeField2 = document.createElement('input');
                 chrimeField2.type = 'radio';
                 chrimeLabel2.classList.add('radio_label');
+                chrimeLabel2.classList.add('field');
                 chrimeField2.value = 'no';
-                chrimeField2.name = `${chrime.idPregunta}`;
+                chrimeField2.name = `answer_${chrime.idPregunta}`;
+                chrimeField2.classList.add('field');
 
                 chrimeElement.appendChild(chrimeSpan);
                 chrimeElement.appendChild(chrimeLabel);
@@ -103,6 +118,16 @@ fetchChcrime().then(chrimes => {
             [...fields].map(function(field){
                 field.classList.add('trigger');
             })
+
+            if(chrime.respuestaQueHabilitaRespuestaHijo == 'SI'){
+                [...fields].map(function(field){
+                    field.classList.add('trigger_yes');
+                })
+            } else if(chrime.respuestaQueHabilitaRespuestaHijo == 'NO'){
+                [...fields].map(function(field){
+                    field.classList.add('trigger_no');
+                })
+            }
         }
 
 
@@ -114,7 +139,8 @@ fetchChcrime().then(chrimes => {
             const getTitle = function(){
                 if(chrimeDiv){
                     let chrimeTitle = chrimeDiv.querySelector('.chrime_title');
-                    return chrimeTitle = chrimeTitle.textContent;
+                    chrimeTitle = chrimeTitle.textContent;
+                    return chrimeTitle;
                 } else {
                     return chrimeTitle = '';
                 }
@@ -122,6 +148,7 @@ fetchChcrime().then(chrimes => {
 
             chrimeTitle = getTitle();
 
+            
             if(chrime.nombreDelito == chrimeTitle && chrime.idPreguntaPadre){
                 const parentElem = document.getElementById(`${chrime.idPreguntaPadre}`);
                 parentElem.append(chrimeElement);
@@ -146,6 +173,7 @@ fetchChcrime().then(chrimes => {
             const elemsShow = document.querySelectorAll(`.parent_id_${e.target.parentNode.id}`);
             console.log(elemsShow);
             [...elemsShow].map(elem => {
+                console.log('tiene clase: ', elem)
                 if(trigger.value == 'si'){
                     elem.classList.remove('hide');
                 } else {
@@ -188,21 +216,41 @@ const form = document.querySelector('#jpm_form');
 form.addEventListener('submit', function(e){
     e.preventDefault();
 
-    // Serialize form data function
-    const serializeForm = function (form) {
-        var obj = {};
-        var formData = new FormData(form);
-        for (var key of formData.keys()) {
-            obj[key] = formData.get(key);
+    const formGroups = [...document.querySelectorAll('.wrapper')];
+
+    let payloadContent = [];
+
+    const payload = {
+        "IdMensaje": "4545",
+        "PreguntasAndRespuestasList": payloadContent
+    }
+
+    formGroups.map(function(formGroup){
+        let fieldName = formGroup.querySelector('.field');
+        fieldName = fieldName.getAttribute('name');
+        const fieldValue = form[fieldName].value;
+
+        const payloadElement = {
+            "idDelito": formGroup.getAttribute('chrime_id'),
+            "nombreDelito": formGroup.getAttribute('chrime_name'),
+            "ENT_ID_PREGUNTA_ABC_3": formGroup.id,
+            "idPreguntaPadre": "ok",
+            "TXT_NOM_PREGUNTA_3": formGroup.getAttribute('question'),
+            "tipoRespuesta": "ok",
+            "posiblesRespuestas": "SI/NO",
+            "respuestaQueHabilitaRespuestaHijo": "SI",
+            "TXT_RESPUESTA_ABC_3": fieldValue
         }
-        return obj;
-    };
+
+        payloadContent.push(payloadElement);
+
+    });
 
     const sendForm = async () => {
         const url = 'https://jsonplaceholder.typicode.com/posts'; // endpoint to post data
         const settings = {
             method: 'POST', // or 'PUT'
-            body: JSON.stringify(serializeForm(e.target)), 
+            body: JSON.stringify(payload), 
             headers:{
                 'Accept': 'application/json',
                 'Content-Type': 'application/json'
