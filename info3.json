@@ -1,0 +1,811 @@
+[
+ {
+  "TRES_ID_DELITO": 1,
+  "TRES_NOM_DELITO": "Insubordinación",
+  "TRES_ENT_ID_PREG": "1",
+  "TRES_TXT_NOM_PREGUNTA": "¿El denunciado incurrió en actitudes violentas? ",
+  "TRES_TIPO_RESPUESTAS": "SELECCIÓN SIMPLE",
+  "TRES_POSIBLES_RESPUESTAS": "SI/NO",
+  "TRES_RES_HABILITA_RES_HIJO": "SI"
+ },
+ {
+  "TRES_ID_DELITO": 1,
+  "TRES_NOM_DELITO": "Insubordinación",
+  "TRES_ENT_ID_PREG_PADRE": "1",
+  "TRES_ENT_ID_PREG": "2",
+  "TRES_TXT_NOM_PREGUNTA": "¿Cuáles?",
+  "TRES_POSIBLES_RESPUESTAS": "TEXTO UNA LÍNEA"
+ },
+ {
+  "TRES_ID_DELITO": 1,
+  "TRES_NOM_DELITO": "Insubordinación",
+  "TRES_ENT_ID_PREG_PADRE": "1",
+  "TRES_ENT_ID_PREG": "3",
+  "TRES_TXT_NOM_PREGUNTA": "¿ El denunciado utilizo armas?",
+  "TRES_POSIBLES_RESPUESTAS": "SI/NO",
+  "TRES_RES_HABILITA_RES_HIJO": null
+ },
+ {
+  "TRES_ID_DELITO": 1,
+  "TRES_NOM_DELITO": "Insubordinación",
+  "TRES_ENT_ID_PREG_PADRE": "1",
+  "TRES_ENT_ID_PREG": "4",
+  "TRES_TXT_NOM_PREGUNTA": "¿Las actitudes violentas están relacionadas con una orden?",
+  "TRES_POSIBLES_RESPUESTAS": "SI/NO",
+  "TRES_RES_HABILITA_RES_HIJO": "SI"
+ },
+ {
+  "TRES_ID_DELITO": 1,
+  "TRES_NOM_DELITO": "Insubordinación",
+  "TRES_ENT_ID_PREG_PADRE": "4",
+  "TRES_ENT_ID_PREG": "5",
+  "TRES_TXT_NOM_PREGUNTA": "¿En qué consistía la orden?",
+  "TRES_POSIBLES_RESPUESTAS": "AREA DE TEXTO",
+  "TRES_RES_HABILITA_RES_HIJO": null
+ },
+ {
+  "TRES_ID_DELITO": 1,
+  "TRES_NOM_DELITO": "Insubordinación",
+  "TRES_ENT_ID_PREG_PADRE": "4",
+  "TRES_ENT_ID_PREG": "6",
+  "TRES_TXT_NOM_PREGUNTA": "¿Cómo fue impartida la orden?",
+  "TRES_POSIBLES_RESPUESTAS": "AREA DE TEXTO",
+  "TRES_RES_HABILITA_RES_HIJO": null
+ },
+ {
+  "TRES_ID_DELITO": 1,
+  "TRES_NOM_DELITO": "Insubordinación",
+  "TRES_ENT_ID_PREG_PADRE": "4",
+  "TRES_ENT_ID_PREG": "7",
+  "TRES_TXT_NOM_PREGUNTA": "¿Fueron para rechazar una orden? ",
+  "TRES_POSIBLES_RESPUESTAS": "SI/NO",
+  "TRES_RES_HABILITA_RES_HIJO": "SI"
+ },
+ {
+  "TRES_ID_DELITO": 1,
+  "TRES_NOM_DELITO": "Insubordinación",
+  "TRES_ENT_ID_PREG_PADRE": "4",
+  "TRES_ENT_ID_PREG": "8",
+  "TRES_TXT_NOM_PREGUNTA": "¿Fueron para impedir que otra persona cumpliera la orden?",
+  "TRES_POSIBLES_RESPUESTAS": "SI/NO",
+  "TRES_RES_HABILITA_RES_HIJO": null
+ },
+ {
+  "TRES_ID_DELITO": 1,
+  "TRES_NOM_DELITO": "Insubordinación",
+  "TRES_ENT_ID_PREG_PADRE": "7",
+  "TRES_ENT_ID_PREG": "9",
+  "TRES_TXT_NOM_PREGUNTA": "¿Qué persona debía cumplir la orden?",
+  "TRES_POSIBLES_RESPUESTAS": "TEXTO UNA LÍNEA",
+  "TRES_RES_HABILITA_RES_HIJO": null
+ },
+ {
+  "TRES_ID_DELITO": 1,
+  "TRES_NOM_DELITO": "Insubordinación",
+  "TRES_ENT_ID_PREG_PADRE": "3",
+  "TRES_ENT_ID_PREG": "10",
+  "TRES_TXT_NOM_PREGUNTA": "¿Fueron para impedir que el superior impartiera la orden?",
+  "TRES_POSIBLES_RESPUESTAS": "SI/NO",
+  "TRES_RES_HABILITA_RES_HIJO": "SI"
+ },
+ {
+  "TRES_ID_DELITO": 1,
+  "TRES_NOM_DELITO": "Insubordinación",
+  "TRES_ENT_ID_PREG_PADRE": "10",
+  "TRES_ENT_ID_PREG": "11",
+  "TRES_TXT_NOM_PREGUNTA": "¿Qué superior debía impartir la orden? ",
+  "TRES_POSIBLES_RESPUESTAS": "TEXTO UNA LÍNEA",
+  "TRES_RES_HABILITA_RES_HIJO": null
+ },
+ {
+  "TRES_ID_DELITO": 1,
+  "TRES_NOM_DELITO": "Insubordinación",
+  "TRES_ENT_ID_PREG_PADRE": "3",
+  "TRES_ENT_ID_PREG": "12",
+  "TRES_TXT_NOM_PREGUNTA": "¿Obligaron al superior a impartir la orden?",
+  "TRES_POSIBLES_RESPUESTAS": "SI/NO",
+  "TRES_RES_HABILITA_RES_HIJO": "SI"
+ },
+ {
+  "TRES_ID_DELITO": 1,
+  "TRES_NOM_DELITO": "Insubordinación",
+  "TRES_ENT_ID_PREG_PADRE": "12",
+  "TRES_ENT_ID_PREG": "13",
+  "TRES_TXT_NOM_PREGUNTA": "¿Qué superior fue obligado a impartir la orden? ",
+  "TRES_POSIBLES_RESPUESTAS": "TEXTO UNA LÍNEA",
+  "TRES_RES_HABILITA_RES_HIJO": null
+ },
+ {
+  "TRES_ID_DELITO": 1,
+  "TRES_NOM_DELITO": "Insubordinación",
+  "TRES_ENT_ID_PREG_PADRE": null,
+  "TRES_ENT_ID_PREG": "14",
+  "TRES_TXT_NOM_PREGUNTA": "¿La conducta la cometió el denunciado con el concurso de otras personas?",
+  "TRES_POSIBLES_RESPUESTAS": "SI/NO",
+  "TRES_RES_HABILITA_RES_HIJO": "SI"
+ },
+ {
+  "TRES_ID_DELITO": 1,
+  "TRES_NOM_DELITO": "Insubordinación",
+  "TRES_ENT_ID_PREG_PADRE": "14",
+  "TRES_ENT_ID_PREG": "15",
+  "TRES_TXT_NOM_PREGUNTA": "¿Con quiénes?",
+  "TRES_POSIBLES_RESPUESTAS": "TEXTO UNA LÍNEA",
+  "TRES_RES_HABILITA_RES_HIJO": null
+ },
+ {
+  "TRES_ID_DELITO": 1,
+  "TRES_NOM_DELITO": "Insubordinación",
+  "TRES_ENT_ID_PREG_PADRE": null,
+  "TRES_ENT_ID_PREG": "16",
+  "TRES_TXT_NOM_PREGUNTA": "¿La conducta la cometió el denunciado estando frente a tropas formadas?",
+  "TRES_POSIBLES_RESPUESTAS": "SI/NO",
+  "TRES_RES_HABILITA_RES_HIJO": "SI"
+ },
+ {
+  "TRES_ID_DELITO": 1,
+  "TRES_NOM_DELITO": "Insubordinación",
+  "TRES_ENT_ID_PREG_PADRE": "16",
+  "TRES_ENT_ID_PREG": "17",
+  "TRES_TXT_NOM_PREGUNTA": " ¿Qué tropas?",
+  "TRES_POSIBLES_RESPUESTAS": "TEXTO UNA LÍNEA",
+  "TRES_RES_HABILITA_RES_HIJO": null
+ },
+ {
+  "TRES_ID_DELITO": 10,
+  "TRES_NOM_DELITO": "ABANDONO DEL SERVICIO DE SOLDADOS VOLUNTARIOS O PROFESIONALES",
+  "TRES_ENT_ID_PREG_PADRE": null,
+  "TRES_ENT_ID_PREG": "65",
+  "TRES_TXT_NOM_PREGUNTA": "El Investigado ejercía la función de: ",
+  "TRES_POSIBLES_RESPUESTAS": "SI/NO",
+  "TRES_RES_HABILITA_RES_HIJO": null
+ },
+ {
+  "TRES_ID_DELITO": 10,
+  "TRES_NOM_DELITO": "ABANDONO DEL SERVICIO DE SOLDADOS VOLUNTARIOS O PROFESIONALES",
+  "TRES_ENT_ID_PREG_PADRE": 65,
+  "TRES_ENT_ID_PREG": "66",
+  "TRES_TXT_NOM_PREGUNTA": "¿Comandante General Fuerzas Militares?",
+  "TRES_POSIBLES_RESPUESTAS": "SI/NO",
+  "TRES_RES_HABILITA_RES_HIJO": null
+ },
+ {
+  "TRES_ID_DELITO": 10,
+  "TRES_NOM_DELITO": "ABANDONO DEL SERVICIO DE SOLDADOS VOLUNTARIOS O PROFESIONALES",
+  "TRES_ENT_ID_PREG_PADRE": 65,
+  "TRES_ENT_ID_PREG": "67",
+  "TRES_TXT_NOM_PREGUNTA": "¿Comandante de Fuerza?",
+  "TRES_POSIBLES_RESPUESTAS": "SI/NO",
+  "TRES_RES_HABILITA_RES_HIJO": null
+ },
+ {
+  "TRES_ID_DELITO": 10,
+  "TRES_NOM_DELITO": "ABANDONO DEL SERVICIO DE SOLDADOS VOLUNTARIOS O PROFESIONALES",
+  "TRES_ENT_ID_PREG_PADRE": 67,
+  "TRES_ENT_ID_PREG": "68",
+  "TRES_TXT_NOM_PREGUNTA": "¿De cuál?",
+  "TRES_POSIBLES_RESPUESTAS": "TEXTO UNA LÍNEA",
+  "TRES_RES_HABILITA_RES_HIJO": null
+ },
+ {
+  "TRES_ID_DELITO": 10,
+  "TRES_NOM_DELITO": "ABANDONO DEL SERVICIO DE SOLDADOS VOLUNTARIOS O PROFESIONALES",
+  "TRES_ENT_ID_PREG_PADRE": 65,
+  "TRES_ENT_ID_PREG": "69",
+  "TRES_TXT_NOM_PREGUNTA": "¿Jefe de Estado Mayor Conjunto?",
+  "TRES_POSIBLES_RESPUESTAS": "SI/NO",
+  "TRES_RES_HABILITA_RES_HIJO": null
+ },
+ {
+  "TRES_ID_DELITO": 10,
+  "TRES_NOM_DELITO": "ABANDONO DEL SERVICIO DE SOLDADOS VOLUNTARIOS O PROFESIONALES",
+  "TRES_ENT_ID_PREG_PADRE": 65,
+  "TRES_ENT_ID_PREG": "70",
+  "TRES_TXT_NOM_PREGUNTA": "¿Comandante de Comando Conjunto? ",
+  "TRES_POSIBLES_RESPUESTAS": "SI/NO",
+  "TRES_RES_HABILITA_RES_HIJO": null
+ },
+ {
+  "TRES_ID_DELITO": 10,
+  "TRES_NOM_DELITO": "ABANDONO DEL SERVICIO DE SOLDADOS VOLUNTARIOS O PROFESIONALES",
+  "TRES_ENT_ID_PREG_PADRE": 65,
+  "TRES_ENT_ID_PREG": "71",
+  "TRES_TXT_NOM_PREGUNTA": "¿Comandante de Fuerza de Tarea?",
+  "TRES_POSIBLES_RESPUESTAS": "SI/NO",
+  "TRES_RES_HABILITA_RES_HIJO": null
+ },
+ {
+  "TRES_ID_DELITO": 10,
+  "TRES_NOM_DELITO": "ABANDONO DEL SERVICIO DE SOLDADOS VOLUNTARIOS O PROFESIONALES",
+  "TRES_ENT_ID_PREG_PADRE": 65,
+  "TRES_ENT_ID_PREG": "72",
+  "TRES_TXT_NOM_PREGUNTA": "¿Director General de la Policía Nacional?",
+  "TRES_POSIBLES_RESPUESTAS": "SI/NO",
+  "TRES_RES_HABILITA_RES_HIJO": null
+ },
+ {
+  "TRES_ID_DELITO": 10,
+  "TRES_NOM_DELITO": "ABANDONO DEL SERVICIO DE SOLDADOS VOLUNTARIOS O PROFESIONALES",
+  "TRES_ENT_ID_PREG_PADRE": 65,
+  "TRES_ENT_ID_PREG": "73",
+  "TRES_TXT_NOM_PREGUNTA": "¿Comandante de Unidad Operativa?",
+  "TRES_POSIBLES_RESPUESTAS": "SI/NO",
+  "TRES_RES_HABILITA_RES_HIJO": null
+ },
+ {
+  "TRES_ID_DELITO": 10,
+  "TRES_NOM_DELITO": "ABANDONO DEL SERVICIO DE SOLDADOS VOLUNTARIOS O PROFESIONALES",
+  "TRES_ENT_ID_PREG_PADRE": 65,
+  "TRES_ENT_ID_PREG": "74",
+  "TRES_TXT_NOM_PREGUNTA": "¿Comandante de Unidad Táctica (Batallón, Grupo de caballería o sus equivalentes     en la Armada y Fuerza Aérea)?",
+  "TRES_POSIBLES_RESPUESTAS": "SI/NO",
+  "TRES_RES_HABILITA_RES_HIJO": null
+ },
+ {
+  "TRES_ID_DELITO": 10,
+  "TRES_NOM_DELITO": "ABANDONO DEL SERVICIO DE SOLDADOS VOLUNTARIOS O PROFESIONALES",
+  "TRES_ENT_ID_PREG_PADRE": 65,
+  "TRES_ENT_ID_PREG": "75",
+  "TRES_TXT_NOM_PREGUNTA": "¿Director de Escuela de Formación?",
+  "TRES_POSIBLES_RESPUESTAS": "SI/NO",
+  "TRES_RES_HABILITA_RES_HIJO": null
+ },
+ {
+  "TRES_ID_DELITO": 10,
+  "TRES_NOM_DELITO": "ABANDONO DEL SERVICIO DE SOLDADOS VOLUNTARIOS O PROFESIONALES",
+  "TRES_ENT_ID_PREG_PADRE": 65,
+  "TRES_ENT_ID_PREG": "76",
+  "TRES_TXT_NOM_PREGUNTA": "¿Comandante de Departamento de Policía?",
+  "TRES_POSIBLES_RESPUESTAS": "SI/NO",
+  "TRES_RES_HABILITA_RES_HIJO": null
+ },
+ {
+  "TRES_ID_DELITO": 10,
+  "TRES_NOM_DELITO": "ABANDONO DEL SERVICIO DE SOLDADOS VOLUNTARIOS O PROFESIONALES",
+  "TRES_ENT_ID_PREG_PADRE": 65,
+  "TRES_ENT_ID_PREG": "77",
+  "TRES_TXT_NOM_PREGUNTA": "¿Comandante de Comando Unificado? ",
+  "TRES_POSIBLES_RESPUESTAS": "SI/NO",
+  "TRES_RES_HABILITA_RES_HIJO": null
+ },
+ {
+  "TRES_ID_DELITO": 10,
+  "TRES_NOM_DELITO": "ABANDONO DEL SERVICIO DE SOLDADOS VOLUNTARIOS O PROFESIONALES",
+  "TRES_ENT_ID_PREG_PADRE": 65,
+  "TRES_ENT_ID_PREG": "78",
+  "TRES_TXT_NOM_PREGUNTA": "¿Comandante de Comando Específico?",
+  "TRES_POSIBLES_RESPUESTAS": "SI/NO",
+  "TRES_RES_HABILITA_RES_HIJO": null
+ },
+ {
+  "TRES_ID_DELITO": 10,
+  "TRES_NOM_DELITO": "ABANDONO DEL SERVICIO DE SOLDADOS VOLUNTARIOS O PROFESIONALES",
+  "TRES_ENT_ID_PREG_PADRE": 65,
+  "TRES_ENT_ID_PREG": "79",
+  "TRES_TXT_NOM_PREGUNTA": "¿Comandante de Comando Operativo?",
+  "TRES_POSIBLES_RESPUESTAS": "SI/NO",
+  "TRES_RES_HABILITA_RES_HIJO": null
+ },
+ {
+  "TRES_ID_DELITO": 10,
+  "TRES_NOM_DELITO": "ABANDONO DEL SERVICIO DE SOLDADOS VOLUNTARIOS O PROFESIONALES",
+  "TRES_ENT_ID_PREG_PADRE": null,
+  "TRES_ENT_ID_PREG": "80",
+  "TRES_TXT_NOM_PREGUNTA": "¿Ejerció las funciones propias del comando, jefatura o dirección?",
+  "TRES_POSIBLES_RESPUESTAS": "SI/NO",
+  "TRES_RES_HABILITA_RES_HIJO": "SI"
+ },
+ {
+  "TRES_ID_DELITO": 10,
+  "TRES_NOM_DELITO": "ABANDONO DEL SERVICIO DE SOLDADOS VOLUNTARIOS O PROFESIONALES",
+  "TRES_ENT_ID_PREG_PADRE": 80,
+  "TRES_ENT_ID_PREG": "81",
+  "TRES_TXT_NOM_PREGUNTA": "¿Por qué causa no las ejerció?",
+  "TRES_POSIBLES_RESPUESTAS": "TEXTO UNA LÍNEA",
+  "TRES_RES_HABILITA_RES_HIJO": null
+ },
+ {
+  "TRES_ID_DELITO": 10,
+  "TRES_NOM_DELITO": "ABANDONO DEL SERVICIO DE SOLDADOS VOLUNTARIOS O PROFESIONALES",
+  "TRES_ENT_ID_PREG_PADRE": null,
+  "TRES_ENT_ID_PREG": "82",
+  "TRES_TXT_NOM_PREGUNTA": "¿Los hechos sucedieron en tiempo de paz?",
+  "TRES_POSIBLES_RESPUESTAS": "SI/NO",
+  "TRES_RES_HABILITA_RES_HIJO": "SI"
+ },
+ {
+  "TRES_ID_DELITO": 10,
+  "TRES_NOM_DELITO": "ABANDONO DEL SERVICIO DE SOLDADOS VOLUNTARIOS O PROFESIONALES",
+  "TRES_ENT_ID_PREG_PADRE": 82,
+  "TRES_ENT_ID_PREG": "83",
+  "TRES_TXT_NOM_PREGUNTA": "¿A partir de cuándo dejó de ejercer las funciones?",
+  "TRES_POSIBLES_RESPUESTAS": "TEXTO UNA LÍNEA",
+  "TRES_RES_HABILITA_RES_HIJO": null
+ },
+ {
+  "TRES_ID_DELITO": 10,
+  "TRES_NOM_DELITO": "ABANDONO DEL SERVICIO DE SOLDADOS VOLUNTARIOS O PROFESIONALES",
+  "TRES_ENT_ID_PREG_PADRE": 82,
+  "TRES_ENT_ID_PREG": "84",
+  "TRES_TXT_NOM_PREGUNTA": "¿Reasumió el ejercicio de sus funciones?",
+  "TRES_POSIBLES_RESPUESTAS": "SI/NO",
+  "TRES_RES_HABILITA_RES_HIJO": "SI"
+ },
+ {
+  "TRES_ID_DELITO": 10,
+  "TRES_NOM_DELITO": "ABANDONO DEL SERVICIO DE SOLDADOS VOLUNTARIOS O PROFESIONALES",
+  "TRES_ENT_ID_PREG_PADRE": 84,
+  "TRES_ENT_ID_PREG": "85",
+  "TRES_TXT_NOM_PREGUNTA": "¿Cuándo?",
+  "TRES_POSIBLES_RESPUESTAS": "TEXTO UNA LÍNEA",
+  "TRES_RES_HABILITA_RES_HIJO": null
+ },
+ {
+  "TRES_ID_DELITO": 10,
+  "TRES_NOM_DELITO": "ABANDONO DEL SERVICIO DE SOLDADOS VOLUNTARIOS O PROFESIONALES",
+  "TRES_ENT_ID_PREG_PADRE": 82,
+  "TRES_ENT_ID_PREG": "86",
+  "TRES_TXT_NOM_PREGUNTA": "¿El abandono de las funciones fue por más de 24 horas consecutivas? ",
+  "TRES_POSIBLES_RESPUESTAS": "SI/NO",
+  "TRES_RES_HABILITA_RES_HIJO": null
+ },
+ {
+  "TRES_ID_DELITO": 16,
+  "TRES_NOM_DELITO": "Deserción",
+  "TRES_ENT_ID_PREG_PADRE": null,
+  "TRES_ENT_ID_PREG": "89",
+  "TRES_TXT_NOM_PREGUNTA": "¿Regresó?",
+  "TRES_POSIBLES_RESPUESTAS": "SI/NO",
+  "TRES_RES_HABILITA_RES_HIJO": "SI"
+ },
+ {
+  "TRES_ID_DELITO": 16,
+  "TRES_NOM_DELITO": "Deserción",
+  "TRES_ENT_ID_PREG_PADRE": 89,
+  "TRES_ENT_ID_PREG": "90",
+  "TRES_TXT_NOM_PREGUNTA": "¿Cuándo regresó?",
+  "TRES_POSIBLES_RESPUESTAS": "TEXTO UNA LÍNEA",
+  "TRES_RES_HABILITA_RES_HIJO": null
+ },
+ {
+  "TRES_ID_DELITO": 16,
+  "TRES_NOM_DELITO": "Deserción",
+  "TRES_ENT_ID_PREG_PADRE": null,
+  "TRES_ENT_ID_PREG": "91",
+  "TRES_TXT_NOM_PREGUNTA": "¿Por qué se ausentó?",
+  "TRES_POSIBLES_RESPUESTAS": "AREA DE TEXTO",
+  "TRES_RES_HABILITA_RES_HIJO": null
+ },
+ {
+  "TRES_ID_DELITO": 16,
+  "TRES_NOM_DELITO": "Deserción",
+  "TRES_ENT_ID_PREG_PADRE": null,
+  "TRES_ENT_ID_PREG": "92",
+  "TRES_TXT_NOM_PREGUNTA": "¿La conducta la cometió en tiempo de guerra?",
+  "TRES_POSIBLES_RESPUESTAS": "SI/NO",
+  "TRES_RES_HABILITA_RES_HIJO": null
+ },
+ {
+  "TRES_ID_DELITO": 16,
+  "TRES_NOM_DELITO": "Deserción",
+  "TRES_ENT_ID_PREG_PADRE": null,
+  "TRES_ENT_ID_PREG": "93",
+  "TRES_TXT_NOM_PREGUNTA": "¿La conducta la cometió en conmoción interior?",
+  "TRES_POSIBLES_RESPUESTAS": "SI/NO",
+  "TRES_RES_HABILITA_RES_HIJO": null
+ },
+ {
+  "TRES_ID_DELITO": 16,
+  "TRES_NOM_DELITO": "Deserción",
+  "TRES_ENT_ID_PREG_PADRE": null,
+  "TRES_ENT_ID_PREG": "94",
+  "TRES_TXT_NOM_PREGUNTA": "¿La conducta la cometió ante la proximidad de rebeldes?",
+  "TRES_POSIBLES_RESPUESTAS": "SI/NO",
+  "TRES_RES_HABILITA_RES_HIJO": null
+ },
+ {
+  "TRES_ID_DELITO": 16,
+  "TRES_NOM_DELITO": "Deserción",
+  "TRES_ENT_ID_PREG_PADRE": null,
+  "TRES_ENT_ID_PREG": "95",
+  "TRES_TXT_NOM_PREGUNTA": "¿La conducta la cometió ante la proximidad de sediciosos?",
+  "TRES_POSIBLES_RESPUESTAS": "SI/NO",
+  "TRES_RES_HABILITA_RES_HIJO": null
+ },
+ {
+  "TRES_ID_DELITO": 16,
+  "TRES_NOM_DELITO": "Deserción",
+  "TRES_ENT_ID_PREG_PADRE": null,
+  "TRES_ENT_ID_PREG": "96",
+  "TRES_TXT_NOM_PREGUNTA": "¿La conducta se cometió en tiempo de guerra exterior?",
+  "TRES_POSIBLES_RESPUESTAS": "SI/NO",
+  "TRES_RES_HABILITA_RES_HIJO": null
+ },
+ {
+  "TRES_ID_DELITO": 20,
+  "TRES_NOM_DELITO": "Delito del centinela",
+  "TRES_ENT_ID_PREG_PADRE": null,
+  "TRES_ENT_ID_PREG": "97",
+  "TRES_TXT_NOM_PREGUNTA": "¿El denunciado estaba nombrado de centinela?",
+  "TRES_POSIBLES_RESPUESTAS": "SI/NO",
+  "TRES_RES_HABILITA_RES_HIJO": "SI"
+ },
+ {
+  "TRES_ID_DELITO": 20,
+  "TRES_NOM_DELITO": "Delito del centinela",
+  "TRES_ENT_ID_PREG_PADRE": 97,
+  "TRES_ENT_ID_PREG": "98",
+  "TRES_TXT_NOM_PREGUNTA": "¿Quién lo designó?",
+  "TRES_POSIBLES_RESPUESTAS": "TEXTO UNA LÍNEA",
+  "TRES_RES_HABILITA_RES_HIJO": null
+ },
+ {
+  "TRES_ID_DELITO": 20,
+  "TRES_NOM_DELITO": "Delito del centinela",
+  "TRES_ENT_ID_PREG_PADRE": 97,
+  "TRES_ENT_ID_PREG": "99",
+  "TRES_TXT_NOM_PREGUNTA": "¿Mediante qué acto lo designó?",
+  "TRES_POSIBLES_RESPUESTAS": "TEXTO UNA LÍNEA",
+  "TRES_RES_HABILITA_RES_HIJO": null
+ },
+ {
+  "TRES_ID_DELITO": 20,
+  "TRES_NOM_DELITO": "Delito del centinela",
+  "TRES_ENT_ID_PREG_PADRE": null,
+  "TRES_ENT_ID_PREG": "100",
+  "TRES_TXT_NOM_PREGUNTA": "¿El denunciado hacía parte de la guardia de la unidad?",
+  "TRES_POSIBLES_RESPUESTAS": "SI/NO",
+  "TRES_RES_HABILITA_RES_HIJO": "SI"
+ },
+ {
+  "TRES_ID_DELITO": 20,
+  "TRES_NOM_DELITO": "Delito del centinela",
+  "TRES_ENT_ID_PREG_PADRE": 100,
+  "TRES_ENT_ID_PREG": "101",
+  "TRES_TXT_NOM_PREGUNTA": "¿La guardia era relevada en turnos de 24 horas?",
+  "TRES_POSIBLES_RESPUESTAS": "SI/NO",
+  "TRES_RES_HABILITA_RES_HIJO": null
+ },
+ {
+  "TRES_ID_DELITO": 20,
+  "TRES_NOM_DELITO": "Delito del centinela",
+  "TRES_ENT_ID_PREG_PADRE": null,
+  "TRES_ENT_ID_PREG": "102",
+  "TRES_TXT_NOM_PREGUNTA": "¿En qué puesto prestaba?",
+  "TRES_POSIBLES_RESPUESTAS": "TEXTO UNA LÍNEA",
+  "TRES_RES_HABILITA_RES_HIJO": null
+ },
+ {
+  "TRES_ID_DELITO": 20,
+  "TRES_NOM_DELITO": "Delito del centinela",
+  "TRES_ENT_ID_PREG_PADRE": null,
+  "TRES_ENT_ID_PREG": "103",
+  "TRES_TXT_NOM_PREGUNTA": "¿Cuáles eran las funciones de seguridad de dicho puesto?",
+  "TRES_POSIBLES_RESPUESTAS": "AREA DE TEXTO",
+  "TRES_RES_HABILITA_RES_HIJO": null
+ },
+ {
+  "TRES_ID_DELITO": 20,
+  "TRES_NOM_DELITO": "Delito del centinela",
+  "TRES_ENT_ID_PREG_PADRE": null,
+  "TRES_ENT_ID_PREG": "104",
+  "TRES_TXT_NOM_PREGUNTA": "¿El denunciado prestaba con armamento?",
+  "TRES_POSIBLES_RESPUESTAS": "SI/NO",
+  "TRES_RES_HABILITA_RES_HIJO": null
+ },
+ {
+  "TRES_ID_DELITO": 20,
+  "TRES_NOM_DELITO": "Delito del centinela",
+  "TRES_ENT_ID_PREG_PADRE": null,
+  "TRES_ENT_ID_PREG": "105",
+  "TRES_TXT_NOM_PREGUNTA": "¿Era un puesto simple o doble?",
+  "TRES_POSIBLES_RESPUESTAS": "TEXTO UNA LÍNEA",
+  "TRES_RES_HABILITA_RES_HIJO": null
+ },
+ {
+  "TRES_ID_DELITO": 20,
+  "TRES_NOM_DELITO": "Delito del centinela",
+  "TRES_ENT_ID_PREG_PADRE": null,
+  "TRES_ENT_ID_PREG": "106",
+  "TRES_TXT_NOM_PREGUNTA": "¿En dónde quedaba dicho puesto?",
+  "TRES_POSIBLES_RESPUESTAS": "TEXTO UNA LÍNEA",
+  "TRES_RES_HABILITA_RES_HIJO": null
+ },
+ {
+  "TRES_ID_DELITO": 20,
+  "TRES_NOM_DELITO": "Delito del centinela",
+  "TRES_ENT_ID_PREG_PADRE": null,
+  "TRES_ENT_ID_PREG": "107",
+  "TRES_TXT_NOM_PREGUNTA": "¿A qué hora recibió el puesto?",
+  "TRES_POSIBLES_RESPUESTAS": "TEXTO UNA LÍNEA",
+  "TRES_RES_HABILITA_RES_HIJO": null
+ },
+ {
+  "TRES_ID_DELITO": 20,
+  "TRES_NOM_DELITO": "Delito del centinela",
+  "TRES_ENT_ID_PREG_PADRE": null,
+  "TRES_ENT_ID_PREG": "108",
+  "TRES_TXT_NOM_PREGUNTA": "¿A quién le recibió el puesto?",
+  "TRES_POSIBLES_RESPUESTAS": "TEXTO UNA LÍNEA",
+  "TRES_RES_HABILITA_RES_HIJO": null
+ },
+ {
+  "TRES_ID_DELITO": 20,
+  "TRES_NOM_DELITO": "Delito del centinela",
+  "TRES_ENT_ID_PREG_PADRE": null,
+  "TRES_ENT_ID_PREG": "109",
+  "TRES_TXT_NOM_PREGUNTA": "¿A qué hora debía entregarlo?",
+  "TRES_POSIBLES_RESPUESTAS": "TEXTO UNA LÍNEA",
+  "TRES_RES_HABILITA_RES_HIJO": null
+ },
+ {
+  "TRES_ID_DELITO": 20,
+  "TRES_NOM_DELITO": "Delito del centinela",
+  "TRES_ENT_ID_PREG_PADRE": null,
+  "TRES_ENT_ID_PREG": "110",
+  "TRES_TXT_NOM_PREGUNTA": "¿A quién debía entregarle el puesto?",
+  "TRES_POSIBLES_RESPUESTAS": "TEXTO UNA LÍNEA",
+  "TRES_RES_HABILITA_RES_HIJO": null
+ },
+ {
+  "TRES_ID_DELITO": 20,
+  "TRES_NOM_DELITO": "Delito del centinela",
+  "TRES_ENT_ID_PREG_PADRE": null,
+  "TRES_ENT_ID_PREG": "111",
+  "TRES_TXT_NOM_PREGUNTA": "Describa detalladamente el puesto",
+  "TRES_POSIBLES_RESPUESTAS": "AREA DE TEXTO",
+  "TRES_RES_HABILITA_RES_HIJO": null
+ },
+ {
+  "TRES_ID_DELITO": 20,
+  "TRES_NOM_DELITO": "Delito del centinela",
+  "TRES_ENT_ID_PREG_PADRE": null,
+  "TRES_ENT_ID_PREG": "112",
+  "TRES_TXT_NOM_PREGUNTA": "¿Quién realizó el relevó de los turnos de centinela?",
+  "TRES_POSIBLES_RESPUESTAS": "TEXTO UNA LÍNEA",
+  "TRES_RES_HABILITA_RES_HIJO": null
+ },
+ {
+  "TRES_ID_DELITO": 20,
+  "TRES_NOM_DELITO": "Delito del centinela",
+  "TRES_ENT_ID_PREG_PADRE": null,
+  "TRES_ENT_ID_PREG": "113",
+  "TRES_TXT_NOM_PREGUNTA": "¿Cómo se hizo el relevo de los turnos de centinela?",
+  "TRES_POSIBLES_RESPUESTAS": "TEXTO UNA LÍNEA",
+  "TRES_RES_HABILITA_RES_HIJO": null
+ },
+ {
+  "TRES_ID_DELITO": 20,
+  "TRES_NOM_DELITO": "Delito del centinela",
+  "TRES_ENT_ID_PREG_PADRE": null,
+  "TRES_ENT_ID_PREG": "114",
+  "TRES_TXT_NOM_PREGUNTA": "¿El denunciado manifestó algo que le impidiera prestar el turno antes de recibirlo?",
+  "TRES_POSIBLES_RESPUESTAS": "SI/NO",
+  "TRES_RES_HABILITA_RES_HIJO": "SI"
+ },
+ {
+  "TRES_ID_DELITO": 20,
+  "TRES_NOM_DELITO": "Delito del centinela",
+  "TRES_ENT_ID_PREG_PADRE": 114,
+  "TRES_ENT_ID_PREG": "115",
+  "TRES_TXT_NOM_PREGUNTA": "¿Qué manifestó?",
+  "TRES_POSIBLES_RESPUESTAS": "AREA DE TEXTO",
+  "TRES_RES_HABILITA_RES_HIJO": "NO"
+ },
+ {
+  "TRES_ID_DELITO": 20,
+  "TRES_NOM_DELITO": "Delito del centinela",
+  "TRES_ENT_ID_PREG_PADRE": null,
+  "TRES_ENT_ID_PREG": "116",
+  "TRES_TXT_NOM_PREGUNTA": "¿El denunciado manifestó algo que le estuviera impidiendo prestar el turno, mientras lo estuvo prestando?",
+  "TRES_POSIBLES_RESPUESTAS": "SI/NO",
+  "TRES_RES_HABILITA_RES_HIJO": "SI"
+ },
+ {
+  "TRES_ID_DELITO": 20,
+  "TRES_NOM_DELITO": "Delito del centinela",
+  "TRES_ENT_ID_PREG_PADRE": 116,
+  "TRES_ENT_ID_PREG": "117",
+  "TRES_TXT_NOM_PREGUNTA": "¿Qué manifestó?",
+  "TRES_POSIBLES_RESPUESTAS": "AREA DE TEXTO",
+  "TRES_RES_HABILITA_RES_HIJO": null
+ },
+ {
+  "TRES_ID_DELITO": 20,
+  "TRES_NOM_DELITO": "Delito del centinela",
+  "TRES_ENT_ID_PREG_PADRE": null,
+  "TRES_ENT_ID_PREG": "118",
+  "TRES_TXT_NOM_PREGUNTA": "En qué conducta incurrió",
+  "TRES_POSIBLES_RESPUESTAS": "SI/NO",
+  "TRES_RES_HABILITA_RES_HIJO": null
+ },
+ {
+  "TRES_ID_DELITO": 20,
+  "TRES_NOM_DELITO": "Delito del centinela",
+  "TRES_ENT_ID_PREG_PADRE": 118,
+  "TRES_ENT_ID_PREG": "119",
+  "TRES_TXT_NOM_PREGUNTA": "¿Se durmió?",
+  "TRES_POSIBLES_RESPUESTAS": "SI/NO",
+  "TRES_RES_HABILITA_RES_HIJO": null
+ },
+ {
+  "TRES_ID_DELITO": 20,
+  "TRES_NOM_DELITO": "Delito del centinela",
+  "TRES_ENT_ID_PREG_PADRE": 118,
+  "TRES_ENT_ID_PREG": "120",
+  "TRES_TXT_NOM_PREGUNTA": "¿Se embriagó?",
+  "TRES_POSIBLES_RESPUESTAS": "SI/NO",
+  "TRES_RES_HABILITA_RES_HIJO": null
+ },
+ {
+  "TRES_ID_DELITO": 20,
+  "TRES_NOM_DELITO": "Delito del centinela",
+  "TRES_ENT_ID_PREG_PADRE": 118,
+  "TRES_ENT_ID_PREG": "121",
+  "TRES_TXT_NOM_PREGUNTA": "¿Se puso bajo el efecto de sustancias estupefacientes o psicotrópicas?",
+  "TRES_POSIBLES_RESPUESTAS": "SI/NO",
+  "TRES_RES_HABILITA_RES_HIJO": null
+ },
+ {
+  "TRES_ID_DELITO": 20,
+  "TRES_NOM_DELITO": "Delito del centinela",
+  "TRES_ENT_ID_PREG_PADRE": 118,
+  "TRES_ENT_ID_PREG": "122",
+  "TRES_TXT_NOM_PREGUNTA": "¿Faltó a alguna consigna especial?",
+  "TRES_POSIBLES_RESPUESTAS": "SI/NO",
+  "TRES_RES_HABILITA_RES_HIJO": "SI"
+ },
+ {
+  "TRES_ID_DELITO": 20,
+  "TRES_NOM_DELITO": "Delito del centinela",
+  "TRES_ENT_ID_PREG_PADRE": 122,
+  "TRES_ENT_ID_PREG": "123",
+  "TRES_TXT_NOM_PREGUNTA": "¿A cuál consigna?",
+  "TRES_POSIBLES_RESPUESTAS": "TEXTO UNA LÍNEA",
+  "TRES_RES_HABILITA_RES_HIJO": null
+ },
+ {
+  "TRES_ID_DELITO": 20,
+  "TRES_NOM_DELITO": "Delito del centinela",
+  "TRES_ENT_ID_PREG_PADRE": 122,
+  "TRES_ENT_ID_PREG": "124",
+  "TRES_TXT_NOM_PREGUNTA": "¿Cuándo se la informaron?",
+  "TRES_POSIBLES_RESPUESTAS": "TEXTO UNA LÍNEA",
+  "TRES_RES_HABILITA_RES_HIJO": null
+ },
+ {
+  "TRES_ID_DELITO": 20,
+  "TRES_NOM_DELITO": "Delito del centinela",
+  "TRES_ENT_ID_PREG_PADRE": 122,
+  "TRES_ENT_ID_PREG": "125",
+  "TRES_TXT_NOM_PREGUNTA": "¿Quién se le informó?",
+  "TRES_POSIBLES_RESPUESTAS": "TEXTO UNA LÍNEA",
+  "TRES_RES_HABILITA_RES_HIJO": null
+ },
+ {
+  "TRES_ID_DELITO": 20,
+  "TRES_NOM_DELITO": "Delito del centinela",
+  "TRES_ENT_ID_PREG_PADRE": 122,
+  "TRES_ENT_ID_PREG": "126",
+  "TRES_TXT_NOM_PREGUNTA": "¿Cómo se le informó?",
+  "TRES_POSIBLES_RESPUESTAS": "TEXTO UNA LÍNEA",
+  "TRES_RES_HABILITA_RES_HIJO": null
+ },
+ {
+  "TRES_ID_DELITO": 20,
+  "TRES_NOM_DELITO": "Delito del centinela",
+  "TRES_ENT_ID_PREG_PADRE": null,
+  "TRES_ENT_ID_PREG": "127",
+  "TRES_TXT_NOM_PREGUNTA": "¿Se separó de su puesto?",
+  "TRES_POSIBLES_RESPUESTAS": "SI/NO",
+  "TRES_RES_HABILITA_RES_HIJO": "SI"
+ },
+ {
+  "TRES_ID_DELITO": 20,
+  "TRES_NOM_DELITO": "Delito del centinela",
+  "TRES_ENT_ID_PREG_PADRE": "127",
+  "TRES_ENT_ID_PREG": "128",
+  "TRES_TXT_NOM_PREGUNTA": "¿A qué distancia se separó?",
+  "TRES_POSIBLES_RESPUESTAS": "TEXTO UNA LÍNEA",
+  "TRES_RES_HABILITA_RES_HIJO": null
+ },
+ {
+  "TRES_ID_DELITO": 20,
+  "TRES_NOM_DELITO": "Delito del centinela",
+  "TRES_ENT_ID_PREG_PADRE": "127",
+  "TRES_ENT_ID_PREG": "129",
+  "TRES_TXT_NOM_PREGUNTA": "¿A qué hora se separó?",
+  "TRES_POSIBLES_RESPUESTAS": "TEXTO UNA LÍNEA",
+  "TRES_RES_HABILITA_RES_HIJO": null
+ },
+ {
+  "TRES_ID_DELITO": 20,
+  "TRES_NOM_DELITO": "Delito del centinela",
+  "TRES_ENT_ID_PREG_PADRE": "127",
+  "TRES_ENT_ID_PREG": "130",
+  "TRES_TXT_NOM_PREGUNTA": "¿Cuánto tiempo duró separado del puesto?",
+  "TRES_POSIBLES_RESPUESTAS": "TEXTO UNA LÍNEA",
+  "TRES_RES_HABILITA_RES_HIJO": null
+ },
+ {
+  "TRES_ID_DELITO": 20,
+  "TRES_NOM_DELITO": "Delito del centinela",
+  "TRES_ENT_ID_PREG_PADRE": "127",
+  "TRES_ENT_ID_PREG": "131",
+  "TRES_TXT_NOM_PREGUNTA": "¿Retornó al puesto?",
+  "TRES_POSIBLES_RESPUESTAS": "SI/NO",
+  "TRES_RES_HABILITA_RES_HIJO": "SI"
+ },
+ {
+  "TRES_ID_DELITO": 20,
+  "TRES_NOM_DELITO": "Delito del centinela",
+  "TRES_ENT_ID_PREG_PADRE": "131",
+  "TRES_ENT_ID_PREG": "132",
+  "TRES_TXT_NOM_PREGUNTA": "¿A qué hora retornó?",
+  "TRES_POSIBLES_RESPUESTAS": "TEXTO UNA LÍNEA",
+  "TRES_RES_HABILITA_RES_HIJO": null
+ },
+ {
+  "TRES_ID_DELITO": 20,
+  "TRES_NOM_DELITO": "Delito del centinela",
+  "TRES_ENT_ID_PREG_PADRE": "127",
+  "TRES_ENT_ID_PREG": "133",
+  "TRES_TXT_NOM_PREGUNTA": "¿Por qué se separó del puesto?",
+  "TRES_POSIBLES_RESPUESTAS": "TEXTO UNA LÍNEA",
+  "TRES_RES_HABILITA_RES_HIJO": null
+ },
+ {
+  "TRES_ID_DELITO": 20,
+  "TRES_NOM_DELITO": "Delito del centinela",
+  "TRES_ENT_ID_PREG_PADRE": null,
+  "TRES_ENT_ID_PREG": "134",
+  "TRES_TXT_NOM_PREGUNTA": "¿Se dejó relevar por quien no estaba autorizado?",
+  "TRES_POSIBLES_RESPUESTAS": "SI/NO",
+  "TRES_RES_HABILITA_RES_HIJO": "SI"
+ },
+ {
+  "TRES_ID_DELITO": 20,
+  "TRES_NOM_DELITO": "Delito del centinela",
+  "TRES_ENT_ID_PREG_PADRE": "134",
+  "TRES_ENT_ID_PREG": "135",
+  "TRES_TXT_NOM_PREGUNTA": "¿Quién lo relevó?",
+  "TRES_POSIBLES_RESPUESTAS": "TEXTO UNA LÍNEA",
+  "TRES_RES_HABILITA_RES_HIJO": null
+ },
+ {
+  "TRES_ID_DELITO": 20,
+  "TRES_NOM_DELITO": "Delito del centinela",
+  "TRES_ENT_ID_PREG_PADRE": "134",
+  "TRES_ENT_ID_PREG": "136",
+  "TRES_TXT_NOM_PREGUNTA": "¿Por qué lo relevó?",
+  "TRES_POSIBLES_RESPUESTAS": "TEXTO UNA LÍNEA",
+  "TRES_RES_HABILITA_RES_HIJO": null
+ },
+ {
+  "TRES_ID_DELITO": 20,
+  "TRES_NOM_DELITO": "Delito del centinela",
+  "TRES_ENT_ID_PREG_PADRE": "134",
+  "TRES_ENT_ID_PREG": "137",
+  "TRES_TXT_NOM_PREGUNTA": "¿Por qué se dejó relevar?",
+  "TRES_POSIBLES_RESPUESTAS": "AREA DE TEXTO",
+  "TRES_RES_HABILITA_RES_HIJO": null
+ },
+ {
+  "TRES_ID_DELITO": 20,
+  "TRES_NOM_DELITO": "Delito del centinela",
+  "TRES_ENT_ID_PREG_PADRE": null,
+  "TRES_ENT_ID_PREG": "138",
+  "TRES_TXT_NOM_PREGUNTA": "¿Los hechos sucedieron en tiempo de guerra?",
+  "TRES_POSIBLES_RESPUESTAS": "SI/NO",
+  "TRES_RES_HABILITA_RES_HIJO": null
+ },
+ {
+  "TRES_ID_DELITO": 20,
+  "TRES_NOM_DELITO": "Delito del centinela",
+  "TRES_ENT_ID_PREG_PADRE": null,
+  "TRES_ENT_ID_PREG": "139",
+  "TRES_TXT_NOM_PREGUNTA": "¿Los hechos sucedieron en tiempo de conmoción interior?",
+  "TRES_POSIBLES_RESPUESTAS": "SI/NO",
+  "TRES_RES_HABILITA_RES_HIJO": null
+ }
+]

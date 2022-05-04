@@ -19,7 +19,7 @@ function submitHandler(form){
             const parentIdAttr = formGroup.getAttribute('data-parent_id');
             const parentId = function(){
                 if(parentIdAttr && parentIdAttr != 'undefined' && parentIdAttr != 'null'){
-                    return 'ok';
+                    return parentIdAttr;
                 } else {
                     return '';
                 }
@@ -33,16 +33,25 @@ function submitHandler(form){
                     return '';
                 }
             }
-    
+            
+            const answerTypeAttr = formGroup.getAttribute('data-answer_type');
+            const answerType = function(){
+                if(answerTypeAttr && answerTypeAttr != 'undefined' && answerTypeAttr != 'null'){
+                    return answerTypeAttr;
+                } else {
+                    return '';
+                }
+            }
+
             const payloadElement = {
-                "idDelito": formGroup.getAttribute('data-chrime_id'),
-                "nombreDelito": formGroup.getAttribute('data-chrime_name'),
-                "ENT_ID_PREGUNTA_ABC_3": formGroup.id,
-                "idPreguntaPadre": parentId(),
+                "TRES_ID_DELITO": formGroup.getAttribute('data-chrime_id'),
+                "TRES_NOM_DELITO": formGroup.getAttribute('data-chrime_name'),
+                "TRES_ENT_ID_PREG": formGroup.id,
+                "TRES_ENT_ID_PREG_PADRE": parentId(),
                 "TXT_NOM_PREGUNTA_3": formGroup.getAttribute('data-question'),
-                "tipoRespuesta": "ok",
-                "posiblesRespuestas": formGroup.getAttribute('data-question_type'),
-                "respuestaQueHabilitaRespuestaHijo": enableChild(),
+                "TRES_TIPO_RESPUESTAS": answerType(),
+                "TRES_POSIBLES_RESPUESTAS": formGroup.getAttribute('data-question_type'),
+                "TRES_RES_HABILITA_RES_HIJO": enableChild(),
                 "TXT_RESPUESTA_ABC_3": fieldValue
             }
     

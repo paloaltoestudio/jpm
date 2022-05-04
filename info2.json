@@ -5,7 +5,7 @@
   "idPregunta": "1",
   "nombrePreguntas": "¿El denunciado incurrió en actitudes violentas? ",
   "tipoDePregunta": "SI/NO",
-  "respuestaQueHabilitaRespuestaHijo": "NO"
+  "respuestaQueHabilitaRespuestaHijo": "SI"
  },
  {
   "idDelito": 1,

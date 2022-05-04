@@ -47,10 +47,10 @@ fetchChcrime().then(chrimes => {
             
             chrimeTitle = getTitle();
             
-            if(chrime.nombreDelito == chrimeTitle && chrime.idPreguntaPadre){
-                const parentElem = document.getElementById(`${chrime.idPreguntaPadre}`);
+            if(chrime.TRES_NOM_DELITO == chrimeTitle && chrime.TRES_ENT_ID_PREG_PADRE){
+                const parentElem = document.getElementById(`${chrime.TRES_ENT_ID_PREG_PADRE}`);
                 parentElem.append(chrimeElement);
-            } else if(chrime.nombreDelito == chrimeTitle){
+            } else if(chrime.TRES_NOM_DELITO == chrimeTitle){
                 chrimeDiv.appendChild(chrimeElement);
             } 
         });
