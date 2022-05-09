@@ -1,8 +1,8 @@
 // Define and buuld fields
 function elemType(chrime){
-    if(chrime.TRES_POSIBLES_RESPUESTAS == 'TEXTO UNA LÍNEA'){
+    if(chrime.TRES_TIPO_RESPUESTAS == 'TEXTO UNA LÍNEA'){
         const chrimeElement = document.createElement('div');
-        chrimeElement.id = `${chrime.TRES_ENT_ID_PREG}`;
+        chrimeElement.id = `${chrime.TRES_ENT_ID_PREGUNTA_ABC}`;
         chrimeElement.classList.add('wrapper');
         chrimeElement.setAttribute('data-chrime_id', `${chrime.TRES_ID_DELITO}`);
         chrimeElement.setAttribute('data-chrime_name', `${chrime.TRES_NOM_DELITO}`);
@@ -16,14 +16,14 @@ function elemType(chrime){
         const chrimeField = document.createElement('input');
         chrimeField.type = 'text';
         chrimeField.classList.add('field');
-        chrimeField.name = `answer_${chrime.TRES_ENT_ID_PREG}`;
+        chrimeField.name = `answer_${chrime.TRES_ENT_ID_PREGUNTA_ABC}`;
         chrimeElement.append(chrimeLabel);
         chrimeElement.append(chrimeField);
         return chrimeElement;
     } 
-    else if(chrime.TRES_POSIBLES_RESPUESTAS == 'AREA DE TEXTO'){
+    else if(chrime.TRES_TIPO_RESPUESTAS == 'AREA DE TEXTO'){
         const chrimeElement = document.createElement('div');
-        chrimeElement.id = `${chrime.TRES_ENT_ID_PREG}`;
+        chrimeElement.id = `${chrime.TRES_ENT_ID_PREGUNTA_ABC}`;
         chrimeElement.classList.add('wrapper');
         chrimeElement.setAttribute('data-chrime_id', `${chrime.TRES_ID_DELITO}`);
         chrimeElement.setAttribute('data-chrime_name', `${chrime.TRES_NOM_DELITO}`);
@@ -35,15 +35,15 @@ function elemType(chrime){
         const chrimeLabel = document.createElement('label');
         chrimeLabel.innerText = `${chrime.TRES_TXT_NOM_PREGUNTA}`;
         const chrimeField = document.createElement('textarea');
-        chrimeField.name = `answer_${chrime.TRES_ENT_ID_PREG}`;
+        chrimeField.name = `answer_${chrime.TRES_ENT_ID_PREGUNTA_ABC}`;
         chrimeField.classList.add('field');
         chrimeElement.append(chrimeLabel);
         chrimeElement.append(chrimeField);
         return chrimeElement;
     } 
-    else if(chrime.TRES_POSIBLES_RESPUESTAS == 'SI/NO') {
+    else if(chrime.TRES_TIPO_RESPUESTAS == 'SI/NO') {
         const chrimeElement = document.createElement('div');
-        chrimeElement.id = `${chrime.TRES_ENT_ID_PREG}`;
+        chrimeElement.id = `${chrime.TRES_ENT_ID_PREGUNTA_ABC}`;
         chrimeElement.classList.add('wrapper');
         chrimeElement.setAttribute('data-chrime_id', `${chrime.TRES_ID_DELITO}`);
         chrimeElement.setAttribute('data-chrime_name', `${chrime.TRES_NOM_DELITO}`);
@@ -60,7 +60,7 @@ function elemType(chrime){
         const chrimeField = document.createElement('input');
         chrimeField.type = 'radio';
         chrimeField.value = 'si';
-        chrimeField.name = `answer_${chrime.TRES_ENT_ID_PREG}`;
+        chrimeField.name = `answer_${chrime.TRES_ENT_ID_PREGUNTA_ABC}`;
         chrimeField.classList.add('field');
         
         const chrimeLabel2 = document.createElement('label');
@@ -70,7 +70,7 @@ function elemType(chrime){
         chrimeLabel2.classList.add('radio_label');
         chrimeLabel2.classList.add('field');
         chrimeField2.value = 'no';
-        chrimeField2.name = `answer_${chrime.TRES_ENT_ID_PREG}`;
+        chrimeField2.name = `answer_${chrime.TRES_ENT_ID_PREGUNTA_ABC}`;
         chrimeField2.classList.add('field');
 
         chrimeElement.appendChild(chrimeSpan);
@@ -82,7 +82,7 @@ function elemType(chrime){
     } 
     else {
         const chrimeElement = document.createElement('p');
-        chrimeElement.id = `${chrime.TRES_ENT_ID_PREG}`;
+        chrimeElement.id = `${chrime.TRES_ENT_ID_PREGUNTA_ABC}`;
         
         const note = document.createTextNode(chrime.TRES_TXT_NOM_PREGUNTA); 
         chrimeElement.appendChild(note);

@@ -24,6 +24,7 @@ const chrimeList = [
 fetchChcrime().then(chrimes => {
     
     chrimes.forEach(function(chrime){
+        console.log(chrime)
 
         //Function to build elements
         const chrimeElement = elemType(chrime);
