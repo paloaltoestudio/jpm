@@ -22,46 +22,47 @@ const chrimeList = [
 ];
 
 fetchChcrime().then(chrimes => {
-    
+    chrimes = chrimes.sort((a, b) => (a.TRES_ID_DELITO > b.TRES_ID_DELITO) ? -1 : 1);
+
     chrimes.forEach(function(chrime){
-        console.log(chrime)
 
         //Function to build elements
-        const chrimeElement = elemType(chrime);
-        
-        // Function to add classes to elements
-        addClassElem(chrime, chrimeElement);
 
-        // Print fields on each chrime group
-        chrimeList.map(function(chrimeName){
-            const chrimeDiv = document.getElementById(`${chrimeName}`);
+        if(!chrime.TRES_ENT_ORDEN_PREGUNTA_HIJO){
+            const chrimeElement = elemType(chrime);
 
-            const getTitle = function(){
-                if(chrimeDiv){
-                    let chrimeTitle = chrimeDiv.querySelector('.chrime_title');
-                    chrimeTitle = chrimeTitle.textContent;
-                    return chrimeTitle;
-                } else {
-                    return chrimeTitle = '';
+            // Function to add classes to elements
+            addClassElem(chrime, chrimeElement);
+
+            // Print fields on each chrime group
+            chrimeList.map(function(chrimeName){
+                const chrimeDiv = document.getElementById(`${chrimeName}`);
+    
+                const getTitle = function(){
+                    if(chrimeDiv){
+                        let chrimeTitle = chrimeDiv.querySelector('.chrime_title');
+                        chrimeTitle = chrimeTitle.textContent;
+                        return chrimeTitle;
+                    } else {
+                        return chrimeTitle = '';
+                    }
                 }
-            }
-            
-            chrimeTitle = getTitle();
-            
-            if(chrime.TRES_NOM_DELITO == chrimeTitle && chrime.TRES_ENT_ID_PREG_PADRE){
-                const parentElem = document.getElementById(`${chrime.TRES_ENT_ID_PREG_PADRE}`);
-                parentElem.append(chrimeElement);
-            } else if(chrime.TRES_NOM_DELITO == chrimeTitle){
-                chrimeDiv.appendChild(chrimeElement);
-            } 
-        });
+                
+                chrimeTitle = getTitle();
+                
+                if(chrime.TRES_NOM_DELITO == chrimeTitle && !chrime.TRES_ENT_ID_PREG_PADRE1){
+                    chrimeDiv.appendChild(chrimeElement);
+                } 
+            });
+        }
+
     });
 
     //Fetch triggers
-    const triggers = [...document.querySelectorAll('.trigger')];
+    const triggers = [...document.querySelectorAll('.trigger')];    
     
     // Add click listener to every trigger
-    triggersHandler(triggers);
+    triggersHandler(triggers, chrimes);
     
 }); 
 

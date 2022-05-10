@@ -1,4 +1,4 @@
-// Define and buuld fields
+// Define and build fields
 function elemType(chrime){
     if(chrime.TRES_TIPO_RESPUESTAS == 'TEXTO UNA LÍNEA'){
         const chrimeElement = document.createElement('div');
@@ -93,7 +93,7 @@ function elemType(chrime){
 function addClassElem(chrime, chrimeElement){
     if(chrime.TRES_ENT_ID_PREG_PADRE){
         chrimeElement.classList.add(`parent_id_${chrime.TRES_ENT_ID_PREG_PADRE}`);
-        chrimeElement.classList.add('hide');
+        //chrimeElement.classList.add('hide');
         chrimeElement.classList.add('child');
     } 
     
