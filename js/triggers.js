@@ -47,7 +47,7 @@ function triggersHandler(triggers, chrimes){
 
                 const children = [...e.target.parentNode.querySelectorAll('.child')];
 
-                children.map(child => e.target.parentNode.removeChild(child));
+                children.map(child => child.remove(child));
 
             }
 

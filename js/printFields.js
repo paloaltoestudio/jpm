@@ -28,7 +28,15 @@ fetchChcrime().then(chrimes => {
 
         //Function to build elements
 
-        if(!chrime.TRES_ENT_ORDEN_PREGUNTA_HIJO){
+        const isParentActive = (parentId) => {
+            const parentChrime = chrimes.find(item => item.TRES_ENT_ID_PREGUNTA_ABC == parentId)
+            console.log(parentChrime)
+            if(parentChrime.TRES_TXT_RESPUESTA_ABC == 'si'){
+                return true;
+            }
+        }
+
+        if(!chrime.TRES_ENT_ID_PREG_PADRE || isParentActive(chrime.TRES_ENT_ID_PREG_PADRE)){
             const chrimeElement = elemType(chrime);
 
             // Function to add classes to elements
@@ -50,7 +58,10 @@ fetchChcrime().then(chrimes => {
                 
                 chrimeTitle = getTitle();
                 
-                if(chrime.TRES_NOM_DELITO == chrimeTitle && !chrime.TRES_ENT_ID_PREG_PADRE1){
+                if(chrime.TRES_NOM_DELITO == chrimeTitle && chrime.TRES_ENT_ID_PREG_PADRE){
+                    const parentElem = document.getElementById(`${chrime.TRES_ENT_ID_PREG_PADRE}`);
+                    parentElem.append(chrimeElement);
+                } else if(chrime.TRES_NOM_DELITO == chrimeTitle){
                     chrimeDiv.appendChild(chrimeElement);
                 } 
             });
