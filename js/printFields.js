@@ -75,7 +75,7 @@ fetchChcrime().then(chrimes => {
     
                     chrimeDiv.appendChild(chrimeElement);
 
-                    function getChildren(chrime){
+                    function getChildren(chrime, chrimeElement){
                         if(chrime.TRES_RES_HABILITA_RES_HIJO){
                             let children = chrimes.filter(item => item.TRES_ENT_ID_PREG_PADRE == chrime.TRES_ENT_ID_PREGUNTA_ABC);
                             children = children.sort((a,b) => (a.TRES_ENT_ORDEN_PREGUNTA_HIJO > b.TRES_ENT_ORDEN_PREGUNTA_HIJO) ? 1 : -1);
@@ -93,13 +93,13 @@ fetchChcrime().then(chrimes => {
             
                                 chrimeElement.appendChild(childChrimeElement);
 
-                                getChildren(child);
+                                getChildren(child, childChrimeElement);
     
                             });
                         } 
                     }
 
-                    getChildren(chrime);
+                    getChildren(chrime, chrimeElement);
                 }
 
 
