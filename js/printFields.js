@@ -26,7 +26,18 @@ fetchChcrime().then(chrimes => {
 
     chrimes = chrimes.PreguntasAndRespuestasList;
 
-    console.log(chrimes)
+    var unique = [];
+    var distinct = [];
+    for(var i = 0; i < chrimes.length; i++ ){
+        if(!unique[chrimes[i].TRES_ID_DELITO]){
+            distinct.push(chrimes[i]);
+            unique[chrimes[i].TRES_ID_DELITO] = 1;
+        }
+    }
+
+    console.log(distinct)
+
+   
     
     chrimes.forEach(function(chrime){
 
@@ -63,28 +74,34 @@ fetchChcrime().then(chrimes => {
                     addClassElem(chrime, chrimeElement);
     
                     chrimeDiv.appendChild(chrimeElement);
+
+                    function getChildren(chrime){
+                        if(chrime.TRES_RES_HABILITA_RES_HIJO){
+                            let children = chrimes.filter(item => item.TRES_ENT_ID_PREG_PADRE == chrime.TRES_ENT_ID_PREGUNTA_ABC);
+                            children = children.sort((a,b) => (a.TRES_ENT_ORDEN_PREGUNTA_HIJO > b.TRES_ENT_ORDEN_PREGUNTA_HIJO) ? 1 : -1);
+        
+                            children.map(child => {
+                                //Function to build elements
+                                const childChrimeElement = elemType(child);
+            
+                                // Function to add classes to elements
+                                addClassElem(child, childChrimeElement);
+        
+                                if(chrime.TRES_TXT_RESPUESTA_ABC && chrime.TRES_TXT_RESPUESTA_ABC == 'si'){
+                                    childChrimeElement.classList.remove('hide');
+                                }
+            
+                                chrimeElement.appendChild(childChrimeElement);
+
+                                getChildren(child);
+    
+                            });
+                        } 
+                    }
+
+                    getChildren(chrime);
                 }
 
-                if(chrime.TRES_RES_HABILITA_RES_HIJO){
-                    let children = chrimes.filter(item => item.TRES_ENT_ID_PREG_PADRE == chrime.TRES_ENT_ID_PREGUNTA_ABC);
-                    children = children.sort((a,b) => (a.TRES_ENT_ORDEN_PREGUNTA_HIJO > b.TRES_ENT_ORDEN_PREGUNTA_HIJO) ? 1 : -1);
-
-                    children.map(child => {
-                        //Function to build elements
-                        const chrimeElement = elemType(child);
-    
-                        // Function to add classes to elements
-                        addClassElem(child, chrimeElement);
-
-                        if(chrime.TRES_TXT_RESPUESTA_ABC && chrime.TRES_TXT_RESPUESTA_ABC == 'si'){
-                            chrimeElement.classList.remove('hide');
-                        }
-    
-                        chrimeDiv.appendChild(chrimeElement);
-
-                    });
-                    
-                }
 
             } 
             // else if(chrime.TRES_NOM_DELITO == chrimeTitle && chrime.TRES_RES_HABILITA_RES_HIJO){

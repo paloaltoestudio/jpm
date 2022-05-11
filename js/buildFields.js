@@ -1,18 +1,42 @@
 // Define and buuld fields
+
+function createWrapperDiv(chrime){
+    const chrimeElement = document.createElement('div');
+    chrimeElement.id = `${chrime.TRES_ENT_ID_PREGUNTA_ABC}`;
+    chrimeElement.classList.add('wrapper');
+    chrimeElement.setAttribute('data-chrime_id', `${chrime.TRES_ID_DELITO}`);
+    chrimeElement.setAttribute('data-chrime_name', `${chrime.TRES_NOM_DELITO}`);
+    chrimeElement.setAttribute('data-question', `${chrime.TRES_TXT_NOM_PREGUNTA}`);
+    chrimeElement.setAttribute('data-parent_id', `${chrime.TRES_ENT_ID_PREG_PADRE}`);
+    chrimeElement.setAttribute('data-question_type', `${chrime.TRES_POSIBLES_RESPUESTAS}`);
+    chrimeElement.setAttribute('data-answer_type', `${chrime.TRES_TIPO_RESPUESTAS}`);
+    chrimeElement.setAttribute('data-enable_child', `${chrime.TRES_RES_HABILITA_RES_HIJO}`);
+
+    return chrimeElement;
+}
+
+function createLabel(chrime, type){
+    const chrimeLabel = document.createElement('label');
+    
+    if(type == 'sí' || type == 'no'){
+        chrimeLabel.innerText = type;
+        chrimeLabel.classList.add('radio_label');
+        chrimeLabel.classList.add('field');
+    } else {
+        chrimeLabel.innerText = `${chrime.TRES_TXT_NOM_PREGUNTA}`;
+    }
+
+    return chrimeLabel;
+}
+
 function elemType(chrime){
     if(chrime.TRES_TIPO_RESPUESTAS == 'TEXTO UNA LÍNEA'){
-        const chrimeElement = document.createElement('div');
-        chrimeElement.id = `${chrime.TRES_ENT_ID_PREGUNTA_ABC}`;
-        chrimeElement.classList.add('wrapper');
-        chrimeElement.setAttribute('data-chrime_id', `${chrime.TRES_ID_DELITO}`);
-        chrimeElement.setAttribute('data-chrime_name', `${chrime.TRES_NOM_DELITO}`);
-        chrimeElement.setAttribute('data-question', `${chrime.TRES_TXT_NOM_PREGUNTA}`);
-        chrimeElement.setAttribute('data-parent_id', `${chrime.TRES_ENT_ID_PREG_PADRE}`);
-        chrimeElement.setAttribute('data-question_type', `${chrime.TRES_POSIBLES_RESPUESTAS}`);
-        chrimeElement.setAttribute('data-answer_type', `${chrime.TRES_TIPO_RESPUESTAS}`);
-        chrimeElement.setAttribute('data-enable_child', `${chrime.TRES_RES_HABILITA_RES_HIJO}`);
-        const chrimeLabel = document.createElement('label');
-        chrimeLabel.innerText = `${chrime.TRES_TXT_NOM_PREGUNTA}`;
+        // Print wrapper div
+        const chrimeElement = createWrapperDiv(chrime);
+
+        //Print label
+        const chrimeLabel = createLabel(chrime, 'text');
+        
         const chrimeField = document.createElement('input');
         chrimeField.type = 'text';
         chrimeField.value = chrime.TRES_TXT_RESPUESTA_ABC;
@@ -23,18 +47,11 @@ function elemType(chrime){
         return chrimeElement;
     } 
     else if(chrime.TRES_TIPO_RESPUESTAS == 'AREA DE TEXTO'){
-        const chrimeElement = document.createElement('div');
-        chrimeElement.id = `${chrime.TRES_ENT_ID_PREGUNTA_ABC}`;
-        chrimeElement.classList.add('wrapper');
-        chrimeElement.setAttribute('data-chrime_id', `${chrime.TRES_ID_DELITO}`);
-        chrimeElement.setAttribute('data-chrime_name', `${chrime.TRES_NOM_DELITO}`);
-        chrimeElement.setAttribute('data-question', `${chrime.TRES_TXT_NOM_PREGUNTA}`);
-        chrimeElement.setAttribute('data-parent_id', `${chrime.TRES_ENT_ID_PREG_PADRE}`);
-        chrimeElement.setAttribute('data-question_type', `${chrime.TRES_POSIBLES_RESPUESTAS}`);
-        chrimeElement.setAttribute('data-answer_type', `${chrime.TRES_TIPO_RESPUESTAS}`);
-        chrimeElement.setAttribute('data-enable_child', `${chrime.TRES_RES_HABILITA_RES_HIJO}`);
-        const chrimeLabel = document.createElement('label');
-        chrimeLabel.innerText = `${chrime.TRES_TXT_NOM_PREGUNTA}`;
+        const chrimeElement = createWrapperDiv(chrime);
+
+        //Print label
+        const chrimeLabel = createLabel(chrime, 'text');
+
         const chrimeField = document.createElement('textarea');
         chrimeField.name = `answer_${chrime.TRES_ENT_ID_PREGUNTA_ABC}`;
         chrimeField.classList.add('field');
@@ -44,21 +61,15 @@ function elemType(chrime){
         return chrimeElement;
     } 
     else if(chrime.TRES_TIPO_RESPUESTAS == 'SI/NO') {
-        const chrimeElement = document.createElement('div');
-        chrimeElement.id = `${chrime.TRES_ENT_ID_PREGUNTA_ABC}`;
-        chrimeElement.classList.add('wrapper');
-        chrimeElement.setAttribute('data-chrime_id', `${chrime.TRES_ID_DELITO}`);
-        chrimeElement.setAttribute('data-chrime_name', `${chrime.TRES_NOM_DELITO}`);
-        chrimeElement.setAttribute('data-question', `${chrime.TRES_TXT_NOM_PREGUNTA}`);
-        chrimeElement.setAttribute('data-parent_id', `${chrime.TRES_ENT_ID_PREG_PADRE}`);
-        chrimeElement.setAttribute('data-question_type', `${chrime.TRES_POSIBLES_RESPUESTAS}`);
-        chrimeElement.setAttribute('data-answer_type', `${chrime.TRES_TIPO_RESPUESTAS}`);
-        chrimeElement.setAttribute('data-enable_child', `${chrime.TRES_RES_HABILITA_RES_HIJO}`);
+        const chrimeElement = createWrapperDiv(chrime);
+
         const chrimeSpan = document.createElement('span');
         chrimeSpan.innerText = `${chrime.TRES_TXT_NOM_PREGUNTA}`;
-        const chrimeLabel = document.createElement('label');
-        chrimeLabel.innerText = `Sí`;
-        chrimeLabel.classList.add('radio_label');
+
+        //Print label
+        const chrimeLabel = createLabel(chrime, 'sí');
+
+        
         const chrimeField = document.createElement('input');
         chrimeField.type = 'radio';
         chrimeField.value = 'si';
@@ -68,12 +79,12 @@ function elemType(chrime){
         chrimeField.name = `answer_${chrime.TRES_ENT_ID_PREGUNTA_ABC}`;
         chrimeField.classList.add('field');
         
-        const chrimeLabel2 = document.createElement('label');
-        chrimeLabel2.innerText = `No`;
+        //Print label
+        const chrimeLabel2 = createLabel(chrime, 'no');
+
         const chrimeField2 = document.createElement('input');
         chrimeField2.type = 'radio';
-        chrimeLabel2.classList.add('radio_label');
-        chrimeLabel2.classList.add('field');
+        
         chrimeField2.value = 'no';
         if(chrime.TRES_TXT_RESPUESTA_ABC == 'no'){
             chrimeField2.setAttribute('checked', true)

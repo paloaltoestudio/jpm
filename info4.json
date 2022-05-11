@@ -1008,7 +1008,7 @@
             "TRES_NOM_DELITO": "Insubordinación",
             "TRES_ENT_ID_PREGUNTA_ABC": 2000,
             "TRES_ENT_ID_PREG_PADRE": 1,
-            "TRES_ENT_ORDEN_PREGUNTA_HIJO": 2,
+            "TRES_ENT_ORDEN_PREGUNTA_HIJO": 4,
             "TRES_ENT_ID_PREG_PADRE1": 1,
             "TRES_TXT_NOM_PREGUNTA": "¿Cuáles 2?",
             "TRES_TIPO_RESPUESTAS": "AREA DE TEXTO",
