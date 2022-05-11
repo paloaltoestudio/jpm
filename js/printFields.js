@@ -26,7 +26,18 @@ fetchChcrime().then(chrimes => {
 
     chrimes = chrimes.PreguntasAndRespuestasList;
 
-    console.log(chrimes)
+    var unique = [];
+    var distinct = [];
+    for(var i = 0; i < chrimes.length; i++ ){
+        if(!unique[chrimes[i].TRES_ID_DELITO]){
+            distinct.push(chrimes[i]);
+            unique[chrimes[i].TRES_ID_DELITO] = 1;
+        }
+    }
+
+    console.log(distinct)
+
+   
     
     chrimes.forEach(function(chrime){
 
