@@ -1,26 +1,4 @@
-
-const chrimeList = [
-    'insubordinacion', 
-    'insubordinacion_exigencia', 
-    'desobediencia',
-    'desobediencia_personal_retirado',
-    'desobediencia_reservistas',
-    'ataque_superior',
-    'ataque_inferior',
-    'amenazas',
-    'abandono_puesto',
-    'abandono_servicio',
-    'abandono_servicio_soldados_voluntarios_profesionales',
-    'delito_centinela',
-    'libertad_indebida_prisioneros_guerra',
-    'omision_abastecimiento',
-    'inutilizacion_voluntaria',
-    'cobardia',
-    'cobardia_omision',
-    'comercio_enemigo',
-    'injuria',
-    'desercion'
-];
+const form = document.querySelector('#jpm_form');
 
 fetchChcrime().then(chrimes => {
 
@@ -35,91 +13,84 @@ fetchChcrime().then(chrimes => {
         }
     }
 
-    console.log(distinct)
+    function createChrimeDiv(chrimeList){
 
-   
-    
-    chrimes.forEach(function(chrime){
+        [...chrimeList].map(item => {
+            const chrimeDiv = document.createElement('div');
+            chrimeDiv.id = 'chrime_id_' + item.TRES_ID_DELITO;
 
-        // //Function to build elements
-        // const chrimeElement = elemType(chrime);
-        
-        // // Function to add classes to elements
-        // addClassElem(chrime, chrimeElement);
-
-
-        // Print fields on each chrime group
-        chrimeList.map(function(chrimeName){
-            const chrimeDiv = document.getElementById(`${chrimeName}`);
-
-            const getTitle = function(){
-                if(chrimeDiv){
-                    let chrimeTitle = chrimeDiv.querySelector('.chrime_title');
-                    chrimeTitle = chrimeTitle.textContent;
-                    return chrimeTitle;
-                } else {
-                    return chrimeTitle = '';
-                }
-            }
+            const title = document.createElement('h2');
+            title.classList.add('chrime_title'); 
+            title.innerText = item.TRES_NOM_DELITO;
             
-            chrimeTitle = getTitle();
-
-            if(chrime.TRES_NOM_DELITO == chrimeTitle){
-
-                if(!chrime.TRES_ENT_ID_PREG_PADRE){
-                    //Function to build elements
-                    const chrimeElement = elemType(chrime);
-                    
-                    // Function to add classes to elements
-                    addClassElem(chrime, chrimeElement);
-    
-                    chrimeDiv.appendChild(chrimeElement);
-
-                    function getChildren(chrime, chrimeElement){
-                        if(chrime.TRES_RES_HABILITA_RES_HIJO){
-                            let children = chrimes.filter(item => item.TRES_ENT_ID_PREG_PADRE == chrime.TRES_ENT_ID_PREGUNTA_ABC);
-                            children = children.sort((a,b) => (a.TRES_ENT_ORDEN_PREGUNTA_HIJO > b.TRES_ENT_ORDEN_PREGUNTA_HIJO) ? 1 : -1);
-        
-                            children.map(child => {
-                                //Function to build elements
-                                const childChrimeElement = elemType(child);
-            
-                                // Function to add classes to elements
-                                addClassElem(child, childChrimeElement);
-        
-                                if(chrime.TRES_TXT_RESPUESTA_ABC && chrime.TRES_TXT_RESPUESTA_ABC == 'si'){
-                                    childChrimeElement.classList.remove('hide');
-                                }
-            
-                                chrimeElement.appendChild(childChrimeElement);
-
-                                getChildren(child, childChrimeElement);
-    
-                            });
-                        } 
-                    }
-
-                    getChildren(chrime, chrimeElement);
-                }
-
-
-            } 
-            // else if(chrime.TRES_NOM_DELITO == chrimeTitle && chrime.TRES_RES_HABILITA_RES_HIJO){
-            //     const parentElem = document.getElementById(`${chrime.TRES_ENT_ID_PREG_PADRE}`);
-            //     parentElem.append(chrimeElement);
-            // } 
+            chrimeDiv.appendChild(title);
+            form.appendChild(chrimeDiv);
         });
-    });
+    }
 
+    createChrimeDiv(distinct);
+
+    distinct.map(item => {
+        const currentChrimes = chrimes.filter(chrime => chrime.TRES_ID_DELITO == item.TRES_ID_DELITO);
+
+        console.log(currentChrimes)
+
+        
+        currentChrimes.map(chrime => {
+            const chrimeDiv = document.getElementById(`chrime_id_${chrime.TRES_ID_DELITO}`);
+            
+            if(!chrime.TRES_ENT_ID_PREG_PADRE){
+                //Function to build elements
+                const chrimeElement = elemType(chrime);
+                
+                // Function to add classes to elements
+                addClassElem(chrime, chrimeElement);
+    
+                chrimeDiv.appendChild(chrimeElement);
+    
+                function getChildren(chrimeObject, chrimeDiv){
+                    
+                    if(chrimeObject.TRES_RES_HABILITA_RES_HIJO){
+                        let children = currentChrimes.filter(currentItem => currentItem.TRES_ENT_ID_PREG_PADRE == chrimeObject.TRES_ENT_ID_PREGUNTA_ABC);
+                        children = children.sort((a,b) => (a.TRES_ENT_ORDEN_PREGUNTA_HIJO > b.TRES_ENT_ORDEN_PREGUNTA_HIJO) ? 1 : -1);
+
+                        
+                        children.map(child => {
+                            //Function to build elements
+                            const childChrimeElement = elemType(child);
+                            
+                            // Function to add classes to elements
+                            addClassElem(child, childChrimeElement);
+                            
+                            if(chrimeObject.TRES_TXT_RESPUESTA_ABC && chrime.TRES_TXT_RESPUESTA_ABC == 'si'){
+                                childChrimeElement.classList.remove('hide');
+                            }
+                            
+                            chrimeDiv.appendChild(childChrimeElement);
+    
+                            getChildren(child, childChrimeElement);
+    
+                        });
+                    } 
+                }
+                getChildren(chrime, chrimeElement);
+            }
+        });
+
+    })
+    
+    //Create and add submit button
+    const submitButton = document.createElement('button');
+    submitButton.innerText = 'Guardar Respuestas';
+    form.appendChild(submitButton);
+    
     //Fetch triggers
     const triggers = [...document.querySelectorAll('.trigger')];
     
     // Add click listener to every trigger
     triggersHandler(triggers);
-    
 }); 
 
 
 // Change submit event
-const form = document.querySelector('#jpm_form');
 submitHandler(form);

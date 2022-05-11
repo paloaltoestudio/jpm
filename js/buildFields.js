@@ -21,7 +21,6 @@ function createLabel(chrime, type){
     if(type == 'sí' || type == 'no'){
         chrimeLabel.innerText = type;
         chrimeLabel.classList.add('radio_label');
-        chrimeLabel.classList.add('field');
     } else {
         chrimeLabel.innerText = `${chrime.TRES_TXT_NOM_PREGUNTA}`;
     }
