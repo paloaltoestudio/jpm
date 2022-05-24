@@ -1,6 +1,9 @@
 function submitHandler(form){
     form.addEventListener('submit', function(e){
         e.preventDefault();
+        
+        const formButton = document.querySelector('.submit_wrapper button');
+        formButton.innerText = '...Enviando';
     
         const formGroups = [...document.querySelectorAll('.wrapper')];
     
@@ -73,6 +76,8 @@ function submitHandler(form){
                 const fetchResponse = await fetch(`${url}`, settings);
                 const data = await fetchResponse.json();
 
+                formButton.innerText = 'Guardar Respuestas';
+
                 if(fetchResponse.status == 201 || fetchResponse.status == 200){
                     Swal.fire({
                         position: 'top-center',
@@ -82,10 +87,21 @@ function submitHandler(form){
                         timer: 1500,
                         showCloseButton: false
                     })
+                } else {
+                    Swal.fire({
+                        position: 'top-center',
+                        icon: 'error',
+                        title: 'Ocurrió un error',
+                        text: 'Intente guardar nuevamente',
+                        showConfirmButton: false,
+                        timer: 1500000000000,
+                        showCloseButton: false
+                    })
                 }
 
                 return data;
             } catch (e) {
+                formButton.innerText = 'Guardar Respuestas';
                 return e;
             }    
         }

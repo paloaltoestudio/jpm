@@ -40,6 +40,12 @@ h2 {
     justify-content: flex-end;
 }
 
+/* Style for popup message */
+.swal2-html-container {
+    margin-top: 0 !important;
+    font: normal bold 16px 'Work Sans', sans-serif;
+}
+
 #jpm_form h2 {
     position: relative;
     color: #2a70b9;
