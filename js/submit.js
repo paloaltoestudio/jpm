@@ -72,6 +72,18 @@ function submitHandler(form){
             try {
                 const fetchResponse = await fetch(`${url}`, settings);
                 const data = await fetchResponse.json();
+
+                if(fetchResponse.status == 201 || fetchResponse.status == 200){
+                    Swal.fire({
+                        position: 'top-center',
+                        icon: 'success',
+                        title: 'Preguntas Guardadas',
+                        showConfirmButton: false,
+                        timer: 1500,
+                        showCloseButton: false
+                    })
+                }
+
                 return data;
             } catch (e) {
                 return e;

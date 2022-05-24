@@ -12,13 +12,37 @@
     width: 100%;
     max-width: 1200px;
     margin: auto;
+    padding-bottom: 100px;
 }
 
 h2 {
-    position: relative;
-    color: #2a70b9;
     font: normal bold 18px 'Work Sans', sans-serif;
     text-transform: uppercase;
+}
+
+.submit_wrapper {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
+    padding-bottom: 40px;
+    left: 0;
+    z-index: 3;
+}
+
+.submit_container {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#jpm_form h2 {
+    position: relative;
+    color: #2a70b9;
     background: #fff;
     z-index: 1;
     border-bottom: 1px solid #2a70b9;
@@ -35,10 +59,13 @@ h2 {
     text-decoration: underline;
 }
 
-label, span {
+#jpm_form span {
+    margin-right: 20px;
+}
+
+#jpm_form label, #jpm_form span {
     font: normal bold 15px 'Work Sans', sans-serif;
     color: #4e4e4e;
-    margin-right: 20px;
 }
 
 label.radio_label {
@@ -74,7 +101,7 @@ textarea {
 }
 
 button {
-    background: #2a70b9;
+    background: #FFAB00;
     color: #fff;
     text-transform: uppercase;
     padding: 10px;
@@ -85,5 +112,5 @@ button {
 }
 
 button:hover {
-    background: #215893;
+    background: #2a70b9;
 }

@@ -80,9 +80,15 @@ fetchChcrime().then(chrimes => {
     })
     
     //Create and add submit button
+    const submitWrapper = document.createElement('div');
+    submitWrapper.classList.add('submit_wrapper');
+    const submitContainer = document.createElement('div');
+    submitContainer.classList.add('submit_container');
     const submitButton = document.createElement('button');
     submitButton.innerText = 'Guardar Respuestas';
-    form.appendChild(submitButton);
+    submitContainer.appendChild(submitButton);
+    submitWrapper.appendChild(submitContainer);
+    form.appendChild(submitWrapper);
     
     //Fetch triggers
     const triggers = [...document.querySelectorAll('.trigger')];
