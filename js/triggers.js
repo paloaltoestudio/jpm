@@ -8,9 +8,9 @@ function triggersHandler(triggers){
             
             // Fetch trigger's children and remove hide class
             const elemsShow = document.querySelectorAll(`.parent_id_${e.target.parentNode.id}`);
-            console.log(elemsShow);
+            
             [...elemsShow].map(elem => {
-                console.log('tiene clase: ', elem)
+                
                 if(trigger.value == 'si'){
                     elem.classList.remove('hide');
                 } else {

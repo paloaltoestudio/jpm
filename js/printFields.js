@@ -32,9 +32,6 @@ fetchChcrime().then(chrimes => {
 
     distinct.map(item => {
         const currentChrimes = chrimes.filter(chrime => chrime.TRES_ID_DELITO == item.TRES_ID_DELITO);
-
-        console.log(currentChrimes)
-
         
         currentChrimes.map(chrime => {
             const chrimeDiv = document.getElementById(`chrime_id_${chrime.TRES_ID_DELITO}`);
