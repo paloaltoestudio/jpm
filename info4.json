@@ -12,7 +12,7 @@
             "TRES_TIPO_RESPUESTAS": "SI/NO",
             "TRES_POSIBLES_RESPUESTAS": "SI;NO",
             "TRES_RES_HABILITA_RES_HIJO": "SI",
-            "TRES_TXT_RESPUESTA_ABC": ""
+            "TRES_TXT_RESPUESTA_ABC": "si"
         },
         {
             "TRES_ID_DELITO": 1,
@@ -25,7 +25,7 @@
             "TRES_TIPO_RESPUESTAS": "AREA DE TEXTO",
             "TRES_POSIBLES_RESPUESTAS": null,
             "TRES_RES_HABILITA_RES_HIJO": null,
-            "TRES_TXT_RESPUESTA_ABC": ""
+            "TRES_TXT_RESPUESTA_ABC": "respuesta 1"
         },
         {
             "TRES_ID_DELITO": 1,

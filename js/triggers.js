@@ -1,6 +1,9 @@
 function triggersHandler(triggers){
     triggers.map(function(trigger){
         trigger.addEventListener('click', function(e){
+            //Add checked class to parent element
+            e.target.parentNode.classList.add('checked');
+
             // Get parent padding
             let parentPadding = window.getComputedStyle(e.target.parentNode, null).getPropertyValue('margin-left');
             parentPadding = parentPadding.split('px');
@@ -31,11 +34,9 @@ function triggersHandler(triggers){
 
                     childrenInputTexts = document.querySelectorAll(`.parent_id_${e.target.parentNode.id} input[type='text']`); 
                     [...childrenInputTexts].map(function(childrenInputText){ 
-                        console.log(childrenInputText)
                         childrenInputText.value = '';
                         childrenInputText.parentNode.classList.add('hide');
                     });
-                    console.log(childrenFields)
                 }
 
                 // Add up parent padding to indent child

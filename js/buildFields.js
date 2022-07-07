@@ -22,6 +22,7 @@ function createLabel(chrime, type){
         chrimeLabel.innerText = type;
         chrimeLabel.classList.add('radio_label');
     } else {
+        chrimeLabel.classList.add('question_text');
         chrimeLabel.innerText = `${chrime.TRES_TXT_NOM_PREGUNTA}`;
     }
 
@@ -63,11 +64,17 @@ function elemType(chrime){
         const chrimeElement = createWrapperDiv(chrime);
 
         const chrimeSpan = document.createElement('span');
+        chrimeSpan.classList.add('question_text');
         chrimeSpan.innerText = `${chrime.TRES_TXT_NOM_PREGUNTA}`;
 
         //Print label
         const chrimeLabel = createLabel(chrime, 'sí');
 
+        //Default hidden value for radio type answer
+        const chrimeFieldDefault = document.createElement('input');
+        chrimeFieldDefault.type = 'hidden';
+        chrimeFieldDefault.name = `answer_${chrime.TRES_ENT_ID_PREGUNTA_ABC}`;
+        chrimeFieldDefault.value = '';
         
         const chrimeField = document.createElement('input');
         chrimeField.type = 'radio';
@@ -91,7 +98,12 @@ function elemType(chrime){
         chrimeField2.name = `answer_${chrime.TRES_ENT_ID_PREGUNTA_ABC}`;
         chrimeField2.classList.add('field');
 
+        if(chrime.TRES_TXT_RESPUESTA_ABC){
+            chrimeElement.classList.add('checked');
+        }
+
         chrimeElement.appendChild(chrimeSpan);
+        chrimeElement.appendChild(chrimeFieldDefault);
         chrimeElement.appendChild(chrimeLabel);
         chrimeElement.appendChild(chrimeField);
         chrimeElement.appendChild(chrimeLabel2);

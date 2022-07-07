@@ -87,6 +87,9 @@ function submitHandler(form){
                         timer: 1500,
                         showCloseButton: false
                     })
+
+                    printSentForm()
+
                 } else {
                     Swal.fire({
                         position: 'top-center',
@@ -94,7 +97,7 @@ function submitHandler(form){
                         title: 'Ocurrió un error',
                         text: 'Intente guardar nuevamente',
                         showConfirmButton: false,
-                        timer: 1500000000000,
+                        timer: 1500,
                         showCloseButton: false
                     })
                 }
@@ -105,7 +108,11 @@ function submitHandler(form){
                 return e;
             }    
         }
-    
+
         sendForm();
+
+        
+
+       
     });
 }
